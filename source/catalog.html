@@ -97,6 +97,111 @@
       </div>
       <div> 
         <a href="">Фильтры</a>
+        <form class="" action="index.html" method="post">
+          <label>
+            <input type="radio" name="criteria" value="parametr" checked>По параметрам
+          </label>
+          <label>
+            <input type="radio" name="criteria" value="brand">По марке
+          </label>
+          <fieldset>
+            <legend>Сезонность</legend>
+            <label>
+              Летние<input type="radio" name="season" value="100">
+            </label>
+            <label>
+              Зимние<input type="radio" name="season" value="600" checked>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Марка</legend>
+            <select name="car-brand-select">
+              <option value="BMW" selected>BMW</option>
+              <option value="KIA">KIA</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Модель</legend>
+            <select name="car-model-select">
+              <option value="1-series" selected>1-series</option>
+              <option value="2-series">2-series</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Кузов</legend>
+            <select name="car-body-select">
+              <option value="E81 3d" selected>E81 3d</option>
+              <option value="E82 3d">E82 3d</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Модификация</legend>
+            <select name="car-modification-select">
+              <option value="116 d" selected>116 d</option>
+              <option value="116 i">116 i</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>R16</legend>
+            <label>
+              <input type="radio" name="radius-16">205/40 R16
+            </label>
+            <label>
+              <input type="radio" name="radius-16">210/45 R16
+            </label>
+            <label>
+              <input type="radio" name="radius-16">215/50 R16
+            </label>
+            <label>
+              <input type="radio" name="radius-16">225/55 R16
+            </label>
+          </fieldset> 
+          <fieldset>
+            <legend>R17</legend>
+            <div>
+              <p>Передняя ось</p>
+              <label>
+                <input type="radio" name="radius-17-front">215/45 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-front">215/50 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-front">205/50 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-front">195/55 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-front">225/55 R17
+              </label>
+            </div>
+            <div>
+              <p>Задняя ось</p>
+              <label>
+                <input type="radio" name="radius-17-back">225/45 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-back" checked>225/50 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-back">245/50 R17
+              </label>
+              <label>
+                <input type="radio" name="radius-17-back">205/55 R17
+              </label>
+            </div>              
+          </fieldset>
+          <fieldset>
+            <legend>R18</legend>
+            <label>
+              <input type="radio" name="radius-18">255/40 R18
+            </label>
+            <label>
+              <input type="radio" name="radius-18">245/45 R18
+            </label>            
+          </fieldset>
+        </form>
       </div>
       <div>
         <p>Набережные Челны</p>
