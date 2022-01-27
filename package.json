@@ -1,0 +1,42 @@
+{
+  "name": "spareshop",
+  "description": "learning project",
+  "private": true,
+  "author": "Ivan-El",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "editorconfig": "^0.15.3",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.5",
+    "stylelint": "^14.3.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "test": "npm run stylelint",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-El/SparesShop.git"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-El/SparesShop/issues"
+  },
+  "homepage": "https://github.com/Ivan-El/SparesShop#readme"
+}

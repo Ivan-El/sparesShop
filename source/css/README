@@ -1,0 +1,10 @@
+Folder for styles.
+
+File Structure:
+
+css/
+	| - style.css
+
+sass/
+	| - style.scss
+	| - [other *.scss files]

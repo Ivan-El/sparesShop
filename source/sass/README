@@ -1,0 +1,8 @@
+Folder for Sass preprocessor files.
+
+File Structure:
+
+sass/
+
+	| - style.scss
+	| - [other *.scss files]
