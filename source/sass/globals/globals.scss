@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  font-family: $main-font;
+  font-weight: normal;
+  font-style: normal;
+  color: $main-font-color;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
