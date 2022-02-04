@@ -1,0 +1,22 @@
+.hamburger__toggle {
+  position: absolute;
+  content: '';
+  top: 30px;
+  left: 16px;
+  display: block;
+  width: 33px;
+  height: 27px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 3px;
+    box-shadow: 0 3px 0 0 #C4C4C4, 0 12px 0 0 #C4C4C4, 0 21px 0 0 #C4C4C4;
+  }
+}
