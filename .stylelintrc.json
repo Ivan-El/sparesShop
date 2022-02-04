@@ -1,6 +1,7 @@
 {
   "extends": ["stylelint-config-standard-scss"],
   "customSyntax": "postcss-scss",
+  "ignoreFiles": ["source/sass/globals/*.scss"],
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
