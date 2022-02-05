@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   min-width: 115px;
-  @include list-reset();
+
+  @include list-reset;
+
   margin-left: auto;
 }

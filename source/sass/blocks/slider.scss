@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+
   &__slide {
     width: 100%;
     padding-top: 51%;
@@ -7,9 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   &__slide--1 {
-    background-image: url('/img/big-slider-image@1x.jpg');
+    background-image: url("/img/big-slider-image@1x.jpg");
   }
+
   &__slide--2,
   &__slide--3,
   &__slide--4,
@@ -17,34 +20,39 @@
   &__slide--6 {
     display: none;
   }
+
   &__arrow {
     display: none;
   }
+
   &__dot-list {
-    @include list-reset();
+    @include list-reset;
+
     position: absolute;
-    content: '';
+    content: "";
     bottom: 10%;
     left: 39%;
     display: flex;
     justify-content: space-between;
     width: 20%;
   }
+
   &__dot {
     position: relative;
     width: 11px;
     height: 11px;
     background-color: transparent;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     border-radius: 50%;
-    &--current:after {
+
+    &--current::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 1px;
       left: 1px;
       width: 7px;
       height: 7px;
-      background-color: #FFF;
+      background-color: #fff;
       border-radius: 50%;
     }
   }
