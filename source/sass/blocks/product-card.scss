@@ -1,0 +1,118 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &__attribute {
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .promotion__product-sale &__attribute {
+    margin-top: 15px;
+  }
+
+  &__new-price {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 31px;
+    color: #ff7931;
+  }
+
+  &__old-price {
+    position: relative;
+    color: #a8a8a8;
+
+    &::before {
+      border-bottom: 1px solid #a8a8a8;
+      position: absolute;
+      left: -10px;
+      top: 2px;
+      content: "";
+      width: 130%;
+      height: 50%;
+      transform: rotate(-17deg);
+    }
+  }
+
+  &__name {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  &__countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f0f4;
+  }
+
+  &__countdown {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__countdown-container {
+    display: flex;
+  }
+
+  &__countdown-time-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--minutes,
+    &--hours {
+      margin-right: 8px;
+
+      ::after {
+        position: absolute;
+        content: ":";
+        top: -1px;
+        right: -8px;
+      }
+    }
+  }
+
+  &__countdown-time {
+    font-weight: bold;
+  }
+
+  &__countdown-measure {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 11px;
+    color: #c4c4c4;
+  }
+
+  &__dot-list {
+    @include list-reset;
+
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  &__dot {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(0 0 0 / 20%);
+    border-radius: 50%;
+
+    &--current {
+      background-color: #ff7931;
+    }
+  }
+}

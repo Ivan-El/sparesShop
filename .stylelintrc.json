@@ -3,6 +3,7 @@
   "customSyntax": "postcss-scss",
   "ignoreFiles": ["source/sass/globals/*.scss"],
   "rules": {
+    "selector-class-pattern": null,
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
   }
