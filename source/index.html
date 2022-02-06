@@ -103,7 +103,7 @@
   <main class="main">
     <section class="promotion">
       <h2 class="visually-hidden">Рекламные товары и услуги</h2>
-      <div class="slider">
+      <div class="promotion__slider slider">
         <div class="slider__slide slider__slide--1">
           <a href="#"></a>
         </div>
@@ -128,17 +128,44 @@
           <li class="slider__dot"></li>
         </ul>
       </div>
-      <article class="promotion-product">
-        <div class="promotion-product__img">
-          <img src="https://via.placeholder.com/50" width="150" height="187" alt="promo-img">
-          <h3>Лампочка mini...</h3>
+
+
+      <article class="promotion__product-sale">
+        <div class="product-card">
+          <h3 class="visually-hidden">Акция!</h3>
+          <div class="product-card__attribute">
+            <span class="product-card__new-price">200 Р</span><br>
+            <span class="product-card__old-price">500 Р</span>
+          </div>
+          <img class="product-card__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+          <p class="product-card__name">Лампочка mini...</p>
+          <div class="product-card__countdown-wrapper">
+            <span class="product-card__countdown">До конца акции осталось:</span>
+            <div class="product-card__countdown-container">
+              <div class="product-card__countdown-time-wrapper product-card__countdown-time-wrapper--hours">
+                <span class="product-card__countdown-time">00</span>
+                <span class="product-card__countdown-measure">часов</span>
+              </div>
+              <div class="product-card__countdown-time-wrapper product-card__countdown-time-wrapper--minutes">
+                <span class="product-card__countdown-time">20</span>
+                <span class="product-card__countdown-measure">минут</span>
+              </div>
+              <div class="product-card__countdown-time-wrapper product-card__countdown-time-wrapper--seconds">
+                <span class="product-card__countdown-time">00</span>
+                <span class="product-card__countdown-measure">секунд</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="promotion-product__countdown">
-          <p class="promotion-product__countdown-description">До конца акции осталось:</p>
-          <p>00 : 20 : 00</p>
-          <p>часов минут секунд</p>
-        </div>
+        <ul class="product-card__dot-list">
+          <li class="product-card__dot product-card__dot--current"></li>
+          <li class="product-card__dot"></li>
+          <li class="product-card__dot"></li>
+        </ul>
       </article>
+
+
+
     </section>
     <section class="search">
       <h2>Фильтр по товарам</h2>
