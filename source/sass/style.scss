@@ -1,6 +1,7 @@
 @import "globals/preprocessing";
 @import "globals/globals";
 @import "globals/visually-hidden";
+@import "globals/container";
 @import "blocks/page-header";
 @import "blocks/menu";
 @import "blocks/hamburger";
@@ -9,3 +10,5 @@
 @import "blocks/promotion";
 @import "blocks/slider";
 @import "blocks/product-card";
+@import "blocks/search";
+@import "blocks/search-form";
