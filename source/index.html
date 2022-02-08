@@ -128,8 +128,6 @@
           <li class="slider__dot"></li>
         </ul>
       </div>
-
-
       <article class="promotion__product-sale">
         <div class="product-card">
           <h3 class="visually-hidden">Акция!</h3>
@@ -163,29 +161,38 @@
           <li class="product-card__dot"></li>
         </ul>
       </article>
-
-
-
     </section>
+
+
     <section class="search">
-      <h2>Фильтр по товарам</h2>
-      <form class="search-form" action="index.html" method="post">
-        <label>
-          <input type="radio" name="search-filter" value="vin">Поиск по Vin
-        </label>
-        <label>
-          <input type="radio" name="search-filter" value="car-brand" checked>Поиск по марке
-        </label>
-        <label>
-          <input type="radio" name="search-filter" value="product-name" >Поиск по названию товара+
-        </label>
-        <label>
-          <input type="radio" name="search-filter" value="article">Поиск по артикулу
-        </label>
-        <input type="text" size="30" placeholder="Введите марку автомобиля">
-        <input type="submit" value="Отправить">
+      <h2 class="visually-hidden">Поиск по товарам</h2>
+      <form class="search__form search-form" action="index.html" method="post">
+        <div class="search-form__wrapper-top">
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="vin" id="radio-input-first">
+          <label class="search-form__radio-label" for="radio-input-first">
+            Поиск по Vin
+          </label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="car-brand" id="radio-input-second" checked>
+          <label class="search-form__radio-label" for="radio-input-second">
+            Поиск по марке
+          </label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="product-name" id="radio-input-third">
+          <label class="search-form__radio-label" for="radio-input-third">
+            Поиск по названию товара
+          </label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="article" id="radio-input-fourth">
+          <label class="search-form__radio-label" for="radio-input-fourth">
+            Поиск по артикулу
+          </label>
+        </div>
+        <div class="search-form__wrapper-bottom">
+          <input class="search-form__text-input" type="text" placeholder="Введите марку автомобиля">
+          <button class="search-form__submit-button" type="submit">
+        </div>
       </form>
     </section>
+
+
     <section class="sections">
       <ul>
         <li>
