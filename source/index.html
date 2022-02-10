@@ -130,13 +130,13 @@
       </div>
       <article class="promotion__product-sale">
         <div class="product-card">
-          <h3 class="visually-hidden">Акция!</h3>
+          <h2 class="visually-hidden">Акция!</h2>
           <div class="product-card__attribute">
-            <span class="product-card__new-price">200 Р</span><br>
-            <span class="product-card__old-price">500 Р</span>
+            <span class="product-card__attribute-new-price">200 Р</span><br>
+            <span class="product-card__attribute-old-price">500 Р</span>
           </div>
-          <img class="product-card__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
-          <p class="product-card__name">Лампочка mini...</p>
+          <img class="product-card__image product-card__image--sale" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+          <h3 class="product-card__name product-card__name--sale">Лампочка mini...</h3>
           <div class="product-card__countdown-wrapper">
             <span class="product-card__countdown">До конца акции осталось:</span>
             <div class="product-card__countdown-container">
@@ -181,9 +181,6 @@
         </div>
       </form>
     </section>
-
-
-
     <section class="categories">
       <h2 class="visually-hidden">Разделы сайта</h2>
       <ul class="categories__list">
@@ -219,115 +216,186 @@
         </li>
       </ul>
     </section>
-
-
-
-
-
-    <section class="upsell upsell-popular">
-      <h2 class="upsell__heading">Популярные товары</h2>
-      <ul class="upsell__category">
+    <section class="related-products related-products--popular">
+      <h2 class="related-products__heading">Популярные товары</h2>
+      <ul class="related-products__categories-list">
         <li>
-          <a href="#">запчасти</a>
+          <a class="related-products__category-link related-products__category-link--current" href="#">запчасти</a>
         </li>
         <li>
-          <a href="#">автохимия</a>
+          <a class="related-products__category-link" href="#">автохимия</a>
         </li>
         <li>
-          <a href="#">шины и диски</a>
+          <a class="related-products__category-link" href="#">шины и диски</a>
         </li>
         <li>
-          <a href="#">автоэлектроника</a>
+          <a class="related-products__category-link" href="#">автоэлектроника</a>
         </li>
         <li>
-          <a href="#">инструменты</a>
+          <a class="related-products__category-link" href="#">инструменты</a>
         </li>
         <li>
-          <a href="#">аксессуары и другое</a>
+          <a class="related-products__category-link" href="#">аксессуары и другое</a>
         </li>
       </ul>
-      <ul class="upsell-card">
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Ремень</span>
-          <span>440 ₽</span>
-          <a href="#">купить</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Шина 205/80 R16 104Q<br>Misha RF Power Grum</span>
-          <span>11 680 ₽</span>
-          <a href="#">купить</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Фара Nokian 2025</span>
-          <span>680 ₽</span>
-          <a href="#">купить</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Шина 245/60 R18 105T Contyther Crosh Conta...</span>
-          <span>нет в наличии</span>
-          <a href="#">Сообщить о поступлении</a>
-        </li>
+      <div class="related-products__carousel">
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
+          <h3 class="product-card__name">Ремень</h3>
+          <div class="product-card__price">440 ₽</div>
+          <a class="product-card__card" href="catalog.html">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/tire-1@1x.jpg" width="126" height="181" alt="Фото шины">
+          <h3 class="product-card__name">Шина 205/80 R16 104Q<br>Misha RF Power Grum</h3>
+          <div class="product-card__price">11 680 ₽</div>
+          <a class="product-card__card" href="catalog.html">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/headlight@1x.jpg" width="232" height="174" alt="Фото фары">
+          <h3 class="product-card__name">Фара Nokian 2025</h3>
+          <div class="product-card__price">680 ₽</div>
+          <a class="product-card__card" href="catalog.html">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/tire-2@1x.jpg" width="232" height="174" alt="Фото фары">
+          <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+          <div class="product-card__no-stock">нет в наличии</div>
+          <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+      </div>
+      <ul class="related-products__dot-list product-card__dot-list">
+        <li class="product-card__dot product-card__dot--current"></li>
+        <li class="product-card__dot"></li>
+        <li class="product-card__dot"></li>
       </ul>
-      <button>показать еще</button>
+      <a class="button button--show-more" href="#">смотреть еще</a>
     </section>
     <aside class="">
       <a href="#">
         <img src="https://via.placeholder.com/50" alt="">
       </a>
     </aside>
-    <section class="upsell upsell-offer">
-      <h2 class="upsell__heading">С этим товаром покупают</h2>
-      <ul class="upsell__category">
+    <section class="related-products related-products--additional">
+      <h2 class="related-products__heading">С этим товаром покупают</h2>
+      <ul class="related-products__categories-list">
         <li>
-          <a href="#">запчасти</a>
+          <a class="related-products__category-link related-products__category-link--current" href="#">запчасти</a>
         </li>
         <li>
-          <a href="#">автохимия</a>
+          <a class="related-products__category-link" href="#">автохимия</a>
         </li>
         <li>
-          <a href="#">шины и диски</a>
+          <a class="related-products__category-link" href="#">шины и диски</a>
         </li>
         <li>
-          <a href="#">автоэлектроника</a>
+          <a class="related-products__category-link" href="#">автоэлектроника</a>
         </li>
         <li>
-          <a href="#">инструменты</a>
+          <a class="related-products__category-link" href="#">инструменты</a>
         </li>
         <li>
-          <a href="#">аксессуары и другое</a>
-        </li>
-      </ul>
-      <ul class="upsell-card">
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Шина 205/80 R16 104Q<br>Misha RF Power Grum</span>
-          <span>нет в наличии</span>
-          <a href="#">Сообщить о поступлении</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Шина 205/80 R16 104Q<br>Misha RF Power Grum</span>
-          <span>11 680 ₽</span>
-          <a href="#">купить</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Шина 205/80 R16 104Q<br>Misha RF Power Grum</span>
-          <span>нет в наличии</span>
-          <a href="#">Сообщить о поступлении</a>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/50" alt="товар">
-          <span>Шина 245/60 R18 105T<br>Contyther Crosh Conty...</span>
-          <span>11 680 ₽</span>
-          <a href="#">купить</a>
+          <a class="related-products__category-link" href="#">аксессуары и другое</a>
         </li>
       </ul>
-      <button>показать еще</button>
+      <div class="related-products__carousel">
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Фото шины">
+          <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+          <div class="product-card__no-stock">нет в наличии</div>
+          <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Фото шины">
+          <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+          <div class="product-card__price">11 680 ₽</div>
+          <a class="product-card__card" href="catalog.html">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Фото шины">
+          <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+          <div class="product-card__no-stock">нет в наличии</div>
+          <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+        <div class="related-products__product-card product-card">
+          <div class="product-card__attribute">
+            <button class="product-card__attribute-button" type="button" name="button">И</button>
+          </div>
+          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+          <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Фото шины">
+          <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conty...</h3>
+          <div class="product-card__price">11 680 ₽</div>
+          <a class="product-card__card" href="catalog.html">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+          <a class="product-card__catalog-link" href="product-card.html">
+            <span class="visually-hidden">Перейти на страницу каталога</span>
+          </a>
+        </div>
+      </div>
+      <ul class="related-products__dot-list product-card__dot-list">
+        <li class="product-card__dot product-card__dot--current"></li>
+        <li class="product-card__dot"></li>
+        <li class="product-card__dot"></li>
+      </ul>
+      <a class="button button--show-more" href="#">смотреть еще</a>
     </section>
   </main>
   <footer class="footer">
