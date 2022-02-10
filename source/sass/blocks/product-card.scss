@@ -1,4 +1,5 @@
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,14 +17,14 @@
     margin-top: 15px;
   }
 
-  &__new-price {
+  &__attribute-new-price {
     font-weight: bold;
     font-size: 27px;
     line-height: 31px;
     color: #ff7931;
   }
 
-  &__old-price {
+  &__attribute-old-price {
     position: relative;
     color: #a8a8a8;
 
@@ -39,11 +40,87 @@
     }
   }
 
+  &__quick-view {
+    position: absolute;
+    top: 122px;
+    left: 22px;
+    display: none;
+  }
+
+  &__image {
+    margin-bottom: 25px;
+
+    &--sale {
+      margin-bottom: 15px;
+    }
+  }
+
   &__name {
-    margin: 15px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: normal;
+    text-align: center;
+
+    &--sale {
+      margin-bottom: 15px;
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 26px;
+    }
+  }
+
+  &__price {
+    margin-bottom: 30px;
     font-weight: bold;
-    font-size: 23px;
-    line-height: 26px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  &__no-stock {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__report-receipt {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ff7931;
+    border: 1px solid rgba(255 121 49 / 20%);
+  }
+
+  &__card {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    z-index: 2;
+    width: 60px;
+    height: 40px;
+    background-color: #ff7931;
+    border-radius: 10px 0 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: 18px;
+      width: 22px;
+      height: 26px;
+      background-image: url("/img/product-card.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__catalog-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
   &__countdown-wrapper {

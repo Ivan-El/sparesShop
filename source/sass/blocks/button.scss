@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--show-more {
+    width: 252px;
+    margin: 0 auto;
+    padding: 17px 43px;
+    color: #bdbec2;
+    background: #f0f0f4;
+  }
+}
