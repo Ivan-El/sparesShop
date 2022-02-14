@@ -1,8 +1,56 @@
 .accordion {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 5%;
+
+  &__section--info::before,
+  &__section::after {
+    position: absolute;
+    content: "";
+    left: -50%;
+    width: 150%;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
+
+  &__dropdown-wrapper {
+    position: relative;
+    color: #7f7f7f;
+  }
+
+  &__section-heading {
+    margin: 0;
+    padding: 16px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   &__dropdown-button {
-    po
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50%;
-    border: 1px solid #000;
+    height: 50px;
+    background-color: transparent;
+  }
+
+  &__subsection-list {
+    @include list-reset;
+
+    display: none;
+    color: #7f7f7f;
+  }
+
+  &__section--active &__subsection-list {
+    display: block;
+  }
+
+  &__subsection-link {
+    font-size: 14px;
+    line-height: 18px;
+    color: inherit;
+    text-decoration: none;
   }
 }
