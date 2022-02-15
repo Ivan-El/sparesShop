@@ -1,0 +1,33 @@
+.mailling {
+  width: 100%;
+  padding: 0 5%;
+  &__call {
+    margin: 0;
+    margin-bottom: 27px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__email-input {
+    width: 100%;
+    height: 33px;
+    padding-left: 12px;
+    border: none;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

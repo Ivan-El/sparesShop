@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+
+  &--show-more {
+    width: 252px;
+    margin: 0 auto;
+    padding: 17px 43px;
+    color: #bdbec2;
+    background-color: #f0f0f4;
+  }
+
+  &--input {
+    color: #fff;
+    background-color: #ff7931;
+  }
+}

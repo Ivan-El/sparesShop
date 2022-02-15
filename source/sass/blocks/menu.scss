@@ -1,0 +1,21 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 242px;
+  transform: translateX(-242px);
+  overflow: hidden;
+
+  &__sections {
+    @include list-reset;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+}

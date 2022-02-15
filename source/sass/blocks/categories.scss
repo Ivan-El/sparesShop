@@ -1,0 +1,118 @@
+.categories {
+  margin-bottom: 80px;
+  padding: 0 18px;
+
+  &__list {
+    @include list-reset;
+
+    display: grid;
+    grid-gap: 30px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
+
+  &__item-name {
+    grid-column: 1 / 3;
+    margin: 0;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  &__link {
+    position: relative;
+    margin-top: 35px;
+    color: #c4c4c4;
+    text-decoration: none;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 90px;
+      content: "";
+      width: 8px;
+      height: 2px;
+      background-color: #c4c4c4;
+    }
+
+    &::before {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 14px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    justify-self: end;
+    width: 60px;
+    height: 60px;
+    background-color: #ff7931;
+    border-radius: 50%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--autochemistry::after {
+      top: 10px;
+      left: 18px;
+      width: 25px;
+      height: 38px;
+      background-image: url("/img/autochemicals.svg");
+    }
+
+    &--tires::after {
+      top: 11px;
+      left: 11px;
+      width: 39px;
+      height: 39px;
+      background-image: url("/img/tires.svg");
+    }
+
+    &--tools::after {
+      top: 5px;
+      left: 17px;
+      width: 27px;
+      height: 50px;
+      background-image: url("/img/tools.svg");
+    }
+
+    &--spares::after {
+      top: 14px;
+      left: 14px;
+      width: 34px;
+      height: 34px;
+      background-image: url("/img/spares.svg");
+    }
+
+    &--autoelectronic::after {
+      top: 15px;
+      left: 11px;
+      width: 38px;
+      height: 30px;
+      background-image: url("/img/autoelectronic.svg");
+    }
+
+    &--accessories::after {
+      top: 10px;
+      left: 22px;
+      width: 18px;
+      height: 40px;
+      background-image: url("/img/accessories.svg");
+    }
+  }
+}
