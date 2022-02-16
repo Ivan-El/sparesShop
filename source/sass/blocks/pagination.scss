@@ -1,0 +1,24 @@
+.pagination {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #a8a8a8;
+    text-decoration: none;
+
+    &--current {
+      font-weight: bold;
+      color: #ff7931;
+      border: 1px solid #ff7931;
+    }
+  }
+}

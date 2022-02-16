@@ -1,0 +1,23 @@
+.compilation-list {
+  display: flex;
+
+  &__compilation {
+    flex-shrink: 0;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 4px 22px;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #48494d;
+    background: #f0f0f4;
+    opacity: 0.7;
+    border-radius: 50px;
+  }
+}

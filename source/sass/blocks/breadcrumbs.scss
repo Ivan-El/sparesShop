@@ -1,0 +1,42 @@
+.breadcrumbs {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 16px;
+  padding-right: 10%;
+
+  &__link {
+    position: relative;
+    padding-right: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #939393;
+
+    &--current {
+      text-decoration: none;
+      color: #bdbec2;
+    }
+  }
+
+  &__link:not(.breadcrumbs__link--current)::before,
+  &__link:not(.breadcrumbs__link--current)::after {
+    position: absolute;
+    content: "";
+    left: 70%;
+    width: 7px;
+    height: 2px;
+    background-color: #d1d1d6;
+  }
+
+  &__link:not(.breadcrumbs__link--current)::before {
+    top: 7px;
+    transform: rotate(45deg);
+  }
+
+  &__link:not(.breadcrumbs__link--current)::after {
+    top: 11px;
+    transform: rotate(-45deg);
+  }
+}
