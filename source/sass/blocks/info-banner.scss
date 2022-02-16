@@ -1,0 +1,30 @@
+.info-banner {
+  background: linear-gradient(90deg, #9710e9 1%, #fd8d43 99%);
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__heading {
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 50px;
+  }
+}
