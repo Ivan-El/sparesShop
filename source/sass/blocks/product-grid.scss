@@ -1,7 +1,7 @@
 .product-grid {
- @include list-reset;
+  @include list-reset;
 
- display: grid;
- justify-content: center;
- grid-gap: 30px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 30px;
 }
