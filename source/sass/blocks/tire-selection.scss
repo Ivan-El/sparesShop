@@ -1,0 +1,62 @@
+.tire-selection {
+  &__sort-wrapper-mobile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: -50%;
+      width: 150%;
+      height: 1px;
+      background-color: rgba(0 0 0 / 10%);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__sort-parametr {
+    padding-left: 16px;
+  }
+
+  &__sort-parametr-button {
+    padding: 0;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #48494d;
+    background-color: inherit;
+    border: none;
+
+    &--city {
+      padding-right: 34px;
+      color: #ff7931;
+    }
+  }
+
+  &__city-choose {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__filter-bottom {
+    display: none;
+  }
+
+  &__compilation-list {
+    @include list-reset;
+
+    margin-bottom: 30px;
+    overflow-x: auto;
+  }
+}

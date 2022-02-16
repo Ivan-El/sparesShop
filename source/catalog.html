@@ -101,7 +101,6 @@
     </div>
   </header>
   <main class="catalog-main">
-
     <div class="page-main__breadcrumbs">
       <ul class="breadcrumbs">
         <li>
@@ -118,17 +117,42 @@
         </li>
       </ul>
     </div>
-
-
-    <h1>Нешипованные шины</h1>
-    <section>
-      <h2>Подбор подходящей шины</h2>
-      <div>
-        <a href="">По пулярности</a>
+    <h1 class="page-main__title">Нешипованные шины</h1>
+    <section class="page-main__tire-selection tire-selection">
+      <h2 class="visually-hidden">Подбор подходящей шины</h2>
+      <div class="tire-selection__filter-top">
+        <div class="tire-selection__sort-wrapper-mobile">
+          <div class="tire-selection__sort-parametr">
+            <button class="tire-selection__sort-parametr-button">По пулярности</button>
+          </div>
+          <div>
+            <button class="tire-selection__sort-parametr-button">Фильтры</button>
+          </div>
+        </div>
+        <div class="tire-selection__city-choose">
+          <button class="tire-selection__sort-parametr-button tire-selection__sort-parametr-button--city">Набережные Челны</button>
+        </div>
+        <ul class="tire-selection__compilation-list compilation-list">
+          <li class="compilation-list__compilation">
+            <a class="compilation-list__link" href="#">Полноприводные</a>
+          </li>
+          <li class="compilation-list__compilation">
+            <a class="compilation-list__link" href="#">от 5000</a>
+          </li>
+          <li class="compilation-list__compilation">
+            <a class="compilation-list__link" href="#">Nokian</a>
+          </li>
+          <li class="compilation-list__compilation">
+            <a class="compilation-list__link" href="#">от 5000</a>
+          </li class="compilation-list__compilation">
+          <li class="compilation-list__compilation">
+            <a class="compilation-list__link" href="#">еще</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <a href="">Фильтры</a>
-        <form class="" action="index.html" method="post">
+      <div class="tire-selection__filter-bottom">
+        <h2>Фильтры</h2>
+        <form class="tire-selection__form" action="index.html" method="post">
           <label>
             <input type="radio" name="criteria" value="parametr" checked>По параметрам
           </label>
@@ -234,10 +258,7 @@
           </fieldset>
         </form>
       </div>
-      <div>
-        <p>Набережные Челны</p>
-      </div>
-      <ul>
+      <ul class="tire-selection__tire-list">
         <li>
           <img src="https://via.placeholder.com/50" alt="товар">
           <span>Шина 245/60 R18 105T<br>Contyther Crosh Conta...</span>
@@ -269,30 +290,33 @@
           <a href="#">купить</a>
         </li>
       </ul>
+      <ul class="pagination">
+        <li>
+          <a href="">1</a>
+        </li>
+        <li>
+          <a href="">2</a>
+        </li>
+        <li>
+          <a href="">3</a>
+        </li>
+        <li>
+          <a href="">4</a>
+        </li>
+        <li>
+          <a href="">5</a>
+        </li>
+        <li>
+          <a href="">Следующая страница</a>
+        </li>
+        <li>
+          <a href="">11</a>
+        </li>
+      </ul>
     </section>
-    <ul class="pagination">
-      <li>
-        <a href="">1</a>
-      </li>
-      <li>
-        <a href="">2</a>
-      </li>
-      <li>
-        <a href="">3</a>
-      </li>
-      <li>
-        <a href="">4</a>
-      </li>
-      <li>
-        <a href="">5</a>
-      </li>
-      <li>
-        <a href="">Следующая страница</a>
-      </li>
-      <li>
-        <a href="">11</a>
-      </li>
-    </ul>
+
+
+
     <aside class="">
       <a href="">
         <span>ШИНОМОНТАЖ</span><br>
