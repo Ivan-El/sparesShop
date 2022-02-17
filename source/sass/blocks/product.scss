@@ -1,0 +1,52 @@
+.product {
+  margin-bottom: 40px;
+
+  &__container {
+    display: grid;
+    justify-items: center;
+    padding: 0 16px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__code {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000;
+    opacity: 0.6;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__price {
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  &__button {
+    margin-bottom: 25px;
+    padding: 16px 92px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__low-price {
+    font-size: 15px;
+    line-height: 17px;
+    color: #ff7931;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255 121 49 / 20%);;
+  }
+}
