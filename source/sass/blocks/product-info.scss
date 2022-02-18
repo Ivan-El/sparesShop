@@ -1,0 +1,21 @@
+.product-info {
+  margin-bottom: 80px;
+
+  &__section {
+    padding: 0 16px;
+    background-color: #f9f9fc;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--active {
+      background-color: #fff;
+    }
+  }
+
+  &__section-heading {
+    margin: 0;
+    padding: 18px 0;
+  }
+}
