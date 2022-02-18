@@ -1,0 +1,73 @@
+.pickup-form {
+  &__shop-select-label {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  &__shop-select-input {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 8px 20px;
+    width: 100%;
+    font-size: 15px;
+    color: #bdbec2;
+    border: 1px solid #e0e0e0;
+  }
+
+  &__pickup-time-label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -50%;
+      width: 200%;
+      height: 1px;
+      background-color: rgba(0 0 0 / 10%);
+    }
+  }
+
+  &__pickup-time-input + &__pickup-radio-indicator {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #cdcdcd;
+    border-radius: 2px;
+    opacity: 0.54;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__pickup-time-input:checked + &__pickup-radio-indicator {
+    border-color: #ff7931;
+    opacity: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 2px;
+      width: 6px;
+      height: 6px;
+      background-color: #ff7931;
+      border-radius: 1px;
+    }
+  }
+}
