@@ -144,102 +144,103 @@
         <section class="product-info__section">
           <h3 class="product-info__section-heading">Отзывы</h3>
         </section>
+
         <section class="product-info__section product-info__section--active">
           <h3 class="product-info__section-heading">Самовывоз</h3>
+
           <form class="pickup-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="pickup-form__shop-select-label" for="shop-select-input">
-              Магазин
-            </label>
+            <label class="pickup-form__shop-select-label" for="shop-select-input">Магазин</label>
             <input class="pickup-form__shop-select-input" type="text" placeholder="Введите название магазина" id="shop-select-input">
             <div>
-              <label class="pickup-form__pickup-time-label">
-                Завтрать сегодня
+              <label class="pickup-form__pickup-time-label">Завтрать сегодня
                 <input class="pickup-form__pickup-time-input visually-hidden" type="radio" name="pickup" value="today">
                 <span class="pickup-form__pickup-radio-indicator"></span>
               </label>
-              <label class="pickup-form__pickup-time-label">
-                Забрать завтра и позднее
+              <label class="pickup-form__pickup-time-label">Забрать завтра и позднее
                 <input class="pickup-form__pickup-time-input visually-hidden" type="radio" name="pickup" value="tomorrow" checked>
                 <span class="pickup-form__pickup-radio-indicator"></span>
               </label>
             </div>
           </form>
+
+
           <table>
-            <tr>
-              <th></th>
-              <td>
-                <address>
-                  Санкт-Петербург, ул Большая Конюшенная, д 19
-                </address>
-              </td>
-            </tr>
-            <tr>
+            <thead>
+              <th>Адрес</th>
               <th>Режим работы</th>
-              <td>
-                <dl>
-                  <dt>пн-сб:</dt>
-                  <dd>08:00-19:00</dd>
-                </dl>
-                <dl>
-                  <dt>вс:</dt>
-                  <dd>09:00-17:00</dd>
-                </dl>
-              </td>
-            </tr>
-            <tr>
               <th>Доступно</th>
-              <td>Завтра и позднее</td>
-            </tr>
-            <tr>
               <th>Количество</th>
-              <td>Мало</td>
-            </tr>
-            <tr>
               <th></th>
-              <td>
-                <p>Нажимая на эту кнопку вы сможете забрать товар вне очереди</p>
-                <input type="submit" value="Купить">
-              </td>
-            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <address>Санкт-Петербург, ул Большая Конюшенная, д 19</address>
+                </td>
+                <td>
+                  <div>Режим работы</div>
+                  <table>
+                    <tr>
+                      <td>пн-сб:</td>
+                      <td>08:00-19:00</td>
+                    </tr>
+                    <tr>
+                      <td>вс:</td>
+                      <td>09:00-17:00</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <div>Доступно</div>
+                  Завтра и позднее
+                </td>
+                <td>
+                  <div>Количество</div>
+                  Мало
+                </td>
+                <td>
+                  <div>Нажимая на эту кнопку вы сможете забрать товар вне очереди</div>
+                  <a href="#">Купить</a>
+                </td>
+              </tr>
+
+
+
+
+              <tr>
+                <td>
+                  <address>
+                    Санкт-Петербург, ул Большая Конюшенная, д 19
+                  </address>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>пн-сб:</td>
+                      <td>08:00-19:00</td>
+                    </tr>
+                    <tr>
+                      <td>вс:</td>
+                      <td>09:00-17:00</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <div>Доступно</div>
+                  Завтра и позднее
+                </td>
+                <td>
+                  <div>Количество</div>
+                  Много
+                </td>
+                <td>
+                  <div>Нажимая на эту кнопку вы сможете забрать товар вне очереди</div>
+                  <a href="#">Купить</a>
+                </td>
+              </tr>
+            </tbody>
           </table>
-          <table>
-            <tr>
-              <th></th>
-              <td>
-                <address>
-                  Санкт-Петербург, ул Большая Конюшенная, д 19
-                </address>
-              </td>
-            </tr>
-            <tr>
-              <th>Режим работы</th>
-              <td>
-                <dl>
-                  <dt>пн-сб:</dt>
-                  <dd>08:00-19:00</dd>
-                </dl>
-                <dl>
-                  <dt>вс:</dt>
-                  <dd>09:00-17:00</dd>
-                </dl>
-              </td>
-            </tr>
-            <tr>
-              <th>Доступно</th>
-              <td>Завтра и позднее</td>
-            </tr>
-            <tr>
-              <th>Количество</th>
-              <td>Много</td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>
-                <p>Нажимая на эту кнопку вы сможете забрать товар вне очереди</p>
-                <input type="submit" value="Купить">
-              </td>
-            </tr>
-          </table>
+          <a href="#">Показать все автосалоны</a>
         </section>
         <section class="product-info__section">
           <h3 class="product-info__section-heading">Доставка</h3>
