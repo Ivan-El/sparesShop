@@ -1,0 +1,71 @@
+.pickup-timetable {
+  &__headings {
+    display: none;
+  }
+
+  &__table-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -20vw;
+      width: 120vw;
+      height: 1px;
+      background-color: rgba(0 0 0 / 10%);
+    }
+  }
+
+  &__table-data {
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(0 0 0 / 70%);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__adress {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__inner-title {
+    margin-bottom: 11px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  &__emphasis {
+    display: inline-block;
+    margin-bottom: 17px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(0 0 0 / 50%);
+  }
+
+  &__button-buy {
+    padding: 16px 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__button-show {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ff7931;
+  }
+}

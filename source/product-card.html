@@ -164,8 +164,8 @@
           </form>
 
 
-          <table>
-            <thead>
+          <table class="pickup-timetable">
+            <thead  class="pickup-timetable__headings">
               <th>Адрес</th>
               <th>Режим работы</th>
               <th>Доступно</th>
@@ -173,12 +173,12 @@
               <th></th>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <address>Санкт-Петербург, ул Большая Конюшенная, д 19</address>
+              <tr class="pickup-timetable__table-row">
+                <td class="pickup-timetable__table-data">
+                  <address class="pickup-timetable__adress">Санкт-Петербург, ул Большая Конюшенная, д 19</address>
                 </td>
-                <td>
-                  <div>Режим работы</div>
+                <td class="pickup-timetable__table-data">
+                  <div class="pickup-timetable__inner-title">Режим работы</div>
                   <table>
                     <tr>
                       <td>пн-сб:</td>
@@ -190,30 +190,31 @@
                     </tr>
                   </table>
                 </td>
-                <td>
-                  <div>Доступно</div>
+                <td class="pickup-timetable__table-data">
+                  <div class="pickup-timetable__inner-title">Доступно</div>
                   Завтра и позднее
                 </td>
-                <td>
-                  <div>Количество</div>
+                <td class="pickup-timetable__table-data">
+                  <div class="pickup-timetable__inner-title">Количество</div>
                   Мало
                 </td>
-                <td>
-                  <div>Нажимая на эту кнопку вы сможете забрать товар вне очереди</div>
-                  <a href="#">Купить</a>
+                <td class="pickup-timetable__table-data">
+                  <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
+                  <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
                 </td>
               </tr>
 
 
 
 
-              <tr>
-                <td>
-                  <address>
+              <tr class="pickup-timetable__table-row">
+                <td class="pickup-timetable__table-data">
+                  <address class="pickup-timetable__adress">
                     Санкт-Петербург, ул Большая Конюшенная, д 19
                   </address>
                 </td>
-                <td>
+                <td class="pickup-timetable__table-data">
+                  <div class="pickup-timetable__inner-title">Режим работы</div>
                   <table>
                     <tr>
                       <td>пн-сб:</td>
@@ -225,22 +226,22 @@
                     </tr>
                   </table>
                 </td>
-                <td>
-                  <div>Доступно</div>
+                <td class="pickup-timetable__table-data">
+                  <div class="pickup-timetable__inner-title">Доступно</div>
                   Завтра и позднее
                 </td>
-                <td>
-                  <div>Количество</div>
+                <td class="pickup-timetable__table-data">
+                  <div class="pickup-timetable__inner-title">Количество</div>
                   Много
                 </td>
-                <td>
-                  <div>Нажимая на эту кнопку вы сможете забрать товар вне очереди</div>
-                  <a href="#">Купить</a>
+                <td class="pickup-timetable__table-data">
+                  <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
+                  <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
                 </td>
               </tr>
             </tbody>
           </table>
-          <a href="#">Показать все автосалоны</a>
+          <a class="pickup-timetable__button-show" href="#">Показать все автосалоны</a>
         </section>
         <section class="product-info__section">
           <h3 class="product-info__section-heading">Доставка</h3>
