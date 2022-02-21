@@ -1,0 +1,71 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f4;
+
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 27px;
+  }
+
+  &__time-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:first-child {
+      padding-left: 43px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 1px;
+        left: 0;
+        width: 28px;
+        height: 28px;
+        background-image: url("/img/timer.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &:last-child {
+      margin-right: 25px;
+    }
+
+    &--minutes,
+    &--hours {
+      margin-right: 8px;
+
+      &::after {
+        position: absolute;
+        content: ":";
+        top: -1px;
+        right: -8px;
+      }
+    }
+  }
+
+  &__time {
+    font-weight: bold;
+  }
+
+  &__measure {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 0;
+    color: #c4c4c4;
+  }
+}

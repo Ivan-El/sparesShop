@@ -1,18 +1,38 @@
 .page-main {
+  &__promotion {
+    margin-bottom: 80px;
+  }
+
+  &__search {
+    margin-bottom: 80px;
+  }
+
+  &__categories {
+    margin-bottom: 80px;
+  }
+
+  &__related-products {
+    margin-bottom: 80px;
+  }
+
+  &__banner {
+    margin-bottom: 50px;
+  }
+
+  &__breadcrumbs {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
   &__title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding-left: 16px;
     font-size: 20px;
     line-height: 23px;
   }
 
-  &__breadcrumbs {
-    margin: 30px 0 40px;
-  }
-
   &__tire-selection {
-    padding-left: 16px;
     margin-bottom: 80px;
   }
 
