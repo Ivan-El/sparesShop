@@ -1,6 +1,4 @@
 .product-info {
-  margin-bottom: 80px;
-
   &__section {
     padding: 0 16px;
     background-color: #f9f9fc;
@@ -15,7 +13,49 @@
   }
 
   &__section-heading {
+    position: relative;
     margin: 0;
-    padding: 18px 0;
+    padding: 18px 0 17px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: normal;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 28px;
+      width: 8px;
+      height: 2px;
+      background-color: #bdbec2;
+    }
+
+    &::before {
+      right: 5px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__section--active &__section-heading {
+    padding-bottom: 14px;
+    font-weight: bold;
+
+    &::before,
+    &::after {
+      background-color: #48494d;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
   }
 }
