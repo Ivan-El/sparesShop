@@ -12,9 +12,9 @@
     &::before {
       position: absolute;
       content: "sale";
-      top: 18px;
-      left: -20px;
-      width: 64px;
+      top: 20px;
+      left: -21px;
+      width: 66px;
       padding: 5px 0 6px;
       font-weight: bold;
       font-size: 12px;
@@ -72,7 +72,7 @@
   }
 
   &--no-stock &__image {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   &__name {
