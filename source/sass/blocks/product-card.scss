@@ -3,14 +3,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 270px;
+  min-width: 270px;
+  height: 403px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
+  &--promo {
+    width: 270px;
+    height: 397px;
+  }
+
   &__attribute {
-    align-self: flex-end;
-    margin-top: 28px;
-    margin-right: 16px;
+    width: 100%;
+    height: 50px;
+    padding-top: 14px;
+    padding-right: 18px;
+    text-align: right;
+  }
+
+  &__attribute-button {
+    background-color: transparent;
+    border: none;
+
+    &--favorites {
+      width: 27px;
+      height: 25px;
+      background-image: url("/img/favorites.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   &--no-stock &__attribute {

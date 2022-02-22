@@ -133,7 +133,7 @@
       </div>
       <article class="promotion__product-sale">
         <h2 class="visually-hidden">Акция!</h2>
-        <article class="promotion__product-card product-card">
+        <article class="promotion__product-card product-card product-card--promo">
           <div class="product-card__sale-price-container">
             <div class="product-card__sale-price product-card__sale-price--new">200</div>
             <div class="product-card__sale-price product-card__sale-price--old">500</div>
@@ -244,7 +244,9 @@
       <div class="related-products__carousel">
         <article class="related-products__product-card product-card">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
@@ -257,7 +259,7 @@
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
-        <article class="related-products__product-card product-card">
+        <!-- <article class="related-products__product-card product-card">
           <div class="product-card__attribute">
             <button class="product-card__attribute-button" type="button" name="button">И</button>
           </div>
@@ -299,7 +301,7 @@
           <a class="product-card__catalog-link" href="product-page.html">
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
-        </article>
+        </article> -->
       </div>
       <ul class="related-products__dot-list dot-list">
         <li class="dot-list__dot dot-list__dot--current"></li>

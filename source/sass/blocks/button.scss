@@ -10,9 +10,9 @@
   border: none;
 
   &--show-more {
-    width: 252px;
+    max-width: 252px;
     margin: 0 auto;
-    padding: 17px 43px;
+    padding: 17px 0 16px;
     color: #bdbec2;
     background-color: #f0f0f4;
   }
