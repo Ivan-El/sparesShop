@@ -19,14 +19,15 @@
     width: 100%;
     height: 33px;
     padding-left: 12px;
+    letter-spacing: 0.03em;
     border: none;
   }
 
   &__button {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 40%;
+    right: -2px;
+    width: 41.5%;
     height: 100%;
     font-size: 11px;
     line-height: 13px;
