@@ -1,11 +1,18 @@
 .related-products {
   &__heading {
     margin: 0;
-    margin-bottom: 19px;
     font-weight: bold;
     font-size: 25px;
     line-height: 29px;
     text-align: center;
+
+    &--index-popular {
+      margin-bottom: 19px;
+    }
+
+    &--index-additional {
+      margin-bottom: 22px;
+    }
 
     &--catalog {
       margin-bottom: 32px;
