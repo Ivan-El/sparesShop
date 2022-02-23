@@ -1,5 +1,5 @@
 .pickup-form {
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 
   &__shop-select-label {
     font-size: 15px;
@@ -7,7 +7,7 @@
   }
 
   &__shop-select-input {
-    margin-top: 20px;
+    margin-top: 17px;
     margin-bottom: 30px;
     padding: 8px 20px;
     width: 100%;
@@ -20,7 +20,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
     font-size: 15px;
     line-height: 17px;
     color: #000;
@@ -44,7 +44,7 @@
   &__pickup-time-input + &__pickup-radio-indicator {
     position: absolute;
     content: "";
-    top: 3px;
+    top: 1px;
     right: 0;
     width: 14px;
     height: 14px;
