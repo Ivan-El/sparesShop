@@ -1,0 +1,19 @@
+.dot-list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  width: 86px;
+  margin: 0 auto;
+
+  &__dot {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(0 0 0 / 20%);
+    border-radius: 50%;
+
+    &--current {
+      background-color: #ff7931;
+    }
+  }
+}

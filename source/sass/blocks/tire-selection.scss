@@ -1,9 +1,10 @@
 .tire-selection {
-  &__sort-wrapper-mobile {
+  &__arrange-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
+    margin-bottom: 19px;
+    padding: 12px 20px 15px 25px;
 
     &::before,
     &::after {
@@ -24,11 +25,8 @@
     }
   }
 
-  &__sort-parametr {
-    padding-left: 16px;
-  }
-
-  &__sort-parametr-button {
+  &__arrange-button {
+    position: relative;
     padding: 0;
     font-size: 15px;
     line-height: 17px;
@@ -37,15 +35,49 @@
     background-color: inherit;
     border: none;
 
-    &--city {
-      padding-right: 34px;
-      color: #ff7931;
+    &--sort {
+      padding-left: 27px;
+      background-image: url("/img/arrows-sort.svg");
+      background-repeat: no-repeat;
+      background-position: 0 2px;
     }
-  }
 
-  &__city-choose {
-    margin-bottom: 20px;
-    text-align: center;
+    &--filter {
+      padding-left: 22px;
+      background-image: url("/img/filter.svg");
+      background-repeat: no-repeat;
+      background-position: 0 2px;
+    }
+
+    &--city {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 22px;
+      padding-left: 16px;
+      padding-right: 50px;
+      color: #ff7931;
+
+      &::before,
+      &::after {
+        position: relative;
+        content: "";
+        top: 6px;
+        width: 8px;
+        height: 2px;
+        background-color: #eaeaed;
+      }
+
+      &::before {
+        left: 179px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        left: 26px;
+        transform: rotate(-45deg);
+      }
+    }
   }
 
   &__filter-bottom {
@@ -56,10 +88,12 @@
     @include list-reset;
 
     margin-bottom: 30px;
+    padding-left: 16px;
     overflow-x: auto;
   }
 
   &__tire-list {
+    padding-left: 24px;
     margin-bottom: 30px;
   }
 

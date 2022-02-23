@@ -1,30 +1,62 @@
 .product {
-  margin-bottom: 40px;
-
   &__container {
     display: grid;
     justify-items: center;
     padding: 0 16px;
   }
 
+  &__header {
+    margin-bottom: 30px;
+  }
+
   &__heading {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     font-size: 20px;
     line-height: 30px;
   }
 
   &__code {
     margin: 0;
-    margin-bottom: 30px;
     font-size: 15px;
     line-height: 17px;
     color: #000;
     opacity: 0.6;
   }
 
+  &__main {
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  &__attribute-wrapper {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 34px;
+    padding-right: 9px;
+  }
+
+  &__attribute {
+    background-color: transparent;
+    margin-left: 20px;
+
+    &--season-winter {
+      width: 28px;
+      height: 31px;
+      background-image: url("/img/snowflake.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   &__img {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   &__price {
@@ -35,9 +67,16 @@
     line-height: 40px;
   }
 
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__button {
+    width: 288px;
     margin-bottom: 25px;
-    padding: 16px 92px;
+    padding: 17px 0;
     font-size: 14px;
     line-height: 16px;
   }

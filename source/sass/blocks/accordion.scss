@@ -17,6 +17,26 @@
   &__dropdown-wrapper {
     position: relative;
     color: #7f7f7f;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 24px;
+      width: 8px;
+      height: 2px;
+      background-color: #d6d6d6;
+    }
+
+    &::before {
+      right: 2px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: -3px;
+      transform: rotate(-45deg);
+    }
   }
 
   &__section-heading {

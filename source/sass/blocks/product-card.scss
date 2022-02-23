@@ -4,93 +4,111 @@
   flex-direction: column;
   align-items: center;
   width: 270px;
+  height: 403px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
-  &__attribute {
-    align-self: flex-end;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-
-  .promotion__product-sale &__attribute {
-    margin-top: 15px;
-  }
-
-  &__attribute-new-price {
-    font-weight: bold;
-    font-size: 27px;
-    line-height: 31px;
-    color: #ff7931;
-  }
-
-  &__attribute-old-price {
-    position: relative;
-    color: #a8a8a8;
-
+  &--sale {
     &::before {
-      border-bottom: 1px solid #a8a8a8;
       position: absolute;
-      left: -10px;
-      top: 2px;
-      content: "";
-      width: 130%;
-      height: 50%;
-      transform: rotate(-17deg);
+      content: "sale";
+      top: 20px;
+      left: -21px;
+      width: 66px;
+      padding: 5px 0 6px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.07em;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      background-image: linear-gradient(91.1deg, #9710e9 1.17%, #fd8d43 99.31%);
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__attribute {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    padding-top: 18px;
+    padding-right: 18px;
+  }
+
+  &__attribute-button {
+    background-color: transparent;
+    margin-left: 20px;
+    border: none;
+
+    &--favorites {
+      align-self: center;
+      width: 27px;
+      height: 25px;
+      background-image: url("/img/favorites.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--season-summer {
+      width: 31px;
+      height: 31px;
+      background-image: url("/img/sun.svg");
+      background-repeat: no-repeat;
     }
   }
 
   &__quick-view {
     position: absolute;
+    content: "";
     top: 122px;
     left: 22px;
     display: none;
   }
 
   &__image {
-    margin-bottom: 25px;
+    margin-bottom: 33px;
+  }
 
-    &--sale {
-      margin-bottom: 15px;
-    }
+  &--no-stock &__image {
+    margin-bottom: 20px;
   }
 
   &__name {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 20px;
     line-height: 23px;
     font-weight: normal;
     text-align: center;
+  }
 
-    &--sale {
-      margin-bottom: 15px;
-      font-weight: bold;
-      font-size: 23px;
-      line-height: 26px;
-    }
+  &--no-stock &__name {
+    margin-bottom: 20px;
   }
 
   &__price {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     font-weight: bold;
     font-size: 30px;
     line-height: 34px;
   }
 
   &__no-stock {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
   }
 
   &__report-receipt {
+    z-index: 2;
     margin-bottom: 25px;
+    margin-left: 4px;
     font-size: 16px;
     line-height: 18px;
     color: #ff7931;
-    border: 1px solid rgba(255 121 49 / 20%);
+    border-bottom: 1px solid rgba(255 121 49 / 20%);
   }
 
   &__card {
@@ -121,75 +139,5 @@
     right: 0;
     bottom: 0;
     left: 0;
-  }
-
-  &__countdown-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #f0f0f4;
-  }
-
-  &__countdown {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  &__countdown-container {
-    display: flex;
-  }
-
-  &__countdown-time-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &--minutes,
-    &--hours {
-      margin-right: 8px;
-
-      ::after {
-        position: absolute;
-        content: ":";
-        top: -1px;
-        right: -8px;
-      }
-    }
-  }
-
-  &__countdown-time {
-    font-weight: bold;
-  }
-
-  &__countdown-measure {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 11px;
-    color: #c4c4c4;
-  }
-
-  &__dot-list {
-    @include list-reset;
-
-    display: flex;
-    justify-content: space-between;
-    max-width: 30%;
-    margin: 0 auto;
-  }
-
-  &__dot {
-    width: 14px;
-    height: 14px;
-    background-color: rgba(0 0 0 / 20%);
-    border-radius: 50%;
-
-    &--current {
-      background-color: #ff7931;
-    }
   }
 }

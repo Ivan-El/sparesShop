@@ -1,14 +1,24 @@
 .related-products {
-  margin-bottom: 80px;
-  padding: 0 25px;
-
   &__heading {
     margin: 0;
-    margin-bottom: 25px;
     font-weight: bold;
     font-size: 25px;
     line-height: 29px;
     text-align: center;
+
+    &--index-popular {
+      margin-bottom: 19px;
+    }
+
+    &--index-additional {
+      margin-bottom: 22px;
+    }
+
+    &--inner {
+      margin-bottom: 32px;
+      font-size: 30px;
+      line-height: 34px;
+    }
   }
 
   &__categories-list {
@@ -17,8 +27,9 @@
     position: relative;
     display: flex;
     gap: 40px;
-    overflow-x: auto;
     margin-bottom: 25px;
+    padding-left: 25px;
+    overflow-x: auto;
   }
 
   &__category-link {
@@ -28,6 +39,7 @@
     line-height: 17px;
     color: inherit;
     text-decoration: none;
+    letter-spacing: 0.04em;
     white-space: nowrap;
 
     &--current {
@@ -40,6 +52,7 @@
     gap: 25px;
     margin: 0 auto;
     margin-bottom: 25px;
+    padding-left: 10px;
     width: 290px;
     overflow-x: hidden;
   }

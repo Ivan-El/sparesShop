@@ -1,0 +1,103 @@
+.promotion-product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  height: 397px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &::before {
+    position: absolute;
+    content: "акция";
+    top: 30px;
+    left: -31px;
+    width: 87px;
+    padding: 5px 0 7px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(91.1deg, #9710e9 1.17%, #fd8d43 99.31%);
+    transform: rotate(-90deg);
+  }
+
+  &__price-container {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 16px;
+  }
+
+  &__price {
+    position: relative;
+
+    &--new {
+      padding-right: 22px;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 31px;
+      color: #ff7931;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        right: 0;
+        width: 14px;
+        height: 17px;
+        background-image: url("/img/rouble-new.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--old {
+      padding-top: 2px;
+      padding-left: 8px;
+      color: #a8a8a8;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+      }
+
+      &::before {
+        left: -1px;
+        top: 1px;
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px solid #a8a8a8;
+        transform: rotate(-13deg);
+      }
+
+      &::after {
+        top: 5px;
+        right: 7px;
+        width: 14px;
+        height: 17px;
+        background-image: url("/img/rouble-old.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  &__image {
+    margin-top: 51px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 26px;
+  }
+}

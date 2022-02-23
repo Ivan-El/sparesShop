@@ -1,11 +1,11 @@
 .hamburger {
   position: absolute;
   content: "";
-  top: 30px;
+  top: 32px;
   left: 16px;
   display: block;
   width: 33px;
-  height: 27px;
+  height: 30px;
   background-color: #fff;
   border: none;
   cursor: pointer;
@@ -13,10 +13,11 @@
   &::after {
     position: absolute;
     content: "";
-    top: 0;
+    top: 3px;
     left: 0;
     width: 33px;
     height: 3px;
-    box-shadow: 0 3px 0 0 #c4c4c4, 0 12px 0 0 #c4c4c4, 0 21px 0 0 #c4c4c4;
+    background-color: #c4c4c4;
+    box-shadow: 0 12px 0 0 #c4c4c4, 0 24px 0 0 #c4c4c4;
   }
 }
