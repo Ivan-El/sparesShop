@@ -1,4 +1,7 @@
 .pickup-timetable {
+  border-collapse: collapse;
+  border-spacing: 0;
+
   &__headings {
     display: none;
   }
@@ -10,8 +13,8 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
 
-    &:not(:last-child) {
-      margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 15px;
     }
 
     &::after {
@@ -29,9 +32,15 @@
     font-size: 15px;
     line-height: 17px;
     color: rgba(0 0 0 / 70%);
+    margin-bottom: 15px;
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
+    &:first-child {
+      margin-bottom: 11px;
+    }
+
+    &:last-child {
+      margin-top: 7px;
+      margin-bottom: 0;
     }
   }
 
@@ -47,6 +56,21 @@
     color: #000;
   }
 
+  &__inner-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  &__inner-table-row {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
   &__emphasis {
     display: inline-block;
     margin-bottom: 17px;
@@ -58,14 +82,36 @@
   }
 
   &__button-buy {
-    padding: 16px 0;
+    padding: 17px 0;
     font-size: 14px;
     line-height: 16px;
   }
 
   &__button-show {
+    position: relative;
+    padding-right: 40px;
     font-size: 16px;
     line-height: 18px;
     color: #ff7931;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 9px;
+      width: 8px;
+      height: 2px;
+      background-color: #bdbec2;
+    }
+
+    &::before {
+      right: 8px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: 3px;
+      transform: rotate(-45deg);
+    }
   }
 }
