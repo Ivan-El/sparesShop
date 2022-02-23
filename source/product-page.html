@@ -243,32 +243,9 @@
           </table>
           <a class="pickup-timetable__button-show" href="#">Показать все автосалоны</a>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <section class="product-info__section">
+        <section class="product-info__section">
           <h3 class="product-info__section-heading">Доставка</h3>
-        </section> -->
-
-
-
-
-
-
-
-
-
-
+        </section>
         <section class="product-info__section">
           <h3 class="product-info__section-heading">Услуги</h3>
         </section>
@@ -284,11 +261,16 @@
       </a>
     </aside>
     <section class="page-main__related-products related-products">
-      <h2 class="related-products__heading">С этим товаром покупают</h2>
+      <h2 class="related-products__heading related-products__heading--inner">С этим покупают</h2>
       <div class="related-products__carousel">
-        <article class="related-products__product-card product-card">
+        <article class="product-card related-products__product-card product-card--no-stock">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+              <span class="visually-hidden">Летняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha 104Q RF Power Grum с 16 радиуса, размером 205 на 80">
