@@ -9,10 +9,16 @@
       position: absolute;
       content: "";
       bottom: 0;
+      z-index: 1;
       left: -20vw;
       width: 120vw;
       height: 1px;
       background-color: #d6d6d6;
     }
   }
+}
+
+.menu-opened .page-header {
+  position: static;
+  transform: translateX(242px);
 }
