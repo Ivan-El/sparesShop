@@ -22,3 +22,7 @@
   position: static;
   transform: translateX(242px);
 }
+
+.no-js .page-header__container {
+  flex-direction: column;
+}

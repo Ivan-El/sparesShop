@@ -5,3 +5,12 @@
     width: 77px;
   }
 }
+
+
+.no-js .logo {
+  order: -1;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
