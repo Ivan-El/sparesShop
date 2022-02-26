@@ -4,8 +4,15 @@
   &__img {
     width: 77px;
   }
-}
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .no-js .logo {
   order: -1;
