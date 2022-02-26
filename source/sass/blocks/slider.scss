@@ -1,7 +1,9 @@
 .slider {
   position: relative;
+  display: flex;
 
   &__slide {
+    flex-shrink: 0;
     width: 100%;
     padding-top: 51%;
     background-position: center;
@@ -13,16 +15,35 @@
     background-image: url("/img/big-slider-image@1x.jpg");
   }
 
-  &__slide--2,
-  &__slide--3,
-  &__slide--4,
-  &__slide--5,
+  &__slide--2 {
+    background-image: url("/img/big-slider-image-2@1x.jpg");
+  }
+
+  &__slide--3 {
+    background-image: url("/img/big-slider-image-3@1x.jpg");
+  }
+
+  &__slide--4 {
+    background-image: url("/img/big-slider-image-4@1x.jpg");
+  }
+
+  &__slide--5 {
+    background-image: url("/img/big-slider-image-5@1x.jpg");
+  }
+
   &__slide--6 {
-    display: none;
+    background-image: url("/img/big-slider-image-6@1x.jpg");
   }
 
   &__arrow {
-    display: none;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    &--next {
+      left: 50%;
+    }
   }
 
   &__dot-list {
