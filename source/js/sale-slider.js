@@ -1,4 +1,4 @@
-"use-strict"
+"use strict"
 
 let position = 0;
 let slidesToShow = 1;
@@ -53,9 +53,9 @@ let setPosition = () => {
 
 let setDots = () => {
   dots.forEach((dot, index) => {
-    dot.classList.remove("dot-list__dot--current");
+    dot.classList.remove("sale-slider__dot-current");
     if(position === index * -itemWidth) {
-      dots[index].classList.add("dot-list__dot--current");
+      dots[index].classList.add("sale-slider__dot-current");
     };
   });
 };
