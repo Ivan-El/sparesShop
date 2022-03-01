@@ -24,6 +24,10 @@
     font-size: 23px;
     line-height: 26px;
 
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(50 50 50 / 25%);
+    }
+
     &--two-rows {
       padding-right: 36%;
     }
@@ -32,15 +36,20 @@
   &__link {
     position: absolute;
     content: "";
-    top: 85px;
-    left: 19px;
+    top: 76px;
+    left: 9px;
+    padding: 10px;
     color: #c4c4c4;
     text-decoration: none;
+
+    &:active {
+      color: #696e63;
+    }
 
     &::before,
     &::after {
       position: absolute;
-      left: 90px;
+      left: 100px;
       content: "";
       width: 8px;
       height: 2px;
@@ -48,12 +57,12 @@
     }
 
     &::before {
-      top: 9px;
+      top: 19px;
       transform: rotate(45deg);
     }
 
     &::after {
-      top: 14px;
+      top: 24px;
       transform: rotate(-45deg);
     }
   }

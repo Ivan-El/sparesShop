@@ -11,7 +11,7 @@ let items = document.querySelectorAll(".sale-slider__slide");
 let itemsCount = items.length;
 let itemWidth = container.clientWidth / slidesToShow;
 let movePosition = slidesToScroll * itemWidth;
-let dots = document.querySelectorAll(".dot-list__dot");
+let dots = document.querySelectorAll(".sale-slider__dot");
 
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
