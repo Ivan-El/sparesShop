@@ -235,7 +235,7 @@
           <button class="sale-slider__button sale-slider__button--next" type="button" name="button"><span class="visually-hidden">Следующий</span></button>
         </div>
         <ul class="dot-list">
-          <li class="dot-list__dot dot-list__dot--current"></li>
+          <li class="dot-list__dot sale-slider__dot-current"></li>
           <li class="dot-list__dot"></li>
           <li class="dot-list__dot"></li>
         </ul>
@@ -247,9 +247,9 @@
         <div class="search-form__wrapper-top">
           <input class="search-form__radio-input" type="radio" name="search-filter" value="vin" id="radio-input-first">
           <label class="search-form__radio-label" for="radio-input-first">Поиск по Vin</label>
-          <input class="search-form__radio-input" type="radio" name="search-filter" value="car-brand" id="radio-input-second" checked>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="car_brand" id="radio-input-second" checked>
           <label class="search-form__radio-label" for="radio-input-second">Поиск по марке</label>
-          <input class="search-form__radio-input" type="radio" name="search-filter" value="product-name" id="radio-input-third">
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="product_name" id="radio-input-third">
           <label class="search-form__radio-label" for="radio-input-third">Поиск по названию товара</label>
           <input class="search-form__radio-input" type="radio" name="search-filter" value="article" id="radio-input-fourth">
           <label class="search-form__radio-label" for="radio-input-fourth">Поиск по артикулу</label>
@@ -579,6 +579,7 @@
   <script src="js/menu.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/sale-slider.js"></script>
+  <script src="js/change-placeholder.js"></script>
 </body>
 
 </html>
