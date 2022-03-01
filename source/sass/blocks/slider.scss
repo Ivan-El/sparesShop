@@ -9,6 +9,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
 
   &__slide--1 {
@@ -76,5 +78,15 @@
       background-color: #fff;
       border-radius: 50%;
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
   }
 }
