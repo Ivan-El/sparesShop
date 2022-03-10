@@ -245,14 +245,14 @@
       <h2 class="visually-hidden">Поиск по товарам</h2>
       <form class="search-form" action="index.html" method="post">
         <div class="search-form__wrapper-top">
-          <input class="search-form__radio-input" type="radio" name="search-filter" value="vin" id="radio-input-first">
-          <label class="search-form__radio-label" for="radio-input-first">Поиск по Vin</label>
-          <input class="search-form__radio-input" type="radio" name="search-filter" value="car_brand" id="radio-input-second" checked>
-          <label class="search-form__radio-label" for="radio-input-second">Поиск по марке</label>
-          <input class="search-form__radio-input" type="radio" name="search-filter" value="product_name" id="radio-input-third">
-          <label class="search-form__radio-label" for="radio-input-third">Поиск по названию товара</label>
-          <input class="search-form__radio-input" type="radio" name="search-filter" value="article" id="radio-input-fourth">
-          <label class="search-form__radio-label" for="radio-input-fourth">Поиск по артикулу</label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="vin" id="radio-input-vin">
+          <label class="search-form__radio-label" for="radio-input-vin">Поиск по Vin</label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="car_brand" id="radio-input-brand" checked>
+          <label class="search-form__radio-label" for="radio-input-brand">Поиск по марке</label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="product_name" id="radio-input-name">
+          <label class="search-form__radio-label" for="radio-input-name">Поиск по названию товара</label>
+          <input class="search-form__radio-input" type="radio" name="search-filter" value="article" id="radio-input-article">
+          <label class="search-form__radio-label" for="radio-input-article">Поиск по артикулу</label>
         </div>
         <div class="search-form__wrapper-bottom">
           <input class="search-form__text-input" type="text" placeholder="Введите марку автомобиля">
@@ -307,102 +307,218 @@
         </li>
       </ul>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="page-main__related-products related-products">
-      <h2 class="related-products__heading related-products__heading--index-popular">Популярные товары</h2>
-      <ul class="related-products__categories-list">
-        <li>
-          <a class="related-products__category-link related-products__category-link--current" href="#">запчасти</a>
-        </li>
-        <li>
-          <a class="related-products__category-link" href="#">автохимия</a>
-        </li>
-        <li>
-          <a class="related-products__category-link" href="#">шины и диски</a>
-        </li>
-        <li>
-          <a class="related-products__category-link" href="#">автоэлектроника</a>
-        </li>
-        <li>
-          <a class="related-products__category-link" href="#">инструменты</a>
-        </li>
-        <li>
-          <a class="related-products__category-link" href="#">аксессуары и другое</a>
-        </li>
-      </ul>
-      <div class="related-products__carousel">
-        <article class="related-products__product-card product-card">
-          <div class="product-card__attribute">
-            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
-              <span class="visually-hidden">Добавить в избранное</span>
-            </button>
+      <div class="related-products__tabs tabs">
+        <h2 class="related-products__heading related-products__heading--index-popular">Популярные товары</h2>
+        <div class="tabs__list-wrap">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <a class="tabs__link tabs__link--current" href="#tab-spares">Запчасти</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#tab-autochemicals">Автохимия</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#tab-tires">Шины и диски</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#tab-autoelectronics">Автоэлектроника</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#tab-tools">Инструменты</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#tab-accessories">Аксессуары и другое</a>
+            </li>
+          </ul>
+        </div>
+
+        <section class="tabs__panel tabs__panel--current" id="tab-spares">
+          <h3 class="visually-hidden">Запчасти</h3>
+
+          <div class="slider">
+
+            <article class="related-products__product-card product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
+              <h3 class="product-card__name">Ремень</h3>
+              <div class="product-card__price">440 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+            <article class="related-products__product-card product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button" type="button" name="button">И</button>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-1@1x.jpg" width="126" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q<br>Misha RF Power Grum</h3>
+              <div class="product-card__price">11 680 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+            <article class="related-products__product-card product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button" type="button" name="button">И</button>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/headlight@1x.jpg" width="232" height="174" alt="Фара Nokian 2025">
+              <h3 class="product-card__name">Фара Nokian 2025</h3>
+              <div class="product-card__price">680 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+            <article class="related-products__product-card product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button" type="button" name="button">И</button>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="232" height="174" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
           </div>
-          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <img class="product-card__image" src="img/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
-          <h3 class="product-card__name">Ремень</h3>
-          <div class="product-card__price">440 ₽</div>
-          <a class="product-card__card" href="#">
-            <span class="visually-hidden">Добавить в корзину</span>
-          </a>
-          <a class="product-card__catalog-link" href="product-page.html">
-            <span class="visually-hidden">Перейти на страницу каталога</span>
-          </a>
-        </article>
-        <!-- <article class="related-products__product-card product-card">
-          <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
-          </div>
-          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <img class="product-card__image" src="img/tire-1@1x.jpg" width="126" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
-          <h3 class="product-card__name">Шина 205/80 R16 104Q<br>Misha RF Power Grum</h3>
-          <div class="product-card__price">11 680 ₽</div>
-          <a class="product-card__card" href="#">
-            <span class="visually-hidden">Добавить в корзину</span>
-          </a>
-          <a class="product-card__catalog-link" href="product-page.html">
-            <span class="visually-hidden">Перейти на страницу каталога</span>
-          </a>
-        </article>
-        <article class="related-products__product-card product-card">
-          <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
-          </div>
-          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <img class="product-card__image" src="img/headlight@1x.jpg" width="232" height="174" alt="Фара Nokian 2025">
-          <h3 class="product-card__name">Фара Nokian 2025</h3>
-          <div class="product-card__price">680 ₽</div>
-          <a class="product-card__card" href="#">
-            <span class="visually-hidden">Добавить в корзину</span>
-          </a>
-          <a class="product-card__catalog-link" href="product-page.html">
-            <span class="visually-hidden">Перейти на страницу каталога</span>
-          </a>
-        </article>
-        <article class="related-products__product-card product-card">
-          <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
-          </div>
-          <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <img class="product-card__image" src="img/tire-2@1x.jpg" width="232" height="174" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
-          <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
-          <div class="product-card__no-stock">нет в наличии</div>
-          <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
-          <a class="product-card__catalog-link" href="product-page.html">
-            <span class="visually-hidden">Перейти на страницу каталога</span>
-          </a>
-        </article> -->
+
+          <ul class="related-products__dot-list dot-list">
+            <li class="dot-list__dot dot-list__dot--current"></li>
+            <li class="dot-list__dot"></li>
+            <li class="dot-list__dot"></li>
+          </ul>
+
+          <a class="button button--show-more" href="#">смотреть еще</a>
+
+        </section>
+
+        <section class="tabs__panel" id="tab-autochemicals">
+          <h3 class="visually-hidden">Автохимия</h3>
+        </section>
+
+        <section class="tabs__panel" id="tab-tires">
+          <h3 class="visually-hidden">Шины и диски</h3>
+        </section>
+
+        <section class="tabs__panel" id="tab-autoelectronics">
+          <h3 class="visually-hidden">Автоэлектроника</h3>
+        </section>
+
+        <section class="tabs__panel" id="tab-tools">
+          <h3 class="visually-hidden">Инструменты</h3>
+        </section>
+
+        <section class="tabs__panel" id="tab-accessories">
+          <h3 class="visually-hidden">Аксессуары и другое</h3>
+        </section>
+
       </div>
-      <ul class="related-products__dot-list dot-list">
-        <li class="dot-list__dot dot-list__dot--current"></li>
-        <li class="dot-list__dot"></li>
-        <li class="dot-list__dot"></li>
-      </ul>
-      <a class="button button--show-more" href="#">смотреть еще</a>
+
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <aside class="page-main__banner banner">
       <a class="banner__link" href="#">
         <span class="visually-hidden">Перейти к списку товаров, учавствующих в акции</span>
       </a>
     </aside>
+
+
+
     <section class="page-main__related-products related-products">
       <h2 class="related-products__heading related-products__heading--index-additional">С этим товаром покупают</h2>
       <ul class="related-products__categories-list">
@@ -592,6 +708,7 @@
   <script src="js/slider.js"></script>
   <script src="js/sale-slider.js"></script>
   <script src="js/change-placeholder.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 
 </html>
