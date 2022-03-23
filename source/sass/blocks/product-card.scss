@@ -51,13 +51,18 @@
 
     &--favorites {
       align-self: center;
-      width: 27px;
-      height: 25px;
+      width: 29px;
+      height: 26px;
       background-image: url("/img/favorites.svg");
       background-repeat: no-repeat;
+      background-position: center;
+
+      &-active {
+        background-image: url("/img/favorites-active.svg");
+      }
 
       &:hover {
-        background-image: url("/img/favorites-grey.svg");
+        opacity: 0.7;
       }
     }
 

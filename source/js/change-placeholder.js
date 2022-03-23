@@ -1,4 +1,5 @@
 "use strict"
+
 function changePlaceholder() {
   let radioButtons= document.querySelectorAll(".search-form__radio-input");
   let textInput = document.querySelector(".search-form__text-input");
