@@ -11,6 +11,7 @@
     "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
+    "jquery": "^3.6.0",
     "postcss": "^8.4.5",
     "stylelint": "^14.3.0",
     "stylelint-config-standard-scss": "^3.0.0"
