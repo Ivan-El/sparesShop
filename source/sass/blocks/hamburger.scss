@@ -10,14 +10,44 @@
   border: none;
   cursor: pointer;
 
+  &::before,
   &::after {
     position: absolute;
     content: "";
+  }
+
+  &::after {
     top: 3px;
     left: 0;
     width: 33px;
     height: 3px;
     background-color: #c4c4c4;
     box-shadow: 0 12px 0 0 #c4c4c4, 0 24px 0 0 #c4c4c4;
+    transition: all 0.3s ease-in;
   }
+
+  &--opened {
+    &::before,
+    &::after {
+      top: 13px;
+      left: 0;
+      width: 33px;
+      height: 3px;
+      background-color: rgba(0 0 0 / 40%);
+      transition: all 0.3s ease-in;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      box-shadow: none;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.no-js .hamburger {
+  display: none;
 }

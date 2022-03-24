@@ -8,11 +8,18 @@
     grid-gap: 30px;
   }
 
-  &__item {
+  &__link-wrapper {
     position: relative;
+    display: block;
     height: 129px;
     border: 1px solid #cdcdcd;
     border-radius: 3px;
+    color: #48494d;
+    text-decoration: none;
+
+    &:active {
+      opacity: 0.7;
+    }
   }
 
   &__item-name {
@@ -24,6 +31,11 @@
     font-size: 23px;
     line-height: 26px;
 
+    &:hover {
+      color: #ff7931;
+      box-shadow: 3px 3px 20px rgba(50 50 50 / 25%);
+    }
+
     &--two-rows {
       padding-right: 36%;
     }
@@ -32,15 +44,15 @@
   &__link {
     position: absolute;
     content: "";
-    top: 85px;
-    left: 19px;
+    top: 76px;
+    left: 9px;
+    padding: 10px;
     color: #c4c4c4;
-    text-decoration: none;
 
     &::before,
     &::after {
       position: absolute;
-      left: 90px;
+      left: 100px;
       content: "";
       width: 8px;
       height: 2px;
@@ -48,12 +60,12 @@
     }
 
     &::before {
-      top: 9px;
+      top: 19px;
       transform: rotate(45deg);
     }
 
     &::after {
-      top: 14px;
+      top: 24px;
       transform: rotate(-45deg);
     }
   }
