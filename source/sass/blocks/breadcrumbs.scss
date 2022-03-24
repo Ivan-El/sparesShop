@@ -18,6 +18,14 @@
       text-decoration: none;
       color: #bdbec2;
     }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   &__link:not(.breadcrumbs__link--current)::before,

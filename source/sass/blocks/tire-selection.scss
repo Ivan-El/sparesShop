@@ -10,8 +10,9 @@
     &::after {
       position: absolute;
       content: "";
-      left: -50%;
-      width: 150%;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
       height: 1px;
       background-color: rgba(0 0 0 / 10%);
     }
@@ -77,6 +78,10 @@
         left: 26px;
         transform: rotate(-45deg);
       }
+    }
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 
