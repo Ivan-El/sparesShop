@@ -155,111 +155,112 @@
       </div>
 
       <div class="tire-selection__filter-bottom">
-        <div>
+        <div class="tire-selection__filter-bottom-heading-wrapper">
           <button class="tire-selection__filter-close" type="button">
             <span class="visually-hidden">закрыть фильтр</span>
           </button>
-          <h2>Фильтры</h2>
+          <h2 class="tire-selection__filter-bottom-heading">Фильтры</h2>
         </div>
-
-        <form class="tire-selection__form" action="index.html" method="post">
-          <label>
-            <input type="radio" name="criteria" value="parametr" checked>По параметрам
-          </label>
-          <label>
-            <input type="radio" name="criteria" value="brand">По марке
-          </label>
-          <fieldset>
-            <legend>Сезонность</legend>
-            <label>
-              Летние<input type="radio" name="season" value="100">
+        <form class="tire-selection__form filter-form" action="index.html" method="post">
+          <div class="filter-form__criterion-container">
+            <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="parametr" id="criterion-radio-parametr" checked>
+            <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-parametr">По параметрам</label>
+            <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="brand" id="criterion-radio-brand">
+            <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-brand">По марке</label>
+          </div>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend filter-form__legend--season">Сезонность</legend>
+            <label class="filter-form__label filter-form__season-label button-mask">Летние
+              <input class="visually-hidden button-mask__input" type="radio" name="season">
+              <span class="filter-form__radio-indicator button-mask__indicator"></span>
             </label>
-            <label>
-              Зимние<input type="radio" name="season" value="600" checked>
+            <label class="filter-form__label filter-form__season-label  button-mask">Зимние
+              <input class="visually-hidden button-mask__input" type="radio" name="season" checked>
+              <span class="filter-form__radio-indicator  button-mask__indicator"></span>
             </label>
           </fieldset>
-          <fieldset>
-            <legend>Марка</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Марка</legend>
             <select name="car-brand-select">
               <option value="BMW" selected>BMW</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>Модель</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Модель</legend>
             <select name="car-model-select">
               <option value="1-series" selected>1-series</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>Кузов</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Кузов</legend>
             <select name="car-body-select">
               <option value="E81 3d" selected>E81 3d</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>Модификация</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Модификация</legend>
             <select name="car-modification-select">
               <option value="116 d" selected>116 d</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>R16</legend>
-            <label>
-              <input type="radio" name="radius-16">205/40 R16
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">R16</legend>
+            <label class="filter-form__label">
+              <input type="checkbox">205/40 R16
             </label>
-            <label>
-              <input type="radio" name="radius-16">210/45 R16
+            <label class="filter-form__label">
+              <input type="checkbox">210/45 R16
             </label>
-            <label>
-              <input type="radio" name="radius-16">215/50 R16
+            <label class="filter-form__label">
+              <input type="checkbox">215/50 R16
             </label>
-            <label>
-              <input type="radio" name="radius-16">225/55 R16
+            <label class="filter-form__label">
+              <input type="checkbox">225/55 R16
             </label>
           </fieldset>
-          <fieldset>
-            <legend>R17</legend>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">R17</legend>
             <div>
               <p>Передняя ось</p>
-              <label>
-                <input type="radio" name="radius-17-front">215/45 R17
+              <label class="filter-form__label">
+                <input type="checkbox">215/45 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-front">215/50 R17
+              <label class="filter-form__label">
+                <input type="checkbox">215/50 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-front">205/50 R17
+              <label class="filter-form__label">
+                <input type="checkbox">205/50 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-front">195/55 R17
+              <label class="filter-form__label">
+                <input type="checkbox">195/55 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-front">225/55 R17
+              <label class="filter-form__label">
+                <input type="checkbox">225/55 R17
               </label>
             </div>
             <div>
               <p>Задняя ось</p>
-              <label>
-                <input type="radio" name="radius-17-back">225/45 R17
+              <label class="filter-form__label">
+                <input type="checkbox">225/45 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-back" checked>225/50 R17
+              <label class="filter-form__label">
+                <input type="checkbox" checked>225/50 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-back">245/50 R17
+              <label class="filter-form__label">
+                <input type="checkbox">245/50 R17
               </label>
-              <label>
-                <input type="radio" name="radius-17-back">205/55 R17
+              <label class="filter-form__label">
+                <input type="checkbox">205/55 R17
               </label>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>R18</legend>
-            <label>
-              <input type="radio" name="radius-18">255/40 R18
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">R18</legend>
+            <label class="filter-form__label">
+              <input type="checkbox">255/40 R18
             </label>
-            <label>
-              <input type="radio" name="radius-18">245/45 R18
+            <label class="filter-form__label">
+              <input type="checkbox">245/45 R18
             </label>
           </fieldset>
         </form>

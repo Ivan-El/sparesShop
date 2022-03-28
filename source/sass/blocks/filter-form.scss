@@ -1,0 +1,111 @@
+.filter-form {
+  &__criterion-container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__criterion-label {
+    flex-grow: 1;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+
+  &__season-label {
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-bottom: 6px;
+    font-size: 15px;
+    line-height: 17px;
+
+    &::before {
+      position: absolute;
+      content: "?";
+      left: 0;
+      top: 15px;
+      width: 17px;
+      height: 17px;
+      color: #fff;
+      text-align: center;
+      background-color: #d7d9df;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -50%;
+      width: 200%;
+      height: 1px;
+      background-color: rgba(0 0 0 / 10%);
+    }
+  }
+
+  &__criterion-radio:checked + &__criterion-label {
+    color: #fff;
+    background-color: #ff7931;
+    border: none;
+  }
+
+  .button-mask__input + &__radio-indicator {
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+  }
+
+  .button-mask__input:checked + &__radio-indicator {
+    background-color: #ff7931;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+    }
+
+    &::before {
+      top: 7px;
+      left: 2px;
+      width: 4px;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 6px;
+      left: 4px;
+      width: 8px;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__fieldset {
+    margin-bottom: 30px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 8px;
+    border: none;
+  }
+
+  &__legend {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    &--season {
+      margin-bottom: 5px;
+    }
+  }
+}
