@@ -153,8 +153,14 @@
           </li>
         </ul>
       </div>
+
       <div class="tire-selection__filter-bottom">
-        <h2>Фильтры</h2>
+        <div>
+          <button class="tire-selection__filter-close" type="button">
+            <span class="visually-hidden">закрыть фильтр</span>
+          </button>
+          <h2>Фильтры</h2>
+        </div>
 
         <form class="tire-selection__form" action="index.html" method="post">
           <label>
@@ -176,28 +182,24 @@
             <legend>Марка</legend>
             <select name="car-brand-select">
               <option value="BMW" selected>BMW</option>
-              <option value="KIA">KIA</option>
             </select>
           </fieldset>
           <fieldset>
             <legend>Модель</legend>
             <select name="car-model-select">
               <option value="1-series" selected>1-series</option>
-              <option value="2-series">2-series</option>
             </select>
           </fieldset>
           <fieldset>
             <legend>Кузов</legend>
             <select name="car-body-select">
               <option value="E81 3d" selected>E81 3d</option>
-              <option value="E82 3d">E82 3d</option>
             </select>
           </fieldset>
           <fieldset>
             <legend>Модификация</legend>
             <select name="car-modification-select">
               <option value="116 d" selected>116 d</option>
-              <option value="116 i">116 i</option>
             </select>
           </fieldset>
           <fieldset>
@@ -608,6 +610,7 @@
   <script src="js/slick-carousel.js"></script>
   <script src="js/favorites.js"></script>
   <script src="js/footer-accordion.js"></script>
+  <script src="js/filters.js"></script>
 </body>
 
 </html>

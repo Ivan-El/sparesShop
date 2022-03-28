@@ -87,6 +87,7 @@
 
   &__filter-bottom {
     display: none;
+    padding: 0 16px;
   }
 
   &__compilation-list {
@@ -105,4 +106,15 @@
   &__button-more {
     margin-bottom: 50px;
   }
+}
+
+.filter-opened .tire-selection__filter-bottom {
+  display: block;
+}
+
+.filter-opened .page-header,
+.filter-opened .page-main > :not(.tire-selection),
+.filter-opened .tire-selection > :not(.tire-selection__filter-bottom),
+.filter-opened .page-footer {
+  display: none;
 }
