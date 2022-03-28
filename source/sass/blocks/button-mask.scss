@@ -1,0 +1,33 @@
+.button-mask {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  cursor: pointer;
+
+  &__input + &__indicator {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__input:checked + &__indicator {
+    border-color: #ff7931;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
