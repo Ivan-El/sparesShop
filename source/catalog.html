@@ -8,31 +8,31 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="page-header">
     <div class="page-header__container">
-      <h1 class="visually-hidden">Магазин автозапчастей: каталог товаров и услуг</h1>
+      <h1 class="visually-hidden">Магазин автозапчастей: главная страница</h1>
       <div class="menu">
         <ul class="menu__sections">
           <li>
-            <a class="menu__link" href="#">Войти</a>
+            <a class="menu__link menu__link--enter" href="#">Войти</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Регистрация</a>
+            <a class="menu__link menu__link--enter" href="#">Регистрация</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Избранное</a>
+            <a class="menu__link menu__link--favorites" href="#">Избранное</a>
           </li>
         </ul>
         <ul class="menu__sections">
           <li>
-            <a class="menu__link" href="#">Магазины</a>
+            <a class="menu__link menu__link--shops" href="#">Магазины</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Акции</a>
+            <a class="menu__link menu__link--actions" href="#">Акции</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Доставка и оплата</a>
+            <a class="menu__link menu__link--delivery" href="#">Доставка и оплата</a>
           </li>
         </ul>
         <ul class="menu__sections">
@@ -61,9 +61,9 @@
             <a class="menu__link" href="#">Аксессуары</a>
           </li>
         </ul>
-        <a  class="menu__link" href="#">
-          <address class="menu__address">Санкт-Петербург, ул Большая Конюшенная, д 19</address>
-        </a>
+        <address class="menu__address">
+          <a href="#" class="menu__address-link">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+        </address>
       </div>
       <button class="hamburger" type="button">
         <span class="visually-hidden">Меню</span>
@@ -103,24 +103,26 @@
       </ul>
     </div>
   </header>
-  <main class="catalog-main">
+
+  <main class="page-main">
     <div class="page-main__breadcrumbs">
       <ul class="breadcrumbs">
         <li>
-          <a href="index.html" class="breadcrumbs__link">Главная</a>
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
         <li>
-          <a href="#" class="breadcrumbs__link">Шины</a>
+          <a class="breadcrumbs__link" href="#">Шины</a>
         </li>
         <li>
-          <a href="#" class="breadcrumbs__link">Кама</a>
+          <a class="breadcrumbs__link" href="#">Кама</a>
         </li>
         <li>
-          <a href="#" class="breadcrumbs__link breadcrumbs__link--current">Зимние шины Кама</a>
+          <a class="breadcrumbs__link breadcrumbs__link--current" href="#">Зимние шины Кама</a>
         </li>
       </ul>
     </div>
     <h2 class="page-main__title">Нешипованные шины</h2>
+
     <section class="page-main__tire-selection tire-selection">
       <h2 class="visually-hidden">Подбор подходящей шины</h2>
       <div class="tire-selection__filter-top">
@@ -151,116 +153,151 @@
           </li>
         </ul>
       </div>
+
       <div class="tire-selection__filter-bottom">
-        <h2>Фильтры</h2>
-        <form class="tire-selection__form" action="index.html" method="post">
-          <label>
-            <input type="radio" name="criteria" value="parametr" checked>По параметрам
-          </label>
-          <label>
-            <input type="radio" name="criteria" value="brand">По марке
-          </label>
-          <fieldset>
-            <legend>Сезонность</legend>
-            <label>
-              Летние<input type="radio" name="season" value="100">
+        <div class="tire-selection__filter-bottom-heading-wrapper">
+          <button class="tire-selection__filter-close" type="button">
+            <span class="visually-hidden">закрыть фильтр</span>
+          </button>
+          <h2 class="tire-selection__filter-bottom-heading">Фильтры</h2>
+        </div>
+        <form class="tire-selection__form filter-form" action="index.html" method="post">
+          <div class="filter-form__criterion-container">
+            <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="parametr" id="criterion-radio-parametr" checked>
+            <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-parametr">По параметрам</label>
+            <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="brand" id="criterion-radio-brand">
+            <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-brand">По марке</label>
+          </div>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend filter-form__legend--season">Сезонность</legend>
+            <label class="filter-form__label filter-form__season-label button-mask">Летние
+              <input class="visually-hidden button-mask__input" type="radio" name="season">
+              <span class="filter-form__radio-indicator button-mask__indicator"></span>
             </label>
-            <label>
-              Зимние<input type="radio" name="season" value="600" checked>
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Марка</legend>
-            <select name="car-brand-select">
-              <option value="BMW" selected>BMW</option>
-              <option value="KIA">KIA</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Модель</legend>
-            <select name="car-model-select">
-              <option value="1-series" selected>1-series</option>
-              <option value="2-series">2-series</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Кузов</legend>
-            <select name="car-body-select">
-              <option value="E81 3d" selected>E81 3d</option>
-              <option value="E82 3d">E82 3d</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Модификация</legend>
-            <select name="car-modification-select">
-              <option value="116 d" selected>116 d</option>
-              <option value="116 i">116 i</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>R16</legend>
-            <label>
-              <input type="radio" name="radius-16">205/40 R16
-            </label>
-            <label>
-              <input type="radio" name="radius-16">210/45 R16
-            </label>
-            <label>
-              <input type="radio" name="radius-16">215/50 R16
-            </label>
-            <label>
-              <input type="radio" name="radius-16">225/55 R16
+            <label class="filter-form__label filter-form__season-label  button-mask">Зимние
+              <input class="visually-hidden button-mask__input" type="radio" name="season" checked>
+              <span class="filter-form__radio-indicator  button-mask__indicator"></span>
             </label>
           </fieldset>
-          <fieldset>
-            <legend>R17</legend>
-            <div>
-              <p>Передняя ось</p>
-              <label>
-                <input type="radio" name="radius-17-front">215/45 R17
-              </label>
-              <label>
-                <input type="radio" name="radius-17-front">215/50 R17
-              </label>
-              <label>
-                <input type="radio" name="radius-17-front">205/50 R17
-              </label>
-              <label>
-                <input type="radio" name="radius-17-front">195/55 R17
-              </label>
-              <label>
-                <input type="radio" name="radius-17-front">225/55 R17
-              </label>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Марка</legend>
+            <div class="filter-form__select-wrapper">
+              <select class="filter-form__select" name="car-brand-select">
+                <option value="BMW" selected>BMW</option>
+              </select>
             </div>
-            <div>
-              <p>Задняя ось</p>
-              <label>
-                <input type="radio" name="radius-17-back">225/45 R17
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Модель</legend>
+            <div class="filter-form__select-wrapper">
+              <select class="filter-form__select" name="car-model-select">
+                <option value="1-series" selected>1-series</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Кузов</legend>
+            <div class="filter-form__select-wrapper">
+              <select class="filter-form__select" name="car-body-select">
+                <option value="E81 3d" selected>E81 3d</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">Модификация</legend>
+            <div class="filter-form__select-wrapper">
+              <select class="filter-form__select" name="car-modification-select">
+                <option value="116 d" selected>116 d</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">R16</legend>
+            <div class="filter-form__checkbox-container">
+              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/40R16">
+              <label class="filter-form__label filter-form__checkbox-label" for="205/40R16">
+                205/40 R16
               </label>
-              <label>
-                <input type="radio" name="radius-17-back" checked>225/50 R17
+              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="210/45R16">
+              <label class="filter-form__label filter-form__checkbox-label" for="210/45R16">
+                210/45 R16
               </label>
-              <label>
-                <input type="radio" name="radius-17-back">245/50 R17
+              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R16">
+              <label class="filter-form__label filter-form__checkbox-label" for="215/50R16">
+                215/50 R16
               </label>
-              <label>
-                <input type="radio" name="radius-17-back">205/55 R17
+              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R16">
+              <label class="filter-form__label filter-form__checkbox-label" for="225/55R16">
+                225/55 R16
               </label>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>R18</legend>
-            <label>
-              <input type="radio" name="radius-18">255/40 R18
-            </label>
-            <label>
-              <input type="radio" name="radius-18">245/45 R18
-            </label>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">R17</legend>
+            <div class="filter-form__checkbox-container">
+              <fieldset class="filter-form__fieldset  filter-form__fieldset--inner">
+                <legend class="filter-form__legend">Передняя ось</legend>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/45R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="215/45R17">
+                  215/45 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="215/50R17">
+                  215/50 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/50R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="205/50R17">
+                  205/50 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="195/55R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="195/55R17">
+                  195/55 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="225/55R17">
+                  225/55 R17
+                </label>
+              </fieldset>
+              <fieldset class="filter-form__fieldset filter-form__fieldset--inner">
+                <legend class="filter-form__legend">Задняя ось</legend>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/45R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="225/45R17">
+                  225/45 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/50R17" checked>
+                <label class="filter-form__label filter-form__checkbox-label" for="225/50R17">
+                  225/50 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/50R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="245/50R17">
+                  245/50 R17
+                </label>
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/55R17">
+                <label class="filter-form__label filter-form__checkbox-label" for="205/55R17">
+                  205/55 R17
+                </label>
+              </fieldset>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legend">R18</legend>
+            <div class="filter-form__checkbox-container">
+              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="255/40R18">
+              <label class="filter-form__label filter-form__checkbox-label" for="255/40R18">
+                255/40 R18
+              </label>
+              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/45R18">
+              <label class="filter-form__label filter-form__checkbox-label" for="245/45R18">
+                245/45 R18
+              </label>
+            </div>
           </fieldset>
         </form>
+
       </div>
       <ul class="tire-selection__tire-list product-grid">
         <li>
+
           <article class="product-card product-card--no-stock product-card--sale">
             <div class="product-card__attribute">
               <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
@@ -279,8 +316,10 @@
               <span class="visually-hidden">Перейти на страницу каталога</span>
             </a>
           </article>
+
         </li>
         <li>
+
           <article class="product-card">
             <div class="product-card__attribute">
               <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
@@ -301,8 +340,10 @@
               <span class="visually-hidden">Перейти на страницу каталога</span>
             </a>
           </article>
+
         </li>
         <li>
+
           <article class="product-card product-card--no-stock product-card--sale">
             <div class="product-card__attribute">
               <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
@@ -321,8 +362,10 @@
               <span class="visually-hidden">Перейти на страницу каталога</span>
             </a>
           </article>
+
         </li>
         <li>
+
           <article class="product-card">
             <div class="product-card__attribute">
               <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
@@ -343,8 +386,10 @@
               <span class="visually-hidden">Перейти на страницу каталога</span>
             </a>
           </article>
+
         </li>
         <li>
+
           <article class="product-card">
             <div class="product-card__attribute">
               <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
@@ -365,6 +410,7 @@
               <span class="visually-hidden">Перейти на страницу каталога</span>
             </a>
           </article>
+
         </li>
       </ul>
       <a class="tire-selection__button-more button button--show-more" href="#">показать еще</a>
@@ -395,16 +441,19 @@
         </li>
       </ul>
     </section>
+
     <aside class="page-main__info-banner info-banner">
       <a class="info-banner__link" href="#">
         <h2 class="info-banner__heading">ШИНОМОНТАЖ</h2>
         <p class="info-banner__title">Любой сложности и без очередей</p>
       </a>
     </aside>
+
     <section class="page-main__related-products related-products">
       <h2 class="related-products__heading related-products__heading--inner">С этим покупают</h2>
-      <div class="related-products__carousel">
-        <article class="product-card related-products__product-card product-card--no-stock">
+      <div class="slick-carousel slick-carousel--no-tab">
+
+        <article class="related-products__product-card product-card product-card--sale">
           <div class="product-card__attribute">
             <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
               <span class="visually-hidden">Добавить в избранное</span>
@@ -422,9 +471,15 @@
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
-        <!-- <article class="product-card">
+
+        <article class="related-products__product-card product-card">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-winter">
+              <span class="visually-hidden">Зимняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
@@ -437,9 +492,15 @@
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
-        <article class="product-card related-products__product-card product-card--no-stock">
+
+        <article class="related-products__product-card product-card product-card--sale">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+              <span class="visually-hidden">Летняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
@@ -450,9 +511,15 @@
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
+
         <article class="related-products__product-card product-card">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+              <span class="visually-hidden">Летняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
@@ -464,16 +531,15 @@
           <a class="product-card__catalog-link" href="product-page.html">
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
-        </article> -->
+        </article>
+
       </div>
-      <ul class="related-products__dot-list dot-list">
-        <li class="dot-list__dot dot-list__dot--current"></li>
-        <li class="dot-list__dot"></li>
-        <li class="dot-list__dot"></li>
-      </ul>
     </section>
+
   </main>
+
   <footer class="page-footer">
+
       <article class="page-footer__mailling-form mailling">
         <form class="mailling__form" action="index.html" method="post">
           <h3 class="mailling__call">Подпишитесь на нашу рассылку и узнавайте об акция быстрее</h3>
@@ -483,6 +549,7 @@
           </div>
         </form>
       </article>
+
       <section class="page-footer__sections accordion">
         <div class="accordion__section accordion__section--info">
           <div class="accordion__dropdown-wrapper">
@@ -563,8 +630,17 @@
           </ul>
         </div>
       </section>
+
       <p class="page-footer__title">Интернет-магазин автозапчастей</p>
   </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-carousel.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/footer-accordion.js"></script>
+  <script src="js/filters.js"></script>
 </body>
 
 </html>
