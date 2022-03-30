@@ -6,10 +6,14 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
 
-    &--active {
-      background-color: #fff;
-    }
+  .tabs__panel &__section-wrapper {
+    display: none;
+  }
+
+  .tabs__panel--current &__section-wrapper {
+    display: block;
   }
 
   &__section-heading {
@@ -41,7 +45,7 @@
     }
   }
 
-  &__section--active &__section-heading {
+  .tabs__panel--current &__section-heading {
     padding-bottom: 14px;
     font-weight: bold;
 
@@ -58,4 +62,12 @@
       transform: rotate(45deg);
     }
   }
+}
+
+.tabs__panel.product-info__section {
+  display: block;
+}
+
+.tabs__panel--current.product-info__section {
+  background-color: #fff;
 }

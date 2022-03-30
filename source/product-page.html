@@ -8,31 +8,31 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="page-header">
     <div class="page-header__container">
-      <h1 class="visually-hidden">Магазин автозапчастей: каталог товаров и услуг</h1>
+      <h1 class="visually-hidden">Магазин автозапчастей: главная страница</h1>
       <div class="menu">
         <ul class="menu__sections">
           <li>
-            <a class="menu__link" href="#">Войти</a>
+            <a class="menu__link menu__link--enter" href="#">Войти</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Регистрация</a>
+            <a class="menu__link menu__link--enter" href="#">Регистрация</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Избранное</a>
+            <a class="menu__link menu__link--favorites" href="#">Избранное</a>
           </li>
         </ul>
         <ul class="menu__sections">
           <li>
-            <a class="menu__link" href="#">Магазины</a>
+            <a class="menu__link menu__link--shops" href="#">Магазины</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Акции</a>
+            <a class="menu__link menu__link--actions" href="#">Акции</a>
           </li>
           <li>
-            <a class="menu__link" href="#">Доставка и оплата</a>
+            <a class="menu__link menu__link--delivery" href="#">Доставка и оплата</a>
           </li>
         </ul>
         <ul class="menu__sections">
@@ -61,9 +61,9 @@
             <a class="menu__link" href="#">Аксессуары</a>
           </li>
         </ul>
-        <a  class="menu__link" href="#">
-          <address class="menu__address">Санкт-Петербург, ул Большая Конюшенная, д 19</address>
-        </a>
+        <address class="menu__address">
+          <a href="#" class="menu__address-link">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+        </address>
       </div>
       <button class="hamburger" type="button">
         <span class="visually-hidden">Меню</span>
@@ -103,6 +103,7 @@
       </ul>
     </div>
   </header>
+
   <main class="page-main">
     <div class="page-main__breadcrumbs page-main__breadcrumbs--product-page">
       <ul class="breadcrumbs breadcrumbs--product-page">
@@ -120,6 +121,7 @@
         </li>
       </ul>
     </div>
+
     <article class="page-main__product product">
       <div class="product__container">
         <header class="product__header">
@@ -141,129 +143,173 @@
         </footer>
       </div>
     </article>
-    <section class="page-main__product-info product-info">
+
+
+
+
+
+    <section class="page-main__product-info product-info tabs">
       <div class="product-info__container">
-        <section class="product-info__section">
-          <h3 class="product-info__section-heading">О товаре</h3>
+
+        <section class="product-info__section tabs__panel" id="about">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link" href="#about">О товаре</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+          </div>
         </section>
-        <section class="product-info__section">
-          <h3 class="product-info__section-heading">Характеристики</h3>
+
+        <section class="product-info__section tabs__panel" id="specs">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link" href="#specs">Характеристики</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+          </div>
         </section>
-        <section class="product-info__section">
-          <h3 class="product-info__section-heading">Отзывы</h3>
+
+        <section class="product-info__section tabs__panel" id="feedback">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link" href="#feedback">Отзывы</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+          </div>
         </section>
-        <section class="product-info__section product-info__section--active">
-          <h3 class="product-info__section-heading">Самовывоз</h3>
-          <form class="pickup-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="pickup-form__shop-select-label" for="shop-select-input">Магазин</label>
-            <input class="pickup-form__shop-select-input" type="text" placeholder="Введите название магазина" id="shop-select-input">
-            <div>
-              <label class="pickup-form__pickup-time-label button-mask">Завтрать сегодня
-                <input class="pickup-form__pickup-time-input button-mask__input visually-hidden" type="radio" name="pickup" value="today">
-                <span class="pickup-form__pickup-radio-indicator button-mask__indicator"></span>
-              </label>
-              <label class="pickup-form__pickup-time-label button-mask">Забрать завтра и позднее
-                <input class="pickup-form__pickup-time-input button-mask__input visually-hidden" type="radio" name="pickup" value="tomorrow" checked>
-                <span class="pickup-form__pickup-radio-indicator button-mask__indicator"></span>
-              </label>
-            </div>
-          </form>
-          <table class="pickup-timetable">
-            <thead  class="pickup-timetable__headings">
-              <th>Адрес</th>
-              <th>Режим работы</th>
-              <th>Доступно</th>
-              <th>Количество</th>
-              <th></th>
-            </thead>
-            <tbody>
-              <tr class="pickup-timetable__table-row">
-                <td class="pickup-timetable__table-data">
-                  <address class="pickup-timetable__adress">Санкт-Петербург, ул Большая Конюшенная, д 19</address>
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <div class="pickup-timetable__inner-title">Режим работы</div>
-                  <table class="pickup-timetable__inner-table">
-                    <tr class="pickup-timetable__inner-table-row">
-                      <td>пн-сб:</td>
-                      <td>08:00-19:00</td>
-                    </tr>
-                    <tr class="pickup-timetable__inner-table-row">
-                      <td>вс:</td>
-                      <td>09:00-17:00</td>
-                    </tr>
-                  </table>
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <div class="pickup-timetable__inner-title">Доступно</div>
-                  Завтра и позднее
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <div class="pickup-timetable__inner-title">Количество</div>
-                  Мало
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
-                  <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
-                </td>
-              </tr>
-              <tr class="pickup-timetable__table-row">
-                <td class="pickup-timetable__table-data">
-                  <address class="pickup-timetable__adress">
-                    Санкт-Петербург, ул Большая Конюшенная, д 19
-                  </address>
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <div class="pickup-timetable__inner-title">Режим работы</div>
-                  <table class="pickup-timetable__inner-table">
-                    <tr class="pickup-timetable__inner-table-row">
-                      <td>пн-сб:</td>
-                      <td>08:00-19:00</td>
-                    </tr>
-                    <tr class="pickup-timetable__inner-table-row">
-                      <td>вс:</td>
-                      <td>09:00-17:00</td>
-                    </tr>
-                  </table>
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <div class="pickup-timetable__inner-title">Доступно</div>
-                  Завтра и позднее
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <div class="pickup-timetable__inner-title">Количество</div>
-                  Много
-                </td>
-                <td class="pickup-timetable__table-data">
-                  <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
-                  <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <a class="pickup-timetable__button-show" href="#">Показать все автосалоны</a>
+
+        <section class="product-info__section tabs__panel tabs__panel--current" id="self-delivery">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link tabs__link--current" href="#self-delivery">Самовывоз</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+            <form class="pickup-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="pickup-form__shop-select-label" for="shop-select-input">Магазин</label>
+              <input class="pickup-form__shop-select-input" type="text" placeholder="Введите название магазина" id="shop-select-input">
+              <div>
+                <label class="pickup-form__pickup-time-label button-mask">Завтрать сегодня
+                  <input class="pickup-form__pickup-time-input button-mask__input visually-hidden" type="radio" name="pickup" value="today">
+                  <span class="pickup-form__pickup-radio-indicator button-mask__indicator"></span>
+                </label>
+                <label class="pickup-form__pickup-time-label button-mask">Забрать завтра и позднее
+                  <input class="pickup-form__pickup-time-input button-mask__input visually-hidden" type="radio" name="pickup" value="tomorrow" checked>
+                  <span class="pickup-form__pickup-radio-indicator button-mask__indicator"></span>
+                </label>
+              </div>
+            </form>
+            <table class="pickup-timetable">
+              <thead  class="pickup-timetable__headings">
+                <th>Адрес</th>
+                <th>Режим работы</th>
+                <th>Доступно</th>
+                <th>Количество</th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr class="pickup-timetable__table-row">
+                  <td class="pickup-timetable__table-data">
+                    <address class="pickup-timetable__adress">Санкт-Петербург, ул Большая Конюшенная, д 19</address>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Режим работы</div>
+                    <table class="pickup-timetable__inner-table">
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>пн-сб:</td>
+                        <td>08:00-19:00</td>
+                      </tr>
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>вс:</td>
+                        <td>09:00-17:00</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Доступно</div>
+                    Завтра и позднее
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Количество</div>
+                    Мало
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
+                    <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
+                  </td>
+                </tr>
+                <tr class="pickup-timetable__table-row">
+                  <td class="pickup-timetable__table-data">
+                    <address class="pickup-timetable__adress">
+                      Санкт-Петербург, ул Большая Конюшенная, д 19
+                    </address>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Режим работы</div>
+                    <table class="pickup-timetable__inner-table">
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>пн-сб:</td>
+                        <td>08:00-19:00</td>
+                      </tr>
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>вс:</td>
+                        <td>09:00-17:00</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Доступно</div>
+                    Завтра и позднее
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Количество</div>
+                    Много
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
+                    <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="pickup-timetable__button-show" href="#">Показать все автосалоны</a>
+          </div>
         </section>
-        <section class="product-info__section">
-          <h3 class="product-info__section-heading">Доставка</h3>
+
+        <section class="product-info__section tabs__panel" id="delivery">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link" href="#delivery">Доставка</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+          </div>
         </section>
-        <section class="product-info__section">
-          <h3 class="product-info__section-heading">Услуги</h3>
+
+        <section class="product-info__section tabs__panel" id="service">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link" href="#service">Услуги</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+          </div>
         </section>
-        <section class="product-info__section">
-          <h3 class="product-info__section-heading">Бизнесу</h3>
+
+        <section class="product-info__section tabs__panel" id="business">
+          <h3 class="product-info__section-heading">
+            <a class="info__section-link tabs__link" href="#business">Бизнесу</a>
+          </h3>
+          <div class="product-info__section-wrapper">
+          </div>
         </section>
+
       </div>
     </section>
+
     <aside class="page-main__info-banner info-banner">
       <a class="info-banner__link" href="">
         <h2 class="info-banner__heading">ШИНОМОНТАЖ</h2>
         <p class="info-banner__title">Любой сложности и без очередей</p>
       </a>
     </aside>
+
     <section class="page-main__related-products related-products">
       <h2 class="related-products__heading related-products__heading--inner">С этим покупают</h2>
-      <div class="related-products__carousel">
-        <article class="product-card related-products__product-card product-card--no-stock">
+      <div class="slick-carousel slick-carousel--no-tab">
+
+        <article class="related-products__product-card product-card product-card--sale">
           <div class="product-card__attribute">
             <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
               <span class="visually-hidden">Добавить в избранное</span>
@@ -273,61 +319,83 @@
             </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha 104Q RF Power Grum с 16 радиуса, размером 205 на 80">
+          <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
           <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
           <div class="product-card__no-stock">нет в наличии</div>
           <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
-          <a class="product-card__catalog-link" href="product-card.html">
+          <a class="product-card__catalog-link" href="product-page.html">
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
+
         <article class="related-products__product-card product-card">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-winter">
+              <span class="visually-hidden">Зимняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
           <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
           <div class="product-card__price">11 680 ₽</div>
-          <a class="product-card__card" href="catalog.html">
+          <a class="product-card__card" href="#">
             <span class="visually-hidden">Добавить в корзину</span>
           </a>
-          <a class="product-card__catalog-link" href="product-card.html">
+          <a class="product-card__catalog-link" href="product-page.html">
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
-        <article class="related-products__product-card product-card">
+
+        <article class="related-products__product-card product-card product-card--sale">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+              <span class="visually-hidden">Летняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
           <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
           <div class="product-card__no-stock">нет в наличии</div>
           <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
-          <a class="product-card__catalog-link" href="product-card.html">
+          <a class="product-card__catalog-link" href="product-page.html">
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
+
         <article class="related-products__product-card product-card">
           <div class="product-card__attribute">
-            <button class="product-card__attribute-button" type="button" name="button">И</button>
+            <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </button>
+            <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+              <span class="visually-hidden">Летняя резина</span>
+            </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
           <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
           <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conty...</h3>
           <div class="product-card__price">11 680 ₽</div>
-          <a class="product-card__card" href="catalog.html">
+          <a class="product-card__card" href="#">
             <span class="visually-hidden">Добавить в корзину</span>
           </a>
-          <a class="product-card__catalog-link" href="product-card.html">
+          <a class="product-card__catalog-link" href="product-page.html">
             <span class="visually-hidden">Перейти на страницу каталога</span>
           </a>
         </article>
+
       </div>
     </section>
+
   </main>
+
   <footer class="page-footer">
+
       <article class="page-footer__mailling-form mailling">
         <form class="mailling__form" action="index.html" method="post">
           <h3 class="mailling__call">Подпишитесь на нашу рассылку и узнавайте об акция быстрее</h3>
@@ -337,6 +405,7 @@
           </div>
         </form>
       </article>
+
       <section class="page-footer__sections accordion">
         <div class="accordion__section accordion__section--info">
           <div class="accordion__dropdown-wrapper">
@@ -417,8 +486,17 @@
           </ul>
         </div>
       </section>
+
       <p class="page-footer__title">Интернет-магазин автозапчастей</p>
   </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-carousel.js"></script>
+  <script src="js/footer-accordion.js"></script>
 </body>
 
 </html>

@@ -20,4 +20,32 @@
       line-height: 34px;
     }
   }
+
+  & .tabs__list {
+    @include list-reset;
+
+    position: relative;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 16px;
+    padding-left: 25px;
+    overflow-x: auto;
+  }
+
+  & .tabs__link {
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #48494d;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+
+    &--current {
+      border-bottom: 2px solid #ff7931;
+    }
+  }
+
+  & .tabs__panel {
+    padding: 0 25px;
+  }
 }
