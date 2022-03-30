@@ -1,24 +1,8 @@
 .tabs {
-  &__list {
-    @include list-reset;
-
-    position: relative;
-    display: flex;
-    gap: 40px;
-    margin-bottom: 16px;
-    padding-left: 25px;
-    overflow-x: auto;
-  }
-
   &__link {
     display: inline-block;
-    padding-bottom: 10px;
-    font-size: 15px;
-    line-height: 17px;
-    color: inherit;
+    color: #48494d;
     text-decoration: none;
-    letter-spacing: 0.04em;
-    white-space: nowrap;
 
     &:hover {
       opacity: 0.7;
@@ -30,13 +14,11 @@
 
     &--current {
       font-weight: bold;
-      border-bottom: 2px solid #ff7931;
     }
   }
 
   &__panel {
     display: none;
-    padding: 0 25px;
 
     &--current {
       display: block;
