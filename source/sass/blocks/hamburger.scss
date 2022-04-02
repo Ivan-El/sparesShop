@@ -10,6 +10,10 @@
   border: none;
   cursor: pointer;
 
+  .no-js & {
+    display: none;
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -48,6 +52,8 @@
   }
 }
 
-.no-js .hamburger {
-  display: none;
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
 }
