@@ -10,7 +10,7 @@
 
 <body class="no-js">
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="page-header__container container">
       <h1 class="visually-hidden">Магазин автозапчастей: главная страница</h1>
       <div class="menu">
         <ul class="menu__sections">
@@ -24,7 +24,7 @@
             <a class="menu__link menu__link--favorites" href="#">Избранное</a>
           </li>
         </ul>
-        <ul class="menu__sections">
+        <ul class="menu__sections menu__sections-main">
           <li>
             <a class="menu__link menu__link--shops" href="#">Магазины</a>
           </li>
@@ -102,10 +102,38 @@
         </li>
       </ul>
     </div>
+    <navigation class="page-header__navigation navigation container">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Каталог Запчастей</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Каталог ТО</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="#">Шины</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Диски</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Аккумуляторы</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Автомасла</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Автолампы</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Аксессуары</a>
+        </li>
+      </ul>
+    </navigation>
   </header>
 
   <main class="page-main">
-    <section class="page-main__promotion promotion">
+    <section class="page-main__promotion promotion container">
       <h2 class="visually-hidden">Рекламные товары и услуги</h2>
       <div class="promotion__slider slider">
         <div class="slider__slide slider__slide--1">
@@ -243,7 +271,7 @@
       </article>
     </section>
 
-    <section class="page-main__search search">
+    <section class="page-main__search search container">
       <h2 class="visually-hidden">Поиск по товарам</h2>
       <form class="search-form" action="index.html" method="post">
         <div class="search-form__wrapper-top">
@@ -263,7 +291,7 @@
       </form>
     </section>
 
-    <section class="page-main__categories categories">
+    <section class="page-main__categories categories container">
       <h2 class="visually-hidden">Разделы сайта</h2>
       <ul class="categories__list">
         <li class="categories__item">
@@ -312,7 +340,7 @@
     </section>
 
 
-    <section class="page-main__related-products related-products">
+    <section class="page-main__related-products related-products container">
       <div class="related-products__tabs tabs">
         <h2 class="related-products__heading related-products__heading--index-popular">Популярные товары</h2>
         <div class="tabs__list-wrap">
@@ -444,13 +472,13 @@
 
     </section>
 
-    <aside class="page-main__banner banner">
+    <aside class="page-main__banner banner container">
       <a class="banner__link" href="#">
         <span class="visually-hidden">Перейти к списку товаров, учавствующих в акции</span>
       </a>
     </aside>
 
-    <section class="page-main__related-products related-products">
+    <section class="page-main__related-products related-products container">
 
       <div class="related-products__tabs tabs">
         <h2 class="related-products__heading related-products__heading--index-additional">С этим товаром покупают</h2>
@@ -593,7 +621,7 @@
 
   <footer class="page-footer">
 
-      <article class="page-footer__mailling-form mailling">
+      <article class="page-footer__mailling-form mailling container">
         <form class="mailling__form" action="index.html" method="post">
           <h3 class="mailling__call">Подпишитесь на нашу рассылку и узнавайте об акция быстрее</h3>
           <div class="mailling__input-wrapper">
@@ -603,7 +631,7 @@
         </form>
       </article>
 
-      <section class="page-footer__sections accordion">
+      <section class="page-footer__sections accordion container">
         <div class="accordion__section accordion__section--info">
           <div class="accordion__dropdown-wrapper">
             <h3 class="accordion__section-heading">Информация</h3>
@@ -684,7 +712,7 @@
         </div>
       </section>
 
-      <p class="page-footer__title">Интернет-магазин автозапчастей</p>
+      <p class="page-footer__title container">Интернет-магазин автозапчастей</p>
   </footer>
 
   <script src="js/menu.js"></script>

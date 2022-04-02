@@ -1,0 +1,59 @@
+.navigation {
+  display: none;
+
+  @media (min-width: 1024px) {
+    position: relative;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 15px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -20%;
+      width: 120vw;
+      height: 1px;
+      background-color: rgba(0 0 0 / 10%);
+    }
+
+    &__list {
+      @include list-reset;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__link {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: #48494d;
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: -16px;
+        left: -12px;
+        right: -12px;
+        display: block;
+        height: 3px;
+        background-color: transparent;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &--current {
+        &::before {
+          background-color: #ff7931;
+        }
+      }
+    }
+  }
+}
