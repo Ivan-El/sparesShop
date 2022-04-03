@@ -3,7 +3,13 @@
     margin-bottom: 50px;
   }
 
-  &__promotion-product {
-    margin: 0 auto;
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+    }
+
+    &__slider {
+      margin-bottom: 0;
+    }
   }
 }
