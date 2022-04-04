@@ -93,21 +93,7 @@
         &::before {
           left: 10px;
         }
-      }
 
-      &--next {
-        &::before {
-          right: 10px;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        top: 46.5%;
-        color: #fff;
-      }
-
-      &--previous {
         &::after {
           content: "←";
           left: 18px;
@@ -115,10 +101,20 @@
       }
 
       &--next {
+        &::before {
+          right: 10px;
+        }
+
         &::after {
           content: "→";
           right: 18px;
         }
+      }
+
+      &::after {
+        position: absolute;
+        top: 46.5%;
+        color: #fff;
       }
     }
 

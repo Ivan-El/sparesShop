@@ -2,8 +2,14 @@
 
 if (window.$) {
   let $ = window.$;
-
   let slickCarousel = $(".slick-carousel");
+
+  slickCarousel.on("init reInit", function(e, slick) {
+    if (slick.slideCount <= slick.options.slidesToShow) {
+      slick.slickAdd(slick.$slides.clone())
+    }
+  });
+
   slickCarousel.slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -29,7 +35,7 @@ if (window.$) {
       }
     },
     {
-      breakpoint: 1232,
+      breakpoint: 1170,
       settings: {
         arrows: true,
         dots: false,
