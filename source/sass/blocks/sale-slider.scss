@@ -1,5 +1,6 @@
 .sale-slider {
   width: 270px;
+  height: 397px;
   margin: 0 auto;
 
   &__container {
@@ -69,5 +70,11 @@
 
   &__dot-current {
     background-color: #ff7931;
+  }
+
+  @media (min-width: 768px) {
+    & .dot-list {
+      display: none;
+    }
   }
 }

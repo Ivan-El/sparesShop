@@ -9,9 +9,11 @@ showSlides(slideIndex);
 if (sliderArrows) {
   for (let arrow of sliderArrows) {
     arrow.classList.contains("slider__arrow--previous") ?
-    arrow.addEventListener("click", () => {
+    arrow.addEventListener("click", (evt) => {
+      evt.preventDefault();
       showSlides(slideIndex -= 1)}) :
-    arrow.addEventListener("click", () => {
+    arrow.addEventListener("click", (evt) => {
+      evt.preventDefault();
       showSlides(slideIndex += 1)});
   }
 }

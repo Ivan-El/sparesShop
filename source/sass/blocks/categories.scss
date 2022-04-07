@@ -135,4 +135,16 @@
       background-image: url("/img/accessories.svg");
     }
   }
+
+  @media (min-width: 768px) {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 }

@@ -7,6 +7,7 @@
   align-items: center;
   width: 103px;
   margin-left: auto;
+  padding-right: 9px;
 
   &__link {
     display: block;
@@ -48,6 +49,17 @@
         text-align: center;
         color: #fff;
       }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      width: 114px;
+    }
+
+    &__link {
+      margin-bottom: 12px;
+      margin-right: 10px;
     }
   }
 }

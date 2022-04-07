@@ -12,4 +12,30 @@
     background-size: cover;
     background-position: center;
   }
+
+  @media (min-width: 768px) {
+    & {
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      padding-top: 14.1%;
+      text-decoration: none;
+      color: inherit;
+      background-image: url("/img/sale50@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      max-width: 1210px;
+      padding: 0 20px;
+    }
+  }
 }

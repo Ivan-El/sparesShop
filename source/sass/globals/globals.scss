@@ -9,9 +9,9 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 320px;
   margin: 0;
-
   font-size: $main-font-size;
   line-height: $main-line-height;
   font-family: $main-font;
@@ -19,6 +19,7 @@ body {
   font-style: normal;
   color: $main-font-color;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 img {

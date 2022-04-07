@@ -10,3 +10,16 @@ if (menuButton) {
     menuButton.classList.toggle("hamburger--opened");
   });
 }
+
+let navList = document.querySelector(".navigation__list");
+
+if (navList) {
+  navList.addEventListener("click", function (evt) {
+    let curTarget = evt.currentTarget;
+    let target = evt.target;
+    if (target.classList.contains("navigation__link")) {
+      curTarget.querySelector(".navigation__link--current").classList.remove("navigation__link--current");
+      target.classList.add("navigation__link--current");
+    }
+  });
+}

@@ -2,8 +2,9 @@
   &__container {
     position: relative;
     display: flex;
-    margin: 0 auto;
-    padding: 30px 25px 16px 16px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
     &::after {
       position: absolute;
@@ -14,6 +15,17 @@
       width: 120vw;
       height: 1px;
       background-color: #d6d6d6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__container {
+      padding-top: 54px;
+      padding-bottom: 24px;
+    }
+
+    &__navigation {
+      margin-bottom: 80px;
     }
   }
 }
