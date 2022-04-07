@@ -3,8 +3,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  padding-left: 16px;
-  padding-right: 10%;
 
   &__link {
     position: relative;
@@ -50,5 +48,15 @@
 
   &--product-page {
     padding-right: 8%;
+  }
+
+  @media (min-width: 1024px) {
+    &__link {
+      text-decoration: none;
+
+      &--desktop {
+        display: none;
+      }
+    }
   }
 }
