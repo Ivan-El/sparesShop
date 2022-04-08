@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="no-js">
+<body class="no-js catalog">
   <header class="page-header">
     <div class="page-header__container container">
       <h1 class="visually-hidden">Магазин автозапчастей: главная страница</h1>
@@ -149,21 +149,49 @@
         </li>
       </ul>
     </div>
-    <h2 class="page-main__title">Нешипованные шины</h2>
 
-    <section class="page-main__tire-selection tire-selection">
+    <h2 class="page-main__title container">Нешипованные шины</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="page-main__tire-selection tire-selection container">
       <h2 class="visually-hidden">Подбор подходящей шины</h2>
-      <div class="tire-selection__filter-top">
-        <div class="tire-selection__arrange-wrapper">
-          <div>
-            <button class="tire-selection__arrange-button tire-selection__arrange-button--sort">По популярности</button>
+      <div class="tire-selection__filter-top filter-top">
+        <div class="filter-top__sorting-wrapper">
+          <button class="filter-top__sorting-button filter-top__sorting-button--sort">По популярности</button>
+          <div class="filter-top__view-wrapper">
+            <button class="filter-top__view-button filter-top__view-button--tile" type="button" name="button">
+              <span class="visually-hidden">показать плиткой</span>
+            </button>
+            <button class="filter-top__view-button filter-top__view-button--list" type="button" name="button">
+              <span class="visually-hidden">показать списком</span>
+            </button>
           </div>
-          <div>
-            <button class="tire-selection__arrange-button tire-selection__arrange-button--filter">Фильтры</button>
-          </div>
+          <button class="filter-top__sorting-button filter-top__sorting-button--filter">Фильтры</button>
         </div>
-        <button class="tire-selection__arrange-button tire-selection__arrange-button--city">Набережные Челны</button>
-        <ul class="tire-selection__compilation-list compilation-list">
+        <button class="filter-top__sorting-button filter-top__sorting-button--city">Набережные Челны</button>
+        <ul class="filter-top__compilation-list compilation-list">
           <li class="compilation-list__compilation">
             <a class="compilation-list__link" href="#">Полноприводные</a>
           </li>
@@ -181,7 +209,6 @@
           </li>
         </ul>
       </div>
-
       <div class="tire-selection__filter-bottom">
         <div class="tire-selection__filter-bottom-heading-wrapper">
           <button class="tire-selection__filter-close" type="button">
@@ -470,6 +497,33 @@
       </ul>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <aside class="page-main__info-banner info-banner">
       <a class="info-banner__link" href="#">
         <h2 class="info-banner__heading">ШИНОМОНТАЖ</h2>
@@ -477,7 +531,7 @@
       </a>
     </aside>
 
-    <section class="page-main__related-products related-products">
+    <section class="page-main__related-products related-products container">
       <h2 class="related-products__heading related-products__heading--inner">С этим покупают</h2>
       <div class="slick-carousel slick-carousel--no-tab">
 
