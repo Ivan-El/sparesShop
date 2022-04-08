@@ -1,6 +1,6 @@
 "use strict"
 
-let filterToggle = document.querySelector(".tire-selection__arrange-button--filter");
+let filterToggle = document.querySelector(".filter-top__sorting-button--filter");
 let backFilters = document.querySelector(".tire-selection__filter-close");
 let body = document.body;
 
