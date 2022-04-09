@@ -13,10 +13,14 @@
 
   &__filter-bottom {
     display: none;
-    padding: 18px 16px 70px;
+    padding: 18px 0 70px;
   }
 
-  &__filter-bottom-heading-wrapper {
+  &__bottom-wrapper {
+    margin-bottom: 30px;
+  }
+
+  &__filter-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -36,19 +40,32 @@
     border: none;
   }
 
-  &__filter-bottom-heading {
+  &__filter-heading {
     margin: 0;
     font-size: 15px;
     line-height: 17px;
   }
 
-  &__tire-list {
-    padding-left: 24px;
-    margin-bottom: 30px;
-  }
-
   &__button-more {
     margin-bottom: 50px;
+  }
+
+  @media (min-width: 768px) {
+    &__bottom-wrapper {
+      display: flex;
+    }
+
+    &__filter-bottom {
+      flex-shrink: 0;
+      display: block;
+      width: 300px;
+      padding: 0;
+      border: 1px solid #000;
+    }
+
+    &__filter-wrapper {
+      display: none;
+    }
   }
 }
 
@@ -58,7 +75,8 @@
 
 .filter-opened .page-header,
 .filter-opened .page-main > :not(.tire-selection),
-.filter-opened .tire-selection > :not(.tire-selection__filter-bottom),
+.filter-opened .tire-selection > :not(.tire-selection__bottom-wrapper),
+.filter-opened .product-grid,
 .filter-opened .page-footer {
   display: none;
 }

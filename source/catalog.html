@@ -209,265 +209,423 @@
           </li>
         </ul>
       </div>
-      <div class="tire-selection__filter-bottom">
-        <div class="tire-selection__filter-bottom-heading-wrapper">
-          <button class="tire-selection__filter-close" type="button">
-            <span class="visually-hidden">закрыть фильтр</span>
-          </button>
-          <h2 class="tire-selection__filter-bottom-heading">Фильтры</h2>
-        </div>
-        <form class="tire-selection__form filter-form" action="index.html" method="post">
-          <div class="filter-form__criterion-container">
-            <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="parametr" id="criterion-radio-parametr" checked>
-            <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-parametr">По параметрам</label>
-            <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="brand" id="criterion-radio-brand">
-            <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-brand">По марке</label>
+      <div class="tire-selection__bottom-wrapper">
+        <div class="tire-selection__filter-bottom">
+          <div class="tire-selection__filter-wrapper">
+            <button class="tire-selection__filter-close" type="button">
+              <span class="visually-hidden">закрыть фильтр</span>
+            </button>
+            <h2 class="tire-selection__filter-heading">Фильтры</h2>
           </div>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend filter-form__legend--season">Сезонность</legend>
-            <label class="filter-form__label filter-form__season-label button-mask">Летние
-              <input class="visually-hidden button-mask__input" type="radio" name="season">
-              <span class="filter-form__radio-indicator button-mask__indicator"></span>
-            </label>
-            <label class="filter-form__label filter-form__season-label  button-mask">Зимние
-              <input class="visually-hidden button-mask__input" type="radio" name="season" checked>
-              <span class="filter-form__radio-indicator  button-mask__indicator"></span>
-            </label>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">Марка</legend>
-            <div class="filter-form__select-wrapper">
-              <select class="filter-form__select" name="car-brand-select">
-                <option value="BMW" selected>BMW</option>
-              </select>
+          <form class="tire-selection__form filter-form" action="index.html" method="post">
+            <div class="filter-form__criterion-container">
+              <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="parametr" id="criterion-radio-parametr" checked>
+              <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-parametr">По параметрам</label>
+              <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="brand" id="criterion-radio-brand">
+              <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-brand">По марке</label>
             </div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">Модель</legend>
-            <div class="filter-form__select-wrapper">
-              <select class="filter-form__select" name="car-model-select">
-                <option value="1-series" selected>1-series</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">Кузов</legend>
-            <div class="filter-form__select-wrapper">
-              <select class="filter-form__select" name="car-body-select">
-                <option value="E81 3d" selected>E81 3d</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">Модификация</legend>
-            <div class="filter-form__select-wrapper">
-              <select class="filter-form__select" name="car-modification-select">
-                <option value="116 d" selected>116 d</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">R16</legend>
-            <div class="filter-form__checkbox-container">
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/40R16">
-              <label class="filter-form__label filter-form__checkbox-label" for="205/40R16">
-                205/40 R16
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend filter-form__legend--season">Сезонность</legend>
+              <label class="filter-form__label filter-form__season-label button-mask">Летние
+                <input class="visually-hidden button-mask__input" type="radio" name="season">
+                <span class="filter-form__radio-indicator button-mask__indicator"></span>
               </label>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="210/45R16">
-              <label class="filter-form__label filter-form__checkbox-label" for="210/45R16">
-                210/45 R16
+              <label class="filter-form__label filter-form__season-label  button-mask">Зимние
+                <input class="visually-hidden button-mask__input" type="radio" name="season" checked>
+                <span class="filter-form__radio-indicator  button-mask__indicator"></span>
               </label>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R16">
-              <label class="filter-form__label filter-form__checkbox-label" for="215/50R16">
-                215/50 R16
-              </label>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R16">
-              <label class="filter-form__label filter-form__checkbox-label" for="225/55R16">
-                225/55 R16
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">R17</legend>
-            <div class="filter-form__checkbox-container">
-              <fieldset class="filter-form__fieldset  filter-form__fieldset--inner">
-                <legend class="filter-form__legend">Передняя ось</legend>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/45R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="215/45R17">
-                  215/45 R17
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">Марка</legend>
+              <div class="filter-form__select-wrapper">
+                <select class="filter-form__select" name="car-brand-select">
+                  <option value="BMW" selected>BMW</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">Модель</legend>
+              <div class="filter-form__select-wrapper">
+                <select class="filter-form__select" name="car-model-select">
+                  <option value="1-series" selected>1-series</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">Кузов</legend>
+              <div class="filter-form__select-wrapper">
+                <select class="filter-form__select" name="car-body-select">
+                  <option value="E81 3d" selected>E81 3d</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">Модификация</legend>
+              <div class="filter-form__select-wrapper">
+                <select class="filter-form__select" name="car-modification-select">
+                  <option value="116 d" selected>116 d</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">R16</legend>
+              <div class="filter-form__checkbox-container">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/40R16">
+                <label class="filter-form__label filter-form__checkbox-label" for="205/40R16">
+                  205/40 R16
                 </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="215/50R17">
-                  215/50 R17
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="210/45R16">
+                <label class="filter-form__label filter-form__checkbox-label" for="210/45R16">
+                  210/45 R16
                 </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/50R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="205/50R17">
-                  205/50 R17
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R16">
+                <label class="filter-form__label filter-form__checkbox-label" for="215/50R16">
+                  215/50 R16
                 </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="195/55R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="195/55R17">
-                  195/55 R17
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R16">
+                <label class="filter-form__label filter-form__checkbox-label" for="225/55R16">
+                  225/55 R16
                 </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="225/55R17">
-                  225/55 R17
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">R17</legend>
+              <div class="filter-form__checkbox-container">
+                <fieldset class="filter-form__fieldset  filter-form__fieldset--inner">
+                  <legend class="filter-form__legend">Передняя ось</legend>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/45R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="215/45R17">
+                    215/45 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="215/50R17">
+                    215/50 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/50R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="205/50R17">
+                    205/50 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="195/55R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="195/55R17">
+                    195/55 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="225/55R17">
+                    225/55 R17
+                  </label>
+                </fieldset>
+                <fieldset class="filter-form__fieldset filter-form__fieldset--inner">
+                  <legend class="filter-form__legend">Задняя ось</legend>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/45R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="225/45R17">
+                    225/45 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/50R17" checked>
+                  <label class="filter-form__label filter-form__checkbox-label" for="225/50R17">
+                    225/50 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/50R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="245/50R17">
+                    245/50 R17
+                  </label>
+                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/55R17">
+                  <label class="filter-form__label filter-form__checkbox-label" for="205/55R17">
+                    205/55 R17
+                  </label>
+                </fieldset>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__fieldset">
+              <legend class="filter-form__legend">R18</legend>
+              <div class="filter-form__checkbox-container">
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="255/40R18">
+                <label class="filter-form__label filter-form__checkbox-label" for="255/40R18">
+                  255/40 R18
                 </label>
-              </fieldset>
-              <fieldset class="filter-form__fieldset filter-form__fieldset--inner">
-                <legend class="filter-form__legend">Задняя ось</legend>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/45R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="225/45R17">
-                  225/45 R17
+                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/45R18">
+                <label class="filter-form__label filter-form__checkbox-label" for="245/45R18">
+                  245/45 R18
                 </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/50R17" checked>
-                <label class="filter-form__label filter-form__checkbox-label" for="225/50R17">
-                  225/50 R17
-                </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/50R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="245/50R17">
-                  245/50 R17
-                </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/55R17">
-                <label class="filter-form__label filter-form__checkbox-label" for="205/55R17">
-                  205/55 R17
-                </label>
-              </fieldset>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__fieldset">
-            <legend class="filter-form__legend">R18</legend>
-            <div class="filter-form__checkbox-container">
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="255/40R18">
-              <label class="filter-form__label filter-form__checkbox-label" for="255/40R18">
-                255/40 R18
-              </label>
-              <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/45R18">
-              <label class="filter-form__label filter-form__checkbox-label" for="245/45R18">
-                245/45 R18
-              </label>
-            </div>
-          </fieldset>
-        </form>
+              </div>
+            </fieldset>
+          </form>
 
+        </div>
+        <ul class="tire-selection__tire-list product-grid">
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__price">11 680 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__price">11 680 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__price">11 680 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__price">11 680 ₽</div>
+              <a class="product-card__card" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+          <li>
+
+            <article class="product-card product-card--no-stock product-card--sale">
+              <div class="product-card__attribute">
+                <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+                <span class="product-card__attribute-button product-card__attribute-button--season-summer">
+                  <span class="visually-hidden">Летняя резина</span>
+                </span>
+              </div>
+              <a class="product-card__quick-view" href="#">быстрый просмотр</a>
+              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+              <div class="product-card__no-stock">нет в наличии</div>
+              <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
+              <a class="product-card__catalog-link" href="product-page.html">
+                <span class="visually-hidden">Перейти на страницу каталога</span>
+              </a>
+            </article>
+
+          </li>
+        </ul>
       </div>
-      <ul class="tire-selection__tire-list product-grid">
-        <li>
-
-          <article class="product-card product-card--no-stock product-card--sale">
-            <div class="product-card__attribute">
-              <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
-                <span class="visually-hidden">Добавить в избранное</span>
-              </button>
-              <span class="product-card__attribute-button product-card__attribute-button--season-summer">
-                <span class="visually-hidden">Летняя резина</span>
-              </span>
-            </div>
-            <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-            <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
-            <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
-            <div class="product-card__no-stock">нет в наличии</div>
-            <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
-            <a class="product-card__catalog-link" href="product-page.html">
-              <span class="visually-hidden">Перейти на страницу каталога</span>
-            </a>
-          </article>
-
-        </li>
-        <li>
-
-          <article class="product-card">
-            <div class="product-card__attribute">
-              <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
-                <span class="visually-hidden">Добавить в избранное</span>
-              </button>
-              <span class="product-card__attribute-button product-card__attribute-button--season-summer">
-                <span class="visually-hidden">Летняя резина</span>
-              </span>
-            </div>
-            <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-            <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
-            <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
-            <div class="product-card__price">11 680 ₽</div>
-            <a class="product-card__card" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
-            <a class="product-card__catalog-link" href="product-page.html">
-              <span class="visually-hidden">Перейти на страницу каталога</span>
-            </a>
-          </article>
-
-        </li>
-        <li>
-
-          <article class="product-card product-card--no-stock product-card--sale">
-            <div class="product-card__attribute">
-              <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
-                <span class="visually-hidden">Добавить в избранное</span>
-              </button>
-              <span class="product-card__attribute-button product-card__attribute-button--season-summer">
-                <span class="visually-hidden">Летняя резина</span>
-              </span>
-            </div>
-            <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-            <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
-            <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
-            <div class="product-card__no-stock">нет в наличии</div>
-            <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
-            <a class="product-card__catalog-link" href="product-page.html">
-              <span class="visually-hidden">Перейти на страницу каталога</span>
-            </a>
-          </article>
-
-        </li>
-        <li>
-
-          <article class="product-card">
-            <div class="product-card__attribute">
-              <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
-                <span class="visually-hidden">Добавить в избранное</span>
-              </button>
-              <span class="product-card__attribute-button product-card__attribute-button--season-summer">
-                <span class="visually-hidden">Летняя резина</span>
-              </span>
-            </div>
-            <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-            <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
-            <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
-            <div class="product-card__price">11 680 ₽</div>
-            <a class="product-card__card" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
-            <a class="product-card__catalog-link" href="product-page.html">
-              <span class="visually-hidden">Перейти на страницу каталога</span>
-            </a>
-          </article>
-
-        </li>
-        <li>
-
-          <article class="product-card">
-            <div class="product-card__attribute">
-              <button class="product-card__attribute-button product-card__attribute-button--favorites" type="button" name="button">
-                <span class="visually-hidden">Добавить в избранное</span>
-              </button>
-              <span class="product-card__attribute-button product-card__attribute-button--season-summer">
-                <span class="visually-hidden">Летняя резина</span>
-              </span>
-            </div>
-            <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-            <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
-            <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
-            <div class="product-card__price">11 680 ₽</div>
-            <a class="product-card__card" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
-            <a class="product-card__catalog-link" href="product-page.html">
-              <span class="visually-hidden">Перейти на страницу каталога</span>
-            </a>
-          </article>
-
-        </li>
-      </ul>
       <a class="tire-selection__button-more button button--show-more" href="#">показать еще</a>
       <ul class="pagination">
         <li>
@@ -496,33 +654,6 @@
         </li>
       </ul>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <aside class="page-main__info-banner info-banner">
       <a class="info-banner__link" href="#">
