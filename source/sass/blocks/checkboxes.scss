@@ -1,0 +1,21 @@
+.checkboxes {
+  & {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+  }
+
+  .filter-modal &__checkbox-label {
+    display: block;
+    width: 80%;
+    padding: 4px 0;
+    text-align: center;
+    background-color: #f0f0f4;
+    border-radius: 50px;
+  }
+
+  .filter-modal &__checkbox:checked + &__checkbox-label {
+    color: #fff;
+    background-color: #ff7931;
+  }
+}

@@ -14,58 +14,25 @@
   &__filter-bottom {
     display: none;
     padding: 18px 0 70px;
-  }
 
-  &__bottom-wrapper {
-    margin-bottom: 30px;
-  }
-
-  &__filter-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
-  }
-
-  &__filter-close {
-    position: absolute;
-    content: "";
-    top: -1px;
-    left: -8px;
-    padding: 10px 15px;
-    background-color: inherit;
-    background-image: url("/img/arrow-back.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-  }
-
-  &__filter-heading {
-    margin: 0;
-    font-size: 15px;
-    line-height: 17px;
-  }
-
-  &__button-more {
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: 768px) {
-    &__bottom-wrapper {
-      display: flex;
-    }
-
-    &__filter-bottom {
+    @media (min-width: 768px) {
       flex-shrink: 0;
       display: block;
       width: 300px;
       padding: 0;
-      border: 1px solid #000;
     }
+  }
 
-    &__filter-wrapper {
-      display: none;
+  &__bottom-wrapper {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      display: flex;
     }
+  }
+
+  &__button-more {
+    margin-bottom: 50px;
   }
 }
 
