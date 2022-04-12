@@ -1,0 +1,78 @@
+.filter-selection {
+  border: 1px solid red;
+  &__criterion-container {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  &__fieldset {
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+
+    &:last-of-type {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__legend {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    &--season,
+    &--type,
+    &--price,
+    &--country {
+      margin-bottom: 20px;
+    }
+
+    &--select {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 16px;
+
+    &--criterion {
+      flex-grow: 0;
+      margin-right: 40px;
+      padding: 0;
+      padding-bottom: 10px;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      white-space: nowrap;
+      font-weight: normal;
+      border: none;
+      opacity: 0.5;
+    }
+
+    &--question {
+      &::before {
+        position: absolute;
+        content: "?";
+        right: -27px;
+        top: -1px;
+        width: 17px;
+        height: 17px;
+        color: #fff;
+        text-align: center;
+        background-color: #d7d9df;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__criterion-radio:checked + &__label--criterion {
+    color: #48494d;
+    font-weight: bold;
+    background-color: #fff;
+    opacity: 1;
+    border-bottom: 2px solid red;
+  }
+}

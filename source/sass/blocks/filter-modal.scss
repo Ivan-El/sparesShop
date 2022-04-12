@@ -1,0 +1,147 @@
+.filter-modal {
+  &__heading-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  &__close {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -8px;
+    padding: 10px 15px;
+    background-color: inherit;
+    background-image: url("/img/arrow-back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  &__criterion-container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 16px;
+
+    &--season {
+      padding-top: 15px;
+      padding-left: 32px;
+      padding-bottom: 6px;
+      font-size: 15px;
+      line-height: 17px;
+
+      &::before {
+        position: absolute;
+        content: "?";
+        left: 0;
+        top: 15px;
+        width: 17px;
+        height: 17px;
+        color: #fff;
+        text-align: center;
+        background-color: #d7d9df;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: -50%;
+        width: 200%;
+        height: 1px;
+        background-color: rgba(0 0 0 / 10%);
+      }
+    }
+  }
+
+  &__criterion-label {
+    flex-grow: 1;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+
+  &__criterion-radio:checked + &__criterion-label {
+    color: #fff;
+    background-color: #ff7931;
+    border: none;
+  }
+
+  &__fieldset {
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+
+    &--inner {
+      display: grid;
+      align-content: flex-start;
+      row-gap: 15px;
+      padding: 0;
+    }
+  }
+
+  &__legend {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    &--season {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__select-wrapper {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      right: 20px;
+      width: 7px;
+      height: 2px;
+      background-color: #e0e0e0;
+    }
+
+    &::before {
+      right: 24px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__select {
+    width: 100%;
+    padding: 11px 15px;
+    padding-right: 30px;
+    color: #48494d;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #000;
+    }
+  }
+}
