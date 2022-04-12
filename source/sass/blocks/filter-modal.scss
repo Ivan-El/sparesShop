@@ -105,43 +105,4 @@
       margin-bottom: 5px;
     }
   }
-
-  &__select-wrapper {
-    position: relative;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      top: 18px;
-      right: 20px;
-      width: 7px;
-      height: 2px;
-      background-color: #e0e0e0;
-    }
-
-    &::before {
-      right: 24px;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
-
-  &__select {
-    width: 100%;
-    padding: 11px 15px;
-    padding-right: 30px;
-    color: #48494d;
-    border: 1px solid #e0e0e0;
-    border-radius: 0;
-    appearance: none;
-
-    &:focus {
-      outline: none;
-      border: 1px solid #000;
-    }
-  }
 }

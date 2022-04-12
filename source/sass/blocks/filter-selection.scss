@@ -6,9 +6,14 @@
   }
 
   &__fieldset {
+    position: relative;
     margin-bottom: 30px;
     padding: 0;
     border: none;
+
+    &--select {
+      border-bottom: 1px solid #e0e0e0;
+    }
 
     &:last-of-type {
       margin-bottom: 15px;
@@ -16,6 +21,7 @@
   }
 
   &__legend {
+    position: relative;
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 16px;
@@ -30,6 +36,19 @@
 
     &--select {
       margin-bottom: 9px;
+
+      &::before{
+        position: absolute;
+        content: "?";
+        right: -32px;
+        width: 17px;
+        height: 17px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        background-color: #d7d9df;
+        border-radius: 50%;
+      }
     }
   }
 
@@ -56,7 +75,7 @@
       &::before {
         position: absolute;
         content: "?";
-        right: -27px;
+        right: -25px;
         top: -1px;
         width: 17px;
         height: 17px;
@@ -64,6 +83,10 @@
         text-align: center;
         background-color: #d7d9df;
         border-radius: 50%;
+      }
+
+      &-studded::before {
+        right: -5px;
       }
     }
   }
