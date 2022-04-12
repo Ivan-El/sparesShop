@@ -1,7 +1,7 @@
 "use strict"
 
 let filterToggle = document.querySelector(".filter-top__sorting-button--filter");
-let backFilters = document.querySelector(".tire-selection__filter-close");
+let backFilters = document.querySelector(".filter-modal__close");
 let body = document.body;
 
 filterToggle.addEventListener("click", function () {
