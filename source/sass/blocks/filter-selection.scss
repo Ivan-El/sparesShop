@@ -102,4 +102,16 @@
     opacity: 1;
     border-bottom: 2px solid red;
   }
+
+  &__link-more {
+    color: #ff7931;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #ffe4d6;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
 }

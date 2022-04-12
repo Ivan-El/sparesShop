@@ -5,6 +5,15 @@
     row-gap: 15px;
   }
 
+  &__wrapper {
+    position: relative;
+  }
+
+  &__checkbox-label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   .filter-modal &__checkbox-label {
     display: block;
     width: 80%;
@@ -17,5 +26,45 @@
   .filter-modal &__checkbox:checked + &__checkbox-label {
     color: #fff;
     background-color: #ff7931;
+  }
+
+  .filter-selection & {
+    margin-bottom: 16px;
+  }
+
+  .filter-selection &__checkbox-indicator {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    border: 1px solid #cdcdcd;
+  }
+
+  .filter-selection &__checkbox:checked + &__checkbox-indicator {
+    background-color: #ff7931;
+    border: none;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 8px;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    &::before {
+      left: 2px;
+      width: 4px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 7px;
+      left: 4px;
+      width: 8px;
+      transform: rotate(-45deg);
+    }
   }
 }
