@@ -25,6 +25,18 @@
     }
   }
 
+  .filter-selection &__arrow {
+    &::before {
+      right: 20px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: 16px;
+      transform: rotate(-45deg);
+    }
+  }
+
   &__input {
     width: 100%;
     padding: 11px 15px;
@@ -59,24 +71,11 @@
     right: 0;
   }
 
-  .filter-selection &__arrow {
-    &::before {
-      right: 20px;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      right: 16px;
-      transform: rotate(-45deg);
-    }
-  }
-
   .filter-selection &__input {
     width: 68px;
     padding: 7px 0;
     padding-right: 40px;
     text-align: right;
-
     border: none;
 
     &:focus + .select__arrow {

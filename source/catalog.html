@@ -152,29 +152,6 @@
 
     <h2 class="page-main__title container">Нешипованные шины</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="page-main__tire-selection tire-selection container">
       <h2 class="visually-hidden">Подбор подходящей шины</h2>
       <div class="tire-selection__filter-top filter-top">
@@ -211,145 +188,454 @@
       </div>
       <div class="tire-selection__bottom-wrapper">
         <div class="tire-selection__filter-bottom">
-          <div class="tire-selection__filter-wrapper">
-            <button class="tire-selection__filter-close" type="button">
-              <span class="visually-hidden">закрыть фильтр</span>
-            </button>
-            <h2 class="tire-selection__filter-heading">Фильтры</h2>
-          </div>
           <form class="tire-selection__form filter-form" action="index.html" method="post">
-            <div class="filter-form__criterion-container">
-              <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="parametr" id="criterion-radio-parametr" checked>
-              <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-parametr">По параметрам</label>
-              <input class="filter-form__criterion-radio visually-hidden" type="radio" name="criterion" value="brand" id="criterion-radio-brand">
-              <label class="filter-form__label filter-form__criterion-label" for="criterion-radio-brand">По марке</label>
-            </div>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend filter-form__legend--season">Сезонность</legend>
-              <label class="filter-form__label filter-form__season-label button-mask">Летние
-                <input class="visually-hidden button-mask__input" type="radio" name="season">
-                <span class="filter-form__radio-indicator button-mask__indicator"></span>
-              </label>
-              <label class="filter-form__label filter-form__season-label  button-mask">Зимние
-                <input class="visually-hidden button-mask__input" type="radio" name="season" checked>
-                <span class="filter-form__radio-indicator  button-mask__indicator"></span>
-              </label>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Марка</legend>
-              <div class="filter-form__select-wrapper">
-                <select class="filter-form__select" name="car-brand-select">
-                  <option value="BMW" selected>BMW</option>
-                </select>
+            <div class="filter-form__desktop-options filter-selection">
+              <div class="filter-selection__criterion-container">
+                <input class="filter-selection__criterion-radio visually-hidden" type="radio" name="criterion--desktop" value="parametr" id="criterion-radio-parametr--desktop" checked>
+                <label class="filter-selection__label filter-selection__label--criterion" for="criterion-radio-parametr--desktop">Параметры</label>
+                <input class="filter-selection__criterion-radio visually-hidden" type="radio" name="criterion--desktop" value="brand" id="criterion-radio-brand--desktop">
+                <label class="filter-selection__label filter-selection__label--criterion" for="criterion-radio-brand--desktop">По марке</label>
               </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Модель</legend>
-              <div class="filter-form__select-wrapper">
-                <select class="filter-form__select" name="car-model-select">
-                  <option value="1-series" selected>1-series</option>
-                </select>
-              </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Кузов</legend>
-              <div class="filter-form__select-wrapper">
-                <select class="filter-form__select" name="car-body-select">
-                  <option value="E81 3d" selected>E81 3d</option>
-                </select>
-              </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">Модификация</legend>
-              <div class="filter-form__select-wrapper">
-                <select class="filter-form__select" name="car-modification-select">
-                  <option value="116 d" selected>116 d</option>
-                </select>
-              </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">R16</legend>
-              <div class="filter-form__checkbox-container">
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/40R16">
-                <label class="filter-form__label filter-form__checkbox-label" for="205/40R16">
-                  205/40 R16
-                </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="210/45R16">
-                <label class="filter-form__label filter-form__checkbox-label" for="210/45R16">
-                  210/45 R16
-                </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R16">
-                <label class="filter-form__label filter-form__checkbox-label" for="215/50R16">
-                  215/50 R16
-                </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R16">
-                <label class="filter-form__label filter-form__checkbox-label" for="225/55R16">
-                  225/55 R16
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">R17</legend>
-              <div class="filter-form__checkbox-container">
-                <fieldset class="filter-form__fieldset  filter-form__fieldset--inner">
-                  <legend class="filter-form__legend">Передняя ось</legend>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/45R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="215/45R17">
-                    215/45 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="215/50R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="215/50R17">
-                    215/50 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/50R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="205/50R17">
-                    205/50 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="195/55R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="195/55R17">
-                    195/55 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/55R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="225/55R17">
-                    225/55 R17
-                  </label>
-                </fieldset>
-                <fieldset class="filter-form__fieldset filter-form__fieldset--inner">
-                  <legend class="filter-form__legend">Задняя ось</legend>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/45R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="225/45R17">
-                    225/45 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="225/50R17" checked>
-                  <label class="filter-form__label filter-form__checkbox-label" for="225/50R17">
-                    225/50 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/50R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="245/50R17">
-                    245/50 R17
-                  </label>
-                  <input class="filter-form__checkbox visually-hidden" type="checkbox" id="205/55R17">
-                  <label class="filter-form__label filter-form__checkbox-label" for="205/55R17">
-                    205/55 R17
-                  </label>
-                </fieldset>
-              </div>
-            </fieldset>
-            <fieldset class="filter-form__fieldset">
-              <legend class="filter-form__legend">R18</legend>
-              <div class="filter-form__checkbox-container">
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="255/40R18">
-                <label class="filter-form__label filter-form__checkbox-label" for="255/40R18">
-                  255/40 R18
-                </label>
-                <input class="filter-form__checkbox visually-hidden" type="checkbox" id="245/45R18">
-                <label class="filter-form__label filter-form__checkbox-label" for="245/45R18">
-                  245/45 R18
-                </label>
-              </div>
-            </fieldset>
-          </form>
 
+              <fieldset class="filter-selection__fieldset">
+                <legend class="filter-selection__legend filter-selection__legend--accordion filter-selection__legend--season">Сезонность</legend>
+                <button class="filter-selection__accordion-close" type="button" name="button">
+                  <span class="visually-hidden">закрыть раздел</span>
+                </button>
+                <div class="filter-selection__accordion-wrapper">
+                  <div class="radio-buttons">
+                    <label class="filter-selection__label filter-selection__label--question radio-buttons__label-wrapper">Зимние
+                      <input class="visually-hidden radio-buttons__input" type="radio" name="season">
+                      <span class="radio-buttons__indicator"></span>
+                    </label>
+                    <label class="filter-selection__label radio-buttons__label-wrapper">Летние
+                      <input class="visually-hidden radio-buttons__input" type="radio" name="season" checked>
+                      <span class="radio-buttons__indicator"></span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset">
+                <legend class="filter-selection__legend filter-selection__legend--type">Тип шин</legend>
+                <div class="radio-buttons">
+                  <label class="filter-selection__label radio-buttons__label-wrapper">Все
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="studded" checked>
+                    <span class="filter-selection__radio-indicator radio-buttons__indicator"></span>
+                  </label>
+                  <label class="filter-selection__label filter-selection__label--question filter-selection__label--question-studded radio-buttons__label-wrapper">Шипованные
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="studded">
+                    <span class="filter-selection__radio-indicator  radio-buttons__indicator"></span>
+                  </label>
+                  <label class="filter-selection__label filter-selection__label--question radio-buttons__label-wrapper">Нешипованные
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="studded">
+                    <span class="filter-selection__radio-indicator  radio-buttons__indicator"></span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset price-range__fieldset">
+                <legend class="filter-selection__legend filter-selection__legend--accordion filter-selection__legend--price">Цена</legend>
+                <button class="filter-selection__accordion-close" type="button" name="button">
+                  <span class="visually-hidden">закрыть раздел</span>
+                </button>
+                <div class="filter-selection__accordion-wrapper">
+                  <div class="price-range__range-controls">
+                    <div class="price-range__scale">
+                      <div class="price-range__bar"></div>
+                    </div>
+                    <div class="price-range__range-toggle price-range__range-toggle--min"></div>
+                    <div class="price-range__range-toggle price-range__range-toggle--max"></div>
+                  </div>
+                  <div class="price-range__price-controls">
+                    <div class="price-range__row price-range__row--input price-range__min-price">
+                      <label class="price-range__label" for="min-price-mask">от</label>
+                      <input class="price-range__input" type="text" name="min-price" value="2000" pattern="^[ 0-9]+$" id="min-price-mask">
+                    </div>
+                    <div class="price-range__row price-range__row--input price-range__max-price">
+                      <label class="price-range__label" for="max-price-mask">до</label>
+                      <input class="price-range__input" type="text" name="max-price" value="12000" pattern="^[ 0-9]+$" id="max-price-mask">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset filter-selection__fieldset--select">
+                <legend class="filter-selection__legend filter-selection__legend--select filter-selection__legend--question">Диаметр</legend>
+                <div class="select">
+                  <select class="select__input" name="tire-diameter-select">
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="12C">12C</option>
+                    <option value="14">14</option>
+                    <option value="14C">14C</option>
+                    <option value="15">15</option>
+                    <option value="15C">15C</option>
+                    <option value="16" selected>16</option>
+                    <option value="16C">16C</option>
+                    <option value="17">17</option>
+                    <option value="17C">17C</option>
+                    <option value="18">18</option>
+                    <option value="18C">18C</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset filter-selection__fieldset--select">
+                <legend class="filter-selection__legend filter-selection__legend--select filter-selection__legend--question">Профиль</legend>
+                <div class="select">
+                  <select class="select__input" name="tire-profile-select">
+                    <option value="55" selected>55</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset filter-selection__fieldset--select">
+                <legend class="filter-selection__legend filter-selection__legend--select filter-selection__legend--question">Ширина</legend>
+                <div class="select">
+                  <select class="select__input" name="tire-width-select">
+                    <option value="205" selected>205</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset filter-selection__fieldset--text">
+                <legend class="filter-selection__legend  filter-selection__legend--accordion">Бренд</legend>
+                <button class="filter-selection__accordion-close" type="button" name="button">
+                  <span class="visually-hidden">закрыть раздел</span>
+                </button>
+                <div class="filter-selection__accordion-wrapper">
+                  <input class="input-text" type="text" placeholder="Введите бренд шины">
+                  <div class="checkboxes">
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="BGudrich" checked>
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="BGudrich">
+                        B Gudrich
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="Wridrestone" checked>
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="Wridrestone">
+                        Wridrestone
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="Rarym">
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="Rarym">
+                        Rarym
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="BFhide">
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="BFhide">
+                        BF hide
+                      </label>
+                    </div>
+                  </div>
+                  <a class="filter-selection__link-more" href="#">Показать еще</a>
+                </div>
+
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset filter-selection__fieldset--text">
+                <legend class="filter-selection__legend  filter-selection__legend--accordion">Модель</legend>
+                <button class="filter-selection__accordion-close" type="button" name="button">
+                  <span class="visually-hidden">закрыть раздел</span>
+                </button>
+                <div class="filter-selection__accordion-wrapper">
+                  <input class="input-text" type="text" placeholder="Введите модель шины">
+                  <div class="checkboxes">
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="ALINA" checked>
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="ALINA">
+                        ALINA
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="BLIWWAS" checked>
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="BLIWWAS">
+                        BLIWWAS
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="FORCEMoode">
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="FORCEMoode">
+                        FORCE Moode
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="ICEGide">
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="ICEGide">
+                        ICE Gide
+                      </label>
+                    </div>
+                  </div>
+                  <a class="filter-selection__link-more" href="#">Показать еще</a>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset">
+                <legend class="filter-selection__legend filter-selection__legend--question">Технология</legend>
+                <div class="radio-buttons">
+                  <label class="filter-selection__label radio-buttons__label-wrapper">Да
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="technology">
+                    <span class="radio-buttons__indicator"></span>
+                  </label>
+                  <label class="filter-selection__label radio-buttons__label-wrapper">Нет
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="technology">
+                    <span class="radio-buttons__indicator"></span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset filter-selection__fieldset--stocks">
+                <legend class="filter-selection__legend">Акции</legend>
+                <div class="checkboxes">
+                  <div class="checkboxes__wrapper">
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="SALE" checked>
+                    <label class="checkboxes__checkbox-label" for="SALE">
+                      SALE
+                    </label>
+                  </div>
+                  <div class="checkboxes__wrapper">
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="NEW">
+                    <label class="checkboxes__checkbox-label" for="NEW">
+                      NEW
+                    </label>
+                  </div>
+                  <div class="checkboxes__wrapper">
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="HIT">
+                    <label class="checkboxes__checkbox-label" for="HIT">
+                      HIT
+                    </label>
+                  </div>
+                  <div class="checkboxes__wrapper">
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="gift" checked>
+                    <label class="checkboxes__checkbox-label" for="gift">
+                      ПОДАРОК
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-selection__fieldset">
+                <legend class="filter-selection__legend filter-selection__legend--accordion filter-selection__legend--country">Страны</legend>
+                <button class="filter-selection__accordion-close" type="button" name="button">
+                  <span class="visually-hidden">закрыть раздел</span>
+                </button>
+                <div class="filter-selection__accordion-wrapper">
+                  <div class="checkboxes">
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="Russia" checked>
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="Russia">
+                        Россия
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="Germany" checked>
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="Germany">
+                        Германия
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="France">
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="France">
+                        Франция
+                      </label>
+                    </div>
+                    <div class="checkboxes__wrapper">
+                      <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="Japan">
+                      <span class="checkboxes__checkbox-indicator"></span>
+                      <label class="checkboxes__checkbox-label" for="Japan">
+                        Япония
+                      </label>
+                    </div>
+                  </div>
+                  <a class="filter-selection__link-more" href="#">Показать еще</a>
+                </div>
+              </fieldset>
+
+              <div class="filter-selection__buttons-wrapper">
+                <button class="filter-selection__button filter-selection__button--submit" type="submit">Подобрать</button>
+                <button class="filter-selection__button filter-selection__button--parametrs" type="button">Дополнительные параметры</button>
+                <button class="filter-selection__button filter-selection__button--reset" type="button">Сбросить фильтр</button>
+              </div>
+            </div>
+
+            <div class="filter-form__mobile-options filter-modal">
+              <div class="filter-modal__heading-wrapper">
+                <button class="filter-modal__close" type="button">
+                  <span class="visually-hidden">закрыть фильтр</span>
+                </button>
+                <h2 class="filter-modal__heading">Фильтры</h2>
+              </div>
+              <div class="filter-modal__criterion-container">
+                <input class="filter-modal__criterion-radio visually-hidden" type="radio" name="criterion" value="parametr" id="criterion-radio-parametr" checked>
+                <label class="filter-modal__label filter-modal__criterion-label" for="criterion-radio-parametr">По параметрам</label>
+                <input class="filter-modal__criterion-radio visually-hidden" type="radio" name="criterion" value="brand" id="criterion-radio-brand">
+                <label class="filter-modal__label filter-modal__criterion-label" for="criterion-radio-brand">По марке</label>
+              </div>
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend filter-modal__legend--season">Сезонность</legend>
+                <div class="radio-buttons">
+                  <label class="filter-modal__label filter-modal__label--season radio-buttons__label-wrapper">Летние
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="season">
+                    <span class="radio-buttons__indicator"></span>
+                  </label>
+                  <label class="filter-modal__label filter-modal__label--season radio-buttons__label-wrapper">Зимние
+                    <input class="visually-hidden radio-buttons__input" type="radio" name="season" checked>
+                    <span class="radio-buttons__indicator"></span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">Марка</legend>
+                <div class="select">
+                  <select class="select__input" name="car-brand-select">
+                    <option value="BMW" selected>BMW</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">Модель</legend>
+                <div class="select">
+                  <select class="select__input" name="car-model-select">
+                    <option value="1-series" selected>1-series</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">Кузов</legend>
+                <div class="select">
+                  <select class="select__input" name="car-body-select">
+                    <option value="E81 3d" selected>E81 3d</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">Модификация</legend>
+                <div class="select">
+                  <select class="select__input" name="car-modification-select">
+                    <option value="116 d" selected>116 d</option>
+                  </select>
+                  <span class="select__arrow"></span>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">R16</legend>
+                <div class="checkboxes">
+                  <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="205/40R16">
+                  <label class="filter-modal__label checkboxes__checkbox-label" for="205/40R16">
+                    205/40 R16
+                  </label>
+                  <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="210/45R16">
+                  <label class="filter-modal__label checkboxes__checkbox-label" for="210/45R16">
+                    210/45 R16
+                  </label>
+                  <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="215/50R16">
+                  <label class="filter-modal__label checkboxes__checkbox-label" for="215/50R16">
+                    215/50 R16
+                  </label>
+                  <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="225/55R16">
+                  <label class="filter-modal__label checkboxes__checkbox-label" for="225/55R16">
+                    225/55 R16
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">R17</legend>
+                <div class="checkboxes">
+                  <fieldset class="filter-modal__fieldset filter-modal__fieldset--inner">
+                    <legend class="filter-modal__legend">Передняя ось</legend>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="215/45R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="215/45R17">
+                      215/45 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="215/50R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="215/50R17">
+                      215/50 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="205/50R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="205/50R17">
+                      205/50 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="195/55R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="195/55R17">
+                      195/55 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="225/55R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="225/55R17">
+                      225/55 R17
+                    </label>
+                  </fieldset>
+                  <fieldset class="filter-modal__fieldset filter-modal__fieldset--inner">
+                    <legend class="filter-modal__legend">Задняя ось</legend>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="225/45R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="225/45R17">
+                      225/45 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="225/50R17" checked>
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="225/50R17">
+                      225/50 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="245/50R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="245/50R17">
+                      245/50 R17
+                    </label>
+                    <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="205/55R17">
+                    <label class="filter-modal__label checkboxes__checkbox-label" for="205/55R17">
+                      205/55 R17
+                    </label>
+                  </fieldset>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-modal__fieldset">
+                <legend class="filter-modal__legend">R18</legend>
+                <div class="checkboxes">
+                  <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="255/40R18">
+                  <label class="filter-modal__label checkboxes__checkbox-label" for="255/40R18">
+                    255/40 R18
+                  </label>
+                  <input class="checkboxes__checkbox visually-hidden" type="checkbox" id="245/45R18">
+                  <label class="filter-modal__label checkboxes__checkbox-label" for="245/45R18">
+                    245/45 R18
+                  </label>
+                </div>
+              </fieldset>
+
+            </div>
+          </form>
         </div>
         <ul class="tire-selection__tire-list product-grid">
           <li>

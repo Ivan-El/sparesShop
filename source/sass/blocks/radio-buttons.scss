@@ -26,7 +26,6 @@
     border-color: #ff7931;
     background-color: transparent;
 
-
     &::before {
       position: absolute;
       content: "";
@@ -41,6 +40,11 @@
     display: block;
   }
 
+  .filter-selection &__input + &__indicator {
+    top: 1px;
+    left: 0;
+  }
+
   .filter-modal &__input + &__indicator {
     top: 15px;
     right: 0;
@@ -48,7 +52,7 @@
 
   .filter-modal &__input:checked + &__indicator {
     background-color: #ff7931;
-    border:none;
+    border: none;
 
     &::before,
     &::after {
@@ -88,11 +92,6 @@
     &:nth-child(2n) {
       width: 50%;
     }
-  }
-
-  .filter-selection &__input + &__indicator {
-    top: 1px;
-    left: 0;
   }
 
   .filter-selection &__input:checked + &__indicator {

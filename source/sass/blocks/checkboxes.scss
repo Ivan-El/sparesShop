@@ -1,9 +1,7 @@
 .checkboxes {
-  & {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 15px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
 
   &__wrapper {
     position: relative;
@@ -21,6 +19,16 @@
     text-align: center;
     background-color: #f0f0f4;
     border-radius: 50px;
+  }
+
+  .filter-selection__fieldset--stocks &__checkbox-label {
+    display: block;
+    width: auto;
+    padding: 6px 15px;
+    color: #bdbec2;
+    text-align: center;
+    background-color: #f0f0f4;
+    border-radius: 0;
   }
 
   .filter-modal &__checkbox:checked + &__checkbox-label {
@@ -66,5 +74,17 @@
       width: 8px;
       transform: rotate(-45deg);
     }
+  }
+
+  .filter-selection__fieldset--stocks & {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .filter-selection__fieldset--stocks &__checkbox:checked + &__checkbox-label {
+    color: #fff;
+    background: linear-gradient(91.1deg, #9710e9 1.17%, #fd8d43 99.31%);
   }
 }
