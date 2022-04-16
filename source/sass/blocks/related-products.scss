@@ -21,6 +21,10 @@
     }
   }
 
+  &__span--mobile {
+    display: none;
+  }
+
   & .tabs__list {
     @include list-reset;
 
@@ -41,6 +45,12 @@
 
     &--current {
       border-bottom: 2px solid #ff7931;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__span--mobile {
+      display: inline;
     }
   }
 
