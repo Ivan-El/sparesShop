@@ -1,0 +1,109 @@
+.radio-buttons {
+  &__label-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__input + &__indicator {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__input:checked + &__indicator {
+    border-color: #ff7931;
+    background-color: transparent;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  .filter-modal & {
+    display: block;
+  }
+
+  .filter-selection &__input + &__indicator {
+    top: 1px;
+    left: 0;
+  }
+
+  .filter-modal &__input + &__indicator {
+    top: 15px;
+    right: 0;
+  }
+
+  .filter-modal &__input:checked + &__indicator {
+    background-color: #ff7931;
+    border: none;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+    }
+
+    &::before {
+      top: 7px;
+      left: 2px;
+      width: 4px;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 6px;
+      left: 4px;
+      width: 8px;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .filter-selection & {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+
+  .filter-selection &__label-wrapper {
+    padding-left: 30px;
+
+    &:nth-child(2n) {
+      width: 50%;
+    }
+  }
+
+  .filter-selection &__input:checked + &__indicator {
+    border: 2px solid #ff7931;
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 8px;
+      height: 8px;
+      background-color: #ff7931;
+    }
+  }
+}

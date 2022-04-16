@@ -28,4 +28,10 @@
     padding-right: 5px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: 1024px) {
+    & {
+      display: none;
+    }
+  }
 }

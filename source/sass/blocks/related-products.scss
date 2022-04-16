@@ -43,4 +43,10 @@
       border-bottom: 2px solid #ff7931;
     }
   }
+
+  @media (min-width: 1024px) {
+    .catalog & {
+      display: none;
+    }
+  }
 }
