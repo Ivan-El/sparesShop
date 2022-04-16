@@ -12,17 +12,21 @@
     line-height: 16px;
     color: #939393;
 
-    &--current {
-      text-decoration: none;
-      color: #bdbec2;
-    }
-
     &:hover {
       opacity: 0.7;
     }
 
     &:active {
       opacity: 1;
+    }
+
+    &--current {
+      text-decoration: none;
+      color: #bdbec2;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
