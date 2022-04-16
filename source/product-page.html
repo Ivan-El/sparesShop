@@ -10,7 +10,7 @@
 
 <body class="no-js">
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="page-header__container container">
       <h1 class="visually-hidden">Магазин автозапчастей: главная страница</h1>
       <div class="menu">
         <ul class="menu__sections">
@@ -24,7 +24,7 @@
             <a class="menu__link menu__link--favorites" href="#">Избранное</a>
           </li>
         </ul>
-        <ul class="menu__sections">
+        <ul class="menu__sections menu__sections-main">
           <li>
             <a class="menu__link menu__link--shops" href="#">Магазины</a>
           </li>
@@ -102,11 +102,39 @@
         </li>
       </ul>
     </div>
+    <navigation class="page-header__navigation page-header__navigation--inner navigation container">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог Запчастей</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Каталог ТО</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="#">Шины</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Диски</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Аккумуляторы</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Автомасла</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Автолампы</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Аксессуары</a>
+        </li>
+      </ul>
+    </navigation>
   </header>
 
   <main class="page-main">
-    <div class="page-main__breadcrumbs page-main__breadcrumbs--product-page">
-      <ul class="breadcrumbs breadcrumbs--product-page">
+    <div class="page-main__breadcrumbs page-main__breadcrumbs--product-page container">
+      <ul class="breadcrumbs">
         <li>
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
@@ -114,10 +142,10 @@
           <a class="breadcrumbs__link" href="#">Шины</a>
         </li>
         <li>
-          <a class="breadcrumbs__link" href="#">Кама</a>
+          <a class="breadcrumbs__link breadcrumbs__link--desktop" href="#">Кама</a>
         </li>
         <li>
-          <a class="breadcrumbs__link breadcrumbs__link--current" href="#">Зимние шины Кама</a>
+          <a class="breadcrumbs__link breadcrumbs__link--current">Шины зимние</a>
         </li>
       </ul>
     </div>
@@ -395,7 +423,7 @@
   </main>
 
   <footer class="page-footer">
-
+    <div class="container">
       <article class="page-footer__mailling-form mailling">
         <form class="mailling__form" action="index.html" method="post">
           <h3 class="mailling__call">Подпишитесь на нашу рассылку и узнавайте об акция быстрее</h3>
@@ -410,7 +438,7 @@
         <div class="accordion__section accordion__section--info">
           <div class="accordion__dropdown-wrapper">
             <h3 class="accordion__section-heading">Информация</h3>
-            <button class="accordion__dropdown-button accordion__dropdown-button button" type="button" name="button">
+            <button class="accordion__dropdown-button button" type="button" name="button">
               <span class="visually-hidden">Информация</span>
             </button>
           </div>
@@ -488,6 +516,7 @@
       </section>
 
       <p class="page-footer__title">Интернет-магазин автозапчастей</p>
+    </div>
   </footer>
 
   <script src="js/menu.js"></script>
