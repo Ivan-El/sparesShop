@@ -7,6 +7,9 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
 
   &__favorite {
@@ -14,10 +17,7 @@
     width: 29px;
     height: 26px;
     align-self: center;
-    background-color: transparent;
     background-image: url("/img/favorites.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 
     &--active {
       background-image: url("/img/favorites-active.svg");
@@ -42,6 +42,12 @@
       height: 31px;
       background-image: url("/img/snowflake.svg");
     }
+  }
+
+  &__bars {
+    width: 20px;
+    height: 28px;
+    background-image: url("/img/bars.svg");
   }
 
   &--show-more {

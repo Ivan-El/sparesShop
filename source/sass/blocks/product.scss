@@ -24,6 +24,8 @@
   }
 
   &__buttons {
+    @include list-reset;
+
     display: none;
   }
 
@@ -100,11 +102,17 @@
     }
 
     &__code {
+      margin-bottom: 20px;
       text-align: center;
     }
 
     &__buttons {
-      display: block;
+      display: flex;
+      justify-content: center;
     }
+  }
+
+  &__buttons-item {
+    margin-right: 25px;
   }
 }

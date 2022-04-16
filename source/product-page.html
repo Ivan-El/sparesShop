@@ -162,34 +162,88 @@
                 </button>
               </li>
               <li class="product__buttons-item">
-                <button class="compare-btn" title="Добавить к сравнению" type="button">
+                <button class="button button__bars" title="Добавить к сравнению" type="button">
                   <span class="visually-hidden">Добавить к сравнению</span>
                 </button>
               </li>
               <li class="product__buttons-item">
-                <div class="product__rating">
-                  <button class="product__rating-star" type="button" data-rating="1">
+                <div class="product__rating rating">
+                  <button class="rating__rating-star" type="button" data-rating="1">
                     <span class="visually-hidden">Рейтинг 1</span>
                   </button>
-                  <button class="product__rating-star product__rating-star--active" type="button" data-rating="2">
+                  <button class="rating__rating-star rating__rating-star--active" type="button" data-rating="2">
                     <span class="visually-hidden">Рейтинг 2</span>
                   </button>
-                  <button class="product__rating-star" type="button" data-rating="3">
+                  <button class="rating__rating-star" type="button" data-rating="3">
                     <span class="visually-hidden">Рейтинг 3</span>
                   </button>
-                  <button class="product__rating-star" type="button" data-rating="4">
+                  <button class="rating__rating-star" type="button" data-rating="4">
                     <span class="visually-hidden">Рейтинг 4</span>
                   </button>
-                  <button class="product__rating-star" type="button" data-rating="5">
+                  <button class="rating__rating-star" type="button" data-rating="5">
                     <span class="visually-hidden">Рейтинг 5</span>
                   </button>
                 </div>
               </li>
             </ul>
         </header>
+
+        <div class="product__description tabs">
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <a class="tabs__link tabs__link--current" href="#product-specs" id="product-specs-tab">
+                  Характеристики
+                </a>
+              </li>
+              <li class="tabs__item">
+                <a class="tabs__link" href="#product-presence" id="product-presence-tab">
+                  Наличие в автосалоне
+                </a>
+              </li>
+            </ul>
+
+            <section class="product__specs tabs__panel tabs__panel--current" id="product-specs">
+              <h2 class="visually-hidden">Характеристики</h2>
+              <table class="product__specs-table">
+                <tbody>
+                  <tr class="product__specs-row">
+                    <td class="product__specs-cell">Производитель</td>
+                    <td class="product__specs-cell">Кама</td>
+                  </tr>
+                  <tr class="product__specs-row">
+                    <td class="product__specs-cell">Диаметр</td>
+                    <td class="product__specs-cell">20</td>
+                  </tr>
+                  <tr class="product__specs-row">
+                    <td class="product__specs-cell">Сезон</td>
+                    <td class="product__specs-cell">Всесезонная</td>
+                  </tr>
+                  <tr class="product__specs-row">
+                    <td class="product__specs-cell">Индекс скорости нагрузки</td>
+                    <td class="product__specs-cell">141/139L</td>
+                  </tr>
+                  <tr class="product__specs-row">
+                    <td class="product__specs-cell">Серия</td>
+                    <td class="product__specs-cell">HN 06</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="product__link" href="#">Показать ещё</a>
+              <div class="product__footer">
+                <button class="product__buy-btn product__buy-btn--only-desktop button" type="button">Купить <span class="product__not-mobile">шину</span></button>
+              </div>
+            </section>
+
+            <section class="product__specs tabs__panel" id="product-presence">
+              <h2 class="visually-hidden">Наличие товара в автосалоне</h2>
+            </section>
+
+          </div>
+        </div>
+
         <div class="product__main">
           <div class="product__attribute-wrapper">
-            <span class="product__attribute product__attribute--season-winter">
+            <span class="product__attribute button__season--winter">
               <span class="visually-hidden">Зимняя резина</span>
             </span>
           </div>
@@ -600,6 +654,7 @@
 
   <script src="js/menu.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="js/rating.js"></script>
   <script src="js/favorites.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
