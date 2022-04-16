@@ -20,8 +20,11 @@
     margin: 0;
     font-size: 15px;
     line-height: 17px;
-    color: #000;
-    opacity: 0.6;
+    color: #a8a8a8;
+  }
+
+  &__buttons {
+    display: none;
   }
 
   &__main {
@@ -87,5 +90,21 @@
     color: #ff7931;
     text-decoration: none;
     border-bottom: 1px solid rgba(255 121 49 / 20%);
+  }
+
+  @media (min-width: 768px) {
+    &__heading {
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    &__code {
+      text-align: center;
+    }
+
+    &__buttons {
+      display: block;
+    }
   }
 }

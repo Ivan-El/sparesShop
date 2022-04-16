@@ -1,12 +1,10 @@
 "use strict"
 
-let favBtns = document.querySelectorAll(".product-card__attribute-button--favorites");
+let favBtns = document.querySelectorAll(".button__favorite");
 
-if (favBtns.length) {
-  favBtns.forEach(function (favBtn) {
-    favBtn.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      evt.target.classList.toggle("product-card__attribute-button--favorites-active");
-    });
+favBtns.forEach(function (favBtn) {
+  favBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    evt.target.classList.toggle("button__favorite--active");
   });
-}
+});
