@@ -1,0 +1,42 @@
+.rating {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+
+  &__rating-star {
+    border: 0;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 6px 2px 0;
+  }
+
+  &__rating-star::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/star-active.svg");
+  }
+
+  &__rating-star:focus {
+    outline: 0;
+  }
+
+  &__rating-star.rating__rating-star--active ~ &__rating-star::before {
+    background-image: url("../img/star.svg");
+  }
+
+  &:hover &__rating-star::before {
+    background-image: url("../img/star-active.svg");
+  }
+
+  &__rating-star:hover ~ &__rating-star::before {
+    background-image: url("../img/star.svg");
+  }
+}
