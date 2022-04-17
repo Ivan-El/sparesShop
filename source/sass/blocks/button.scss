@@ -70,4 +70,15 @@
   &:active {
     opacity: 1;
   }
+
+  @media (min-width: 768px) {
+    &__season {
+      &--winter {
+        width: 36px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
 }
