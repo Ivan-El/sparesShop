@@ -260,7 +260,7 @@
             <img src="img/tire-big@1x.jpg" srcset="img/tire-big@2x.jpg 2x" width="222" height="380" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
           </picture>
           <div class="product__price-wrapper">
-            <p class="product__price product__price--old">15 981 ₽</p>
+            <p class="product__price product__price--old">12 981 ₽</p>
             <p class="product__price">15 981 ₽</p>
             <a class="product__link product__link--only-desktop" href="#">Нашли дешевле? Снизим цену</a>
           </div>
@@ -339,16 +339,18 @@
           </h3>
           <div class="product-info__section-wrapper">
             <form class="pickup-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="pickup-form__shop-select-label" for="shop-select-input">Магазин</label>
-              <input class="pickup-form__shop-select-input" type="text" placeholder="Введите название магазина" id="shop-select-input">
-              <div>
-                <label class="pickup-form__pickup-time-label radio-buttons__label-wrapper">Завтрать сегодня
-                  <input class="pickup-form__pickup-time-input radio-buttons__input visually-hidden" type="radio" name="pickup" value="today">
-                  <span class="pickup-form__pickup-radio-indicator radio-buttons__indicator"></span>
+              <div class="pickup-form__text-wrapper">
+                <label class="pickup-form__text-label" for="text-input">Магазин</label>
+                <input class="pickup-form__text-input" type="text" placeholder="Введите название магазина" id="text-input">
+              </div>
+              <div class="pickup-form__radio-wrapper">
+                <label class="pickup-form__radio-label radio-buttons__label-wrapper">Завтрать сегодня
+                  <input class="pickup-form__radio-input radio-buttons__input visually-hidden" type="radio" name="pickup" value="today">
+                  <span class="pickup-form__radio-indicator radio-buttons__indicator"></span>
                 </label>
-                <label class="pickup-form__pickup-time-label radio-buttons__label-wrapper">Забрать завтра и позднее
-                  <input class="pickup-form__pickup-time-input radio-buttons__input visually-hidden" type="radio" name="pickup" value="tomorrow" checked>
-                  <span class="pickup-form__pickup-radio-indicator radio-buttons__indicator"></span>
+                <label class="pickup-form__radio-label radio-buttons__label-wrapper">Забрать завтра и позднее
+                  <input class="pickup-form__radio-input radio-buttons__input visually-hidden" type="radio" name="pickup" value="tomorrow" checked>
+                  <span class="pickup-form__radio-indicator radio-buttons__indicator"></span>
                 </label>
               </div>
             </form>
