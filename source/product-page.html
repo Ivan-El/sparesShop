@@ -341,7 +341,12 @@
             <form class="pickup-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="pickup-form__text-wrapper">
                 <label class="pickup-form__text-label" for="text-input">Магазин</label>
-                <input class="pickup-form__text-input" type="text" placeholder="Введите название магазина" id="text-input">
+                <div class="pickup-form__text-input-wrapper">
+                  <input class="pickup-form__text-input" type="text" placeholder="Введите название магазина" id="text-input" required>
+                  <button class="pickup-form__text-submit" type="submit" name="button">
+                    <span class="visually-hidden">Отправить</span>
+                  </button>
+                </div>
               </div>
               <div class="pickup-form__radio-wrapper">
                 <label class="pickup-form__radio-label radio-buttons__label-wrapper">Завтрать сегодня

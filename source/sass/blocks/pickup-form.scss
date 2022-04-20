@@ -2,6 +2,8 @@
   margin-bottom: 21px;
 
   &__text-label {
+    display: block;
+    margin-bottom: 17px;
     font-size: 15px;
     line-height: 17px;
 
@@ -10,8 +12,11 @@
     }
   }
 
+  &__text-input-wrapper {
+    position: relative;
+  }
+
   &__text-input {
-    margin-top: 17px;
     margin-bottom: 30px;
     padding: 8px 20px;
     width: 100%;
@@ -23,6 +28,20 @@
       font-weight: bold;
       outline: 2px solid #ff7931;
     }
+  }
+
+  &__text-submit {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 14px;
+    width: 36px;
+    height: 37px;
+    background-color: transparent;
+    background-image: url("/img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
   }
 
   &__radio-label {
@@ -89,12 +108,14 @@
     }
 
     &__text-label {
-      margin-right: 16px;
+      margin-bottom: 0;
+      margin-right: 5px;
     }
 
     &__text-input {
       margin: 0;
       padding: 9px 17px;
+      padding-left: 6px;
       width: 230px;
       font-size: 15px;
       color: #bdbec2;
@@ -103,12 +124,17 @@
       border-radius: 50px;
     }
 
+    &__text-submit {
+      right: 0;
+    }
+
     &__radio-wrapper {
       display: flex;
       align-items: center;
     }
 
     &__radio-label {
+      white-space: nowrap;
       padding-bottom: 0;
       padding-left: 30px;
 
@@ -117,7 +143,7 @@
       }
 
       &:not(:last-child) {
-        margin-right: 50px;
+        margin-right: 10px;
       }
 
       &::after {
@@ -132,8 +158,23 @@
   }
 
   @media (min-width: 1024px) {
+    &__text-label {
+      margin-right: 16px;
+    }
+
     &__text-input {
       width: 313px;
+      padding: 9px 17px;
+    }
+
+    &__text-submit {
+      right: 14px;
+    }
+
+    &__radio-label {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
     }
   }
 }
