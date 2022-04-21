@@ -8,18 +8,9 @@
     }
   }
 
-  .tabs__panel &__section-wrapper {
-    display: none;
-  }
-
-  .tabs__panel--current &__section-wrapper {
-    display: block;
-  }
-
   &__section-heading {
     position: relative;
     margin: 0;
-    padding: 18px 0 17px;
     font-size: 20px;
     line-height: 23px;
     font-weight: normal;
@@ -45,6 +36,19 @@
     }
   }
 
+  &__section-link {
+    width: 100%;
+    padding: 18px 0 17px;
+  }
+
+  .tabs__panel &__section-wrapper {
+    display: none;
+  }
+
+  .tabs__panel--current &__section-wrapper {
+    display: block;
+  }
+
   .tabs__panel--current &__section-heading {
     padding-bottom: 14px;
     font-weight: bold;
@@ -62,12 +66,74 @@
       transform: rotate(45deg);
     }
   }
-}
 
-.tabs__panel.product-info__section {
-  display: block;
-}
+  .tabs__panel.product-info__section {
+    display: block;
+  }
 
-.tabs__panel--current.product-info__section {
-  background-color: #fff;
+  .tabs__panel--current.product-info__section {
+    background-color: #fff;
+  }
+
+  .tabs__list {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    &__section {
+      max-width: 1210px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    &__section-heading {
+      display: none;
+    }
+
+    &__container .tabs__list {
+      @include list-reset;
+
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 50px;
+      padding: 0 16px;
+      background-color: #f4f4f6;
+    }
+
+    &__container .tabs__link {
+      padding: 22px 0 25px;
+      color: #666;
+      text-transform: none;
+
+      &--current {
+        &::after {
+          position: absolute;
+          content: "";
+          top: 50px;
+          left: 0;
+          width: 95%;
+          height: 2px;
+          background-color: #ff7931;
+        }
+      }
+    }
+
+    .tabs__panel.product-info__section {
+      display: none;
+    }
+
+    .tabs__panel--current.product-info__section {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__container .tabs__list {
+      padding: 0 40px;
+    }
+
+    &__section {
+      padding: 0 40px;
+    }
+  }
 }

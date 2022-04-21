@@ -21,6 +21,10 @@
     }
   }
 
+  &__span--mobile {
+    display: none;
+  }
+
   & .tabs__list {
     @include list-reset;
 
@@ -44,9 +48,21 @@
     }
   }
 
+  @media (min-width: 768px) {
+    &__span--mobile {
+      display: inline;
+    }
+  }
+
   @media (min-width: 1024px) {
     .catalog & {
       display: none;
+    }
+
+    &__heading {
+      &--inner {
+        text-align: left;
+      }
     }
   }
 }

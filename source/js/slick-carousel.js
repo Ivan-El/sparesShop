@@ -17,7 +17,7 @@ if (window.$) {
     dots: true,
     mobileFirst: true,
     responsive: [{
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
         arrows: false,
         dots: true,
@@ -26,7 +26,7 @@ if (window.$) {
       }
     },
     {
-      breakpoint: 1024,
+      breakpoint: 1023,
       settings: {
         arrows: true,
         dots: false,
@@ -35,7 +35,7 @@ if (window.$) {
       }
     },
     {
-      breakpoint: 1170,
+      breakpoint: 1169,
       settings: {
         arrows: true,
         dots: false,
