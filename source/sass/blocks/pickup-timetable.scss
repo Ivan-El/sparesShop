@@ -13,6 +13,10 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
 
+    &:nth-child(n+3) {
+      display: none;
+    }
+
     &:last-child {
       margin-bottom: 15px;
     }
@@ -85,6 +89,7 @@
     padding: 17px 0;
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 0.12em;
   }
 
   &__button-show {
@@ -112,6 +117,80 @@
     &::after {
       right: 3px;
       transform: rotate(-45deg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      width: 100%;
+    }
+
+    &__headings {
+      display: table-header-group;
+    }
+
+    &__heading {
+      padding-bottom: 35px;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000;
+      text-align: left;
+    }
+
+    &__table-data {
+      padding-bottom: 20px;
+
+      &--buy {
+        width: 165px;
+      }
+    }
+
+    &__table-row {
+      display: table-row;
+      vertical-align: top;
+      border-bottom: 1px solid #e6e6e6;
+
+      &::after {
+        display: none;
+      }
+
+      &:nth-child(n+3) {
+        display: table-row;
+      }
+
+      &:not(:first-child) .pickup-timetable__table-data {
+        padding-top: 20px;
+      }
+    }
+
+    &__adress {
+      width: 220px;
+    }
+
+    &__inner-table {
+      max-width: 153px;
+    }
+
+    &__button-buy {
+      width: 142px;
+      margin-left: auto;
+      padding: 10px 0;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    &__inner-title {
+      display: none;
+    }
+
+    &__emphasis {
+      display: none;
+    }
+
+    &__button-show {
+      display: none;
     }
   }
 }

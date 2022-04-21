@@ -360,16 +360,16 @@
               </div>
             </form>
             <table class="pickup-timetable">
-              <thead  class="pickup-timetable__headings">
-                <th>Адрес</th>
-                <th>Режим работы</th>
-                <th>Доступно</th>
-                <th>Количество</th>
+              <thead class="pickup-timetable__headings">
+                <th class="pickup-timetable__heading">Адрес</th>
+                <th class="pickup-timetable__heading">Режим работы</th>
+                <th class="pickup-timetable__heading">Доступно</th>
+                <th class="pickup-timetable__heading">Количество</th>
                 <th></th>
               </thead>
               <tbody>
                 <tr class="pickup-timetable__table-row">
-                  <td class="pickup-timetable__table-data">
+                  <td class="pickup-timetable__table-data pickup-timetable__table-data">
                     <address class="pickup-timetable__adress">Санкт-Петербург, ул Большая Конюшенная, д 19</address>
                   </td>
                   <td class="pickup-timetable__table-data">
@@ -393,7 +393,7 @@
                     <div class="pickup-timetable__inner-title">Количество</div>
                     Мало
                   </td>
-                  <td class="pickup-timetable__table-data">
+                  <td class="pickup-timetable__table-data pickup-timetable__table-data--buy">
                     <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
                     <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
                   </td>
@@ -430,8 +430,98 @@
                     <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
                   </td>
                 </tr>
+                <tr class="pickup-timetable__table-row">
+                  <td class="pickup-timetable__table-data">
+                    <address class="pickup-timetable__adress">
+                      Санкт-Петербург, ул Большая Конюшенная, д 19
+                    </address>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Режим работы</div>
+                    <table class="pickup-timetable__inner-table">
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>пн-сб:</td>
+                        <td>08:00-19:00</td>
+                      </tr>
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>вс:</td>
+                        <td>09:00-17:00</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Доступно</div>
+                    Завтра и позднее
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Количество</div>
+                    Достаточно
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
+                    <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
+                  </td>
+                </tr>
+                <tr class="pickup-timetable__table-row">
+                  <td class="pickup-timetable__table-data">
+                    <address class="pickup-timetable__adress">
+                      Санкт-Петербург, ул Большая Конюшенная, д 19
+                    </address>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Режим работы</div>
+                    <table class="pickup-timetable__inner-table">
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>пн-сб:</td>
+                        <td>08:00-19:00</td>
+                      </tr>
+                      <tr class="pickup-timetable__inner-table-row">
+                        <td>вс:</td>
+                        <td>09:00-17:00</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Доступно</div>
+                    Завтра и позднее
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <div class="pickup-timetable__inner-title">Количество</div>
+                    Мало
+                  </td>
+                  <td class="pickup-timetable__table-data">
+                    <em class="pickup-timetable__emphasis">Нажимая на эту кнопку вы сможете забрать товар вне очереди</em>
+                    <a class="button button--input pickup-timetable__button-buy" href="#">Купить</a>
+                  </td>
+                </tr>
               </tbody>
             </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <a class="pickup-timetable__button-show" href="#">Показать все автосалоны</a>
           </div>
         </section>
@@ -462,32 +552,6 @@
 
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <aside class="page-main__info-banner info-banner">
       <a class="info-banner__link" href="">

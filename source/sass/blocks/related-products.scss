@@ -58,5 +58,11 @@
     .catalog & {
       display: none;
     }
+
+    &__heading {
+      &--inner {
+        text-align: left;
+      }
+    }
   }
 }

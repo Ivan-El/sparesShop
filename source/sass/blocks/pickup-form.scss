@@ -175,6 +175,10 @@
       &:not(:last-child) {
         margin-right: 50px;
       }
+
+      &:last-child {
+        margin-right: 110px;
+      }
     }
   }
 }

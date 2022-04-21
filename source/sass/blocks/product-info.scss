@@ -129,7 +129,11 @@
 
   @media (min-width: 1024px) {
     &__container .tabs__list {
-      padding: 0 20px;
+      padding: 0 40px;
+    }
+
+    &__section {
+      padding: 0 40px;
     }
   }
 }
