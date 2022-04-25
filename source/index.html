@@ -73,7 +73,7 @@
         <span class="visually-hidden">Открыть мобильное меню</span>
       </button>
       <a class="logo" href="index.html"  role="link" aria-label="Обновить страницу">
-        <img class="logo__img" src="img/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
+        <img class="logo__img" src="img/marketing/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
       </a>
       <ul class="icon-bar">
         <li>
@@ -187,7 +187,10 @@
                 <a class="promotion-product__link" href="#">
                   <span class="visually-hidden">Перейти на страницу товара</span>
                 </a>
-                <img class="promotion-product__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+                <picture class="promotion-product__image">
+                  <source type="image/webp" srcset="img/product/lamp/lamp@1x.webp 1x, img/product/lamp/lamp@2x.webp 2x">
+                  <img src="img/product/lamp/lamp@1x.jpg" srcset="img/product/lamp/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                </picture>
                 <h3 class="promotion-product__name">Лампочка mini...</h3>
                 <div class="countdown">
                   <div class="countdown__title">До конца акции осталось:</div>
@@ -217,7 +220,10 @@
                 <a class="promotion-product__link" href="#">
                   <span class="visually-hidden">Перейти на страницу товара</span>
                 </a>
-                <img class="promotion-product__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+                <picture class="promotion-product__image">
+                  <source type="image/webp" srcset="img/product/lamp/lamp@1x.webp 1x, img/product/lamp/lamp@2x.webp 2x">
+                  <img src="img/product/lamp/lamp@1x.jpg" srcset="img/product/lamp/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                </picture>
                 <h3 class="promotion-product__name">Лампочка mini...</h3>
                 <div class="countdown">
                   <div class="countdown__title">До конца акции осталось:</div>
@@ -247,7 +253,10 @@
                 <a class="promotion-product__link" href="#">
                   <span class="visually-hidden">Перейти на страницу товара</span>
                 </a>
-                <img class="promotion-product__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+                <picture class="promotion-product__image">
+                  <source type="image/webp" srcset="img/product/lamp/lamp@1x.webp 1x, img/product/lamp/lamp@2x.webp 2x">
+                  <img src="img/product/lamp/lamp@1x.jpg" srcset="img/product/lamp/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                </picture>
                 <h3 class="promotion-product__name">Лампочка mini...</h3>
                 <div class="countdown">
                   <div class="countdown__title">До конца акции осталось:</div>
@@ -269,14 +278,24 @@
               </article>
             </div>
           </div>
-          <button class="sale-slider__button sale-slider__button--previous" type="button" name="button"><span class="visually-hidden">Предыдущий</span></button>
-          <button class="sale-slider__button sale-slider__button--next" type="button" name="button"><span class="visually-hidden">Следующий</span></button>
+          <button class="sale-slider__button sale-slider__button--previous" type="button" name="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="sale-slider__button sale-slider__button--next" type="button" name="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
         </div>
-        <ul class="dot-list">
-          <li class="dot-list__dot sale-slider__dot sale-slider__dot-current"></li>
-          <li class="dot-list__dot sale-slider__dot"></li>
-          <li class="dot-list__dot sale-slider__dot"></li>
-        </ul>
+        <div class="dot-list">
+          <button class="dot-list__dot sale-slider__dot sale-slider__dot-current">
+            <span class="visually-hidden">Включить первый слайд</span>
+          </button>
+          <button class="dot-list__dot sale-slider__dot">
+            <span class="visually-hidden">Включить второй слайд</span>
+          </button>
+          <button class="dot-list__dot sale-slider__dot">
+            <span class="visually-hidden">Включить третий слайд</span>
+          </button>
+        </div>
       </article>
     </section>
 
@@ -385,7 +404,7 @@
                 </button>
               </div>
               <a class="product-card__quick-view" href="#" tabindex="1">быстрый просмотр</a>
-              <img class="product-card__image" src="img/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
+              <img class="product-card__image" src="img/product/belt/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
               <h3 class="product-card__name">Ремень</h3>
               <div class="product-card__price">440 ₽</div>
               <a class="product-card__card" href="#">
@@ -406,7 +425,7 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <img class="product-card__image" src="/img/product/tire-2/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
               <a class="product-card__card" href="#">
@@ -424,7 +443,7 @@
                 </button>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/headlight@1x.jpg" width="232" height="174" alt="Фара Nokian 2025">
+              <img class="product-card__image" src="img/product/headlight/headlight@1x.jpg" width="232" height="174" alt="Фара Nokian 2025">
               <h3 class="product-card__name">Фара Nokian 2025</h3>
               <div class="product-card__price">680 ₽</div>
               <a class="product-card__card" href="#">
@@ -445,7 +464,7 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
               <div class="product-card__no-stock">нет в наличии</div>
               <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
@@ -528,7 +547,7 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
               <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
@@ -547,7 +566,7 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
               <a class="product-card__card" href="#">
@@ -568,7 +587,7 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
               <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
@@ -587,7 +606,7 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conty...</h3>
               <div class="product-card__price">11 680 ₽</div>
               <a class="product-card__card" href="#">
