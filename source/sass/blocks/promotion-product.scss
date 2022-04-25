@@ -50,7 +50,7 @@
         right: 0;
         width: 14px;
         height: 17px;
-        background-image: url("/img/rouble-new.svg");
+        background-image: url("/img/icons/rouble-new.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -81,7 +81,7 @@
         right: 7px;
         width: 14px;
         height: 17px;
-        background-image: url("/img/rouble-old.svg");
+        background-image: url("/img/icons/rouble-old.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -100,6 +100,7 @@
   &__image {
     margin-top: 51px;
     margin-bottom: 20px;
+    object-fit: contain;
   }
 
   &__name {
