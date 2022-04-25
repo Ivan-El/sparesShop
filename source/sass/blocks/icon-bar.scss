@@ -10,56 +10,68 @@
   padding-right: 9px;
 
   &__link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
     display: block;
-    margin-bottom: 2px;
+    padding-bottom: 7px;
+    padding-right: 11px;
 
-    &:hover {
-      opacity: 0.7;
+    &::before {
+      content: "";
+      display: block;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
-    &:active {
-      opacity: 0.3;
-    }
-
-    &--card {
-      position: relative;
-
-      &::before,
-      &::after {
-        position: absolute;
-        content: "";
-      }
+    &--favorites {
+      margin-right: 5px;
 
       &::before {
-        bottom: -5px;
-        right: -8px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #ff7931;
-      }
-
-      &::after {
-        bottom: -3px;
-        right: -2px;
-        content: "1";
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 15px;
-        text-align: center;
-        color: #fff;
+        width: 27px;
+        height: 25px;
+        background-image: url("../img/favorites.svg");
       }
     }
+
+    &--account::before {
+      width: 24px;
+      height: 26px;
+      background-image: url("../img/user.svg");
+    }
+
+    &--cart::before {
+      width: 29px;
+      height: 26px;
+      background-image: url("../img/cart.svg");
+    }
+
+    &:hover::before {
+    opacity: 0.6;
+    }
+
+    &:active::before {
+    opacity: 0.3;
+    }
   }
+
+  &__cart-counter {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff7931;
+}
 
   @media (min-width: 1024px) {
     & {
       width: 114px;
-    }
-
-    &__link {
-      margin-bottom: 12px;
-      margin-right: 10px;
     }
   }
 }
