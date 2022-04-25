@@ -23,20 +23,28 @@
     background-image: url("/img/big-slider-image@1x.jpg");
   }
 
+  &__link {
+    position: absolute;
+    content: "";
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
   &__arrow {
     position: absolute;
+    z-index: 10;
     top: 0;
-    width: 50%;
+    width: 20%;
     height: 100%;
 
     &--next {
-      left: 50%;
+      right: 0;
     }
   }
 
   &__dot-list {
-    @include list-reset;
-
     position: absolute;
     content: "";
     bottom: 10%;
@@ -50,6 +58,7 @@
     position: relative;
     width: 7px;
     height: 7px;
+    padding: 0;
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 50%;
