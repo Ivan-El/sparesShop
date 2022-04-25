@@ -23,6 +23,17 @@
     background-image: url("/img/marketing/big-slider-image@1x.jpg");
   }
 
+  @media (min-resolution: 1.5dppx) {
+    &__slide--1,
+    &__slide--2,
+    &__slide--3,
+    &__slide--4,
+    &__slide--5,
+    &__slide--6 {
+      background-image: url("../img/marketing/big-slider-image@2x.jpg");
+    }
+  }
+
   &__link {
     position: absolute;
     content: "";
