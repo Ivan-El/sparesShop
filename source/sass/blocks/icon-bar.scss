@@ -30,20 +30,20 @@
       &::before {
         width: 27px;
         height: 25px;
-        background-image: url("../img/favorites.svg");
+        background-image: url("../img/icons/favorites.svg");
       }
     }
 
     &--account::before {
       width: 24px;
       height: 26px;
-      background-image: url("../img/user.svg");
+      background-image: url("../img/icons/user.svg");
     }
 
     &--cart::before {
       width: 29px;
       height: 26px;
-      background-image: url("../img/cart.svg");
+      background-image: url("../img/icons/cart.svg");
     }
 
     &:hover::before {

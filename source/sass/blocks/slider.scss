@@ -20,7 +20,7 @@
   &__slide--4,
   &__slide--5,
   &__slide--6 {
-    background-image: url("/img/big-slider-image@1x.jpg");
+    background-image: url("/img/marketing/big-slider-image@1x.jpg");
   }
 
   &__link {
@@ -124,7 +124,7 @@
 
         &::after {
           left: 20px;
-          background-image: url("/img/arrow-left.svg");
+          background-image: url("/img/icons/arrow-left.svg");
         }
       }
 
@@ -135,7 +135,7 @@
 
         &::after {
           right: 20px;
-          background-image: url("/img/arrow-right.svg");
+          background-image: url("/img/icons/arrow-right.svg");
         }
       }
     }
