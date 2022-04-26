@@ -7,10 +7,16 @@
     padding-top: 28.5%;
     text-decoration: none;
     color: inherit;
-    background-image: url("/img/sale50@1x.jpg");
+    background-image: url("/img/marketing/sale50@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    &__link {
+      background-image: url("/img/marketing/sale50@2x.jpg");
+    }
   }
 
   @media (min-width: 768px) {
@@ -20,15 +26,7 @@
     }
 
     &__link {
-      display: block;
-      width: 100%;
       padding-top: 14.1%;
-      text-decoration: none;
-      color: inherit;
-      background-image: url("/img/sale50@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
   }
 
