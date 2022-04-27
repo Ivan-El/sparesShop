@@ -2,6 +2,7 @@
   &__sorting-wrapper {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     &::before,
@@ -42,12 +43,12 @@
 
     &--sort {
       padding-left: 27px;
-      background-image: url("/img/arrows-sort.svg");
+      background-image: url("/img/icons/arrows-sort.svg");
     }
 
     &--filter {
       padding-left: 22px;
-      background-image: url("/img/filter.svg");
+      background-image: url("/img/icons/filter.svg");
     }
 
     &--city {
@@ -99,13 +100,13 @@
       width: 23px;
       height: 21px;
       margin-right: 10px;
-      background-image: url("/img/group-table.svg");
+      background-image: url("/img/icons/group-table.svg");
     }
 
     &--list {
       width: 25px;
       height: 19px;
-      background-image: url("/img/group-list.svg");
+      background-image: url("/img/icons/group-list.svg");
     }
   }
 
@@ -176,6 +177,7 @@
     &__compilation-list {
       order: -1;
       margin-bottom: 30px;
+      overflow: visible;
     }
   }
 
