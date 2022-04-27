@@ -21,7 +21,7 @@
     height: 21px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../img/star-active.svg");
+    background-image: url("../img/icons/star-active.svg");
   }
 
   &__rating-star:focus {
@@ -29,14 +29,14 @@
   }
 
   &__rating-star.rating__rating-star--active ~ &__rating-star::before {
-    background-image: url("../img/star.svg");
+    background-image: url("../img/icons/star.svg");
   }
 
   &:hover &__rating-star::before {
-    background-image: url("../img/star-active.svg");
+    background-image: url("../img/icons/star-active.svg");
   }
 
   &__rating-star:hover ~ &__rating-star::before {
-    background-image: url("../img/star.svg");
+    background-image: url("../img/icons/star.svg");
   }
 }
