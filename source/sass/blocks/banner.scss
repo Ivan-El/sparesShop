@@ -7,10 +7,35 @@
     padding-top: 28.5%;
     text-decoration: none;
     color: inherit;
-    background-image: url("/img/sale50@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @supports not (background-image: url("/img/marketing/sale50@1x.webp")) {
+      & {
+         background-image: url("/img/marketing/sale50@1x.jpg")
+      }
+    }
+
+    @supports (background-image: url("/img/marketing/sale50@1x.webp")) {
+       & {
+           background-image: url("/img/marketing/sale50@1x.webp")
+       }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      @supports not (background-image: url("/img/marketing/sale50@2x.webp")) {
+        & {
+           background-image: url("/img/marketing/sale50@2x.jpg")
+        }
+      }
+
+      @supports (background-image: url("/img/marketing/sale50@2x.webp")) {
+         & {
+             background-image: url("/img/marketing/sale50@2x.webp")
+         }
+      }
+    }
   }
 
   @media (min-width: 768px) {
@@ -20,15 +45,7 @@
     }
 
     &__link {
-      display: block;
-      width: 100%;
       padding-top: 14.1%;
-      text-decoration: none;
-      color: inherit;
-      background-image: url("/img/sale50@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
   }
 

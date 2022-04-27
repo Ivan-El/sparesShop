@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин автозапчастей</title>
+  <meta content="Магазин автозапчастей в городе Санкт-Петербург" name=description>
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/180.png">
+  <link rel="manifest" href="icon.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -15,24 +20,24 @@
       <div class="menu">
         <ul class="menu__sections">
           <li>
-            <a class="menu__link menu__link--enter" href="#">Войти</a>
+            <a class="menu__link menu__link--enter" href="blank.html">Войти</a>
           </li>
           <li>
-            <a class="menu__link menu__link--enter" href="#">Регистрация</a>
+            <a class="menu__link menu__link--enter" href="blank.html">Регистрация</a>
           </li>
           <li>
-            <a class="menu__link menu__link--favorites" href="#">Избранное</a>
+            <a class="menu__link menu__link--favorites" href="blank.html">Избранное</a>
           </li>
         </ul>
         <ul class="menu__sections menu__sections-main">
           <li>
-            <a class="menu__link menu__link--shops" href="#">Магазины</a>
+            <a class="menu__link menu__link--shops" href="blank.html">Магазины</a>
           </li>
           <li>
-            <a class="menu__link menu__link--actions" href="#">Акции</a>
+            <a class="menu__link menu__link--actions" href="blank.html">Акции</a>
           </li>
           <li>
-            <a class="menu__link menu__link--delivery" href="#">Доставка и оплата</a>
+            <a class="menu__link menu__link--delivery" href="blank.html">Доставка и оплата</a>
           </li>
         </ul>
         <ul class="menu__sections">
@@ -62,47 +67,35 @@
           </li>
         </ul>
         <address class="menu__address">
-          <a href="#" class="menu__address-link">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+          <a href="blank.html" class="menu__address-link" role="link" aria-label="Открыть схему проезда в магазин">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
         </address>
       </div>
       <button class="hamburger" type="button">
-        <span class="visually-hidden">Меню</span>
+        <span class="visually-hidden">Открыть мобильное меню</span>
       </button>
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="img/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
+      <a class="logo" href="index.html"  role="link" aria-label="Обновить страницу">
+        <img class="logo__img" src="img/marketing/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
       </a>
       <ul class="icon-bar">
         <li>
-          <a class="icon-bar__link" href="#">
-            <span class="visually-hidden">Избранное</span>
-            <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.9891 1.03931C3.33154 1.03931 0.428514 4.41239 1.09603 9.2538C1.67537 13.4556 11.651 21.8457 12.7589 21.8457C13.8668 21.8457 23.8424 13.4556 24.4218 9.2538C25.0893 4.41229 22.1862 1.03931 18.5287 1.03931C16.0903 1.03931 14.1909 2.06998 12.7589 4.13132C11.3269 2.06998 9.42746 1.03931 6.9891 1.03931Z" stroke="#A8A8A8" stroke-width="2"/>
-            </svg>
+          <a class="icon-bar__link icon-bar__link--favorites" href="blank.html">
+            <span class="visually-hidden">Перейти в избранное</span>
           </a>
         </li>
         <li>
-          <a class="icon-bar__link" href="#">
-            <span class="visually-hidden">Авторизация</span>
-            <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.3478 0.831909C6.35825 0.831909 3.10435 4.04643 3.10435 7.98771C3.10435 10.4355 4.36549 12.6078 6.27337 13.8976C2.57079 15.455 0 19.0888 0 23.3216H2.06957C2.06957 18.7573 5.72768 15.1435 10.3478 15.1435C14.968 15.1435 18.6261 18.7573 18.6261 23.3216H20.6957C20.6957 19.0888 18.1249 15.455 14.4223 13.8976C16.3302 12.6078 17.5913 10.4355 17.5913 7.98771C17.5913 4.04643 14.3374 0.831909 10.3478 0.831909ZM10.3478 2.87642C13.2177 2.87642 15.5217 5.15254 15.5217 7.98771C15.5217 10.8229 13.2177 13.099 10.3478 13.099C7.47792 13.099 5.17391 10.8229 5.17391 7.98771C5.17391 5.15254 7.47792 2.87642 10.3478 2.87642Z" fill="#A8A8A8"/>
-              <ellipse cx="1.03478" cy="23.3216" rx="1.03478" ry="1.02226" fill="#A8A8A8"/>
-              <ellipse cx="19.6608" cy="23.3216" rx="1.03478" ry="1.02226" fill="#A8A8A8"/>
-            </svg>
+          <a class="icon-bar__link icon-bar__link--account" href="blank.html">
+            <span class="visually-hidden">Перейти к вторизации</span>
           </a>
         </li>
         <li>
-          <a class="icon-bar__link icon-bar__link--card" href="#">
-            <span class="visually-hidden">Корзина</span>
-            <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 1.83191H3.31429C3.75854 1.83191 4.14952 2.12499 4.27414 2.5514L7.91748 15.018C8.0421 15.4444 8.43308 15.7375 8.87733 15.7375H21.5942C22.042 15.7375 22.4352 15.4398 22.5567 15.0088L25.041 6.19329C25.2208 5.55527 24.7413 4.92205 24.0785 4.92205H8.12775" stroke="#A8A8A8" stroke-width="2"/>
-              <path d="M13.2237 20.3727C13.2237 21.5401 12.2939 22.4629 11.1758 22.4629C10.0577 22.4629 9.12793 21.5401 9.12793 20.3727C9.12793 19.2054 10.0577 18.2826 11.1758 18.2826C12.2939 18.2826 13.2237 19.2054 13.2237 20.3727Z" stroke="#A8A8A8" stroke-width="2"/>
-              <path d="M21.3512 20.3727C21.3512 21.5401 20.4214 22.4629 19.3033 22.4629C18.1852 22.4629 17.2554 21.5401 17.2554 20.3727C17.2554 19.2054 18.1852 18.2826 19.3033 18.2826C20.4214 18.2826 21.3512 19.2054 21.3512 20.3727Z" stroke="#A8A8A8" stroke-width="2"/>
-            </svg>
+          <a class="icon-bar__link icon-bar__link--cart" href="blank.html">
+            <span class="visually-hidden">Перейти в корзина</span>
+            <span class="icon-bar__cart-counter">1</span>
           </a>
         </li>
       </ul>
     </div>
-    <navigation class="page-header__navigation navigation container">
+    <nav class="page-header__navigation navigation container">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">Каталог Запчастей</a>
@@ -129,7 +122,7 @@
           <a class="navigation__link" href="#">Аксессуары</a>
         </li>
       </ul>
-    </navigation>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -137,34 +130,75 @@
       <h2 class="visually-hidden">Рекламные товары и услуги</h2>
       <div class="promotion__slider slider">
         <div class="slider__slide slider__slide--1">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" srcset="/img/marketing/big-slider-image@2x.webp 1x, /img/marketing/big-slider-image@2x.webp 2x">
+            <img src="/img/marketing/big-slider-image@1x.jpg" srcset="/img/marketing/big-slider-image@2x.jpg 2x" width="870" height="397" alt="Лампа накаливания">
+          </picture>
+          <a class="slider__link" href="blank.html" role="link" aria-label="Перейти на страницу акции товары на все виды автомобилей"></a>
         </div>
         <div class="slider__slide slider__slide--2">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" srcset="/img/marketing/big-slider-image@2x.webp 1x, /img/marketing/big-slider-image@2x.webp 2x">
+            <img src="/img/marketing/big-slider-image@1x.jpg" srcset="/img/marketing/big-slider-image@2x.jpg 2x" width="870" height="397" alt="Лампа накаливания">
+          </picture>
+          <a class="slider__link" href="blank.html" role="link" aria-label="Перейти на страницу акции скидка на запчасти для ТО"></a>
         </div>
         <div class="slider__slide slider__slide--3">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" srcset="/img/marketing/big-slider-image@2x.webp 1x, /img/marketing/big-slider-image@2x.webp 2x">
+            <img src="/img/marketing/big-slider-image@1x.jpg" srcset="/img/marketing/big-slider-image@2x.jpg 2x" width="870" height="397" alt="Лампа накаливания">
+          </picture>
+          <a class="slider__link" href="blank.html" role="link" aria-label="Перейти на страницу акции скидка на шины"></a>
         </div>
         <div class="slider__slide slider__slide--4">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" srcset="/img/marketing/big-slider-image@2x.webp 1x, /img/marketing/big-slider-image@2x.webp 2x">
+            <img src="/img/marketing/big-slider-image@1x.jpg" srcset="/img/marketing/big-slider-image@2x.jpg 2x" width="870" height="397" alt="Лампа накаливания">
+          </picture>
+          <a class="slider__link" href="blank.html" role="link" aria-label="Перейти на страницу акции скидка на диски"></a>
         </div>
         <div class="slider__slide slider__slide--5">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" srcset="/img/marketing/big-slider-image@2x.webp 1x, /img/marketing/big-slider-image@2x.webp 2x">
+            <img src="/img/marketing/big-slider-image@1x.jpg" srcset="/img/marketing/big-slider-image@2x.jpg 2x" width="870" height="397" alt="Лампа накаливания">
+          </picture>
+          <a class="slider__link" href="blank.html" role="link" aria-label="Перейти на страницу акции скидка на автомасла"></a>
         </div>
         <div class="slider__slide slider__slide--6">
-          <a href="#"></a>
+          <picture>
+            <source type="image/webp" srcset="/img/marketing/big-slider-image@2x.webp 1x, /img/marketing/big-slider-image@2x.webp 2x">
+            <img src="/img/marketing/big-slider-image@1x.jpg" srcset="/img/marketing/big-slider-image@2x.jpg 2x" width="870" height="397" alt="Лампа накаливания">
+          </picture>
+          <a class="slider__link" href="blank.html" role="link" aria-label="Перейти на страницу акции скидка на автолампы"></a>
         </div>
-        <a class="slider__arrow slider__arrow--previous" href="#"><span class="visually-hidden">Назад</span></a>
-        <a class="slider__arrow slider__arrow--next" href="#"><span class="visually-hidden">Вперед</span></a>
-        <ul class="slider__dot-list">
-          <li class="slider__dot"></li>
-          <li class="slider__dot"></li>
-          <li class="slider__dot"></li>
-          <li class="slider__dot"></li>
-          <li class="slider__dot"></li>
-          <li class="slider__dot"></li>
-        </ul>
+        <button class="slider__arrow slider__arrow--previous" href="#">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="slider__arrow slider__arrow--next" href="#">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <div class="slider__dot-list">
+          <button class="slider__dot" type="button" name="button">
+            <span class="visually-hidden">Первый слайд</span>
+          </button>
+          <button class="slider__dot" type="button" name="button">
+            <span class="visually-hidden">Второй слайд</span>
+          </button>
+          <button class="slider__dot" type="button" name="button">
+            <span class="visually-hidden">Третий слайд</span>
+          </button>
+          <button class="slider__dot" type="button" name="button">
+            <span class="visually-hidden">Четвертый слайд</span>
+          </button>
+          <button class="slider__dot" type="button" name="button">
+            <span class="visually-hidden">Пятый слайд</span>
+          </button>
+          <button class="slider__dot" type="button" name="button">
+            <span class="visually-hidden">Шестой слайд</span>
+          </button>
+        </div>
       </div>
+
       <article class="promotion__sale-slider sale-slider">
         <h2 class="visually-hidden">Акция!</h2>
         <div class="sale-slider__container">
@@ -178,7 +212,10 @@
                 <a class="promotion-product__link" href="#">
                   <span class="visually-hidden">Перейти на страницу товара</span>
                 </a>
-                <img class="promotion-product__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+                <picture class="promotion-product__image">
+                  <source type="image/webp" srcset="img/product/lamp/lamp@1x.webp 1x, img/product/lamp/lamp@2x.webp 2x">
+                  <img src="img/product/lamp/lamp@1x.jpg" srcset="img/product/lamp/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                </picture>
                 <h3 class="promotion-product__name">Лампочка mini...</h3>
                 <div class="countdown">
                   <div class="countdown__title">До конца акции осталось:</div>
@@ -208,7 +245,10 @@
                 <a class="promotion-product__link" href="#">
                   <span class="visually-hidden">Перейти на страницу товара</span>
                 </a>
-                <img class="promotion-product__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+                <picture class="promotion-product__image">
+                  <source type="image/webp" srcset="img/product/lamp/lamp@1x.webp 1x, img/product/lamp/lamp@2x.webp 2x">
+                  <img src="img/product/lamp/lamp@1x.jpg" srcset="img/product/lamp/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                </picture>
                 <h3 class="promotion-product__name">Лампочка mini...</h3>
                 <div class="countdown">
                   <div class="countdown__title">До конца акции осталось:</div>
@@ -238,7 +278,10 @@
                 <a class="promotion-product__link" href="#">
                   <span class="visually-hidden">Перейти на страницу товара</span>
                 </a>
-                <img class="promotion-product__image" src="img/lamp@1x.jpg" width="150" height="187" alt="Фото Лампочки">
+                <picture class="promotion-product__image">
+                  <source type="image/webp" srcset="img/product/lamp/lamp@1x.webp 1x, img/product/lamp/lamp@2x.webp 2x">
+                  <img src="img/product/lamp/lamp@1x.jpg" srcset="img/product/lamp/lamp@2x.jpg 2x" width="150" height="187" alt="Лампа накаливания">
+                </picture>
                 <h3 class="promotion-product__name">Лампочка mini...</h3>
                 <div class="countdown">
                   <div class="countdown__title">До конца акции осталось:</div>
@@ -260,85 +303,146 @@
               </article>
             </div>
           </div>
-          <button class="sale-slider__button sale-slider__button--previous" type="button" name="button"><span class="visually-hidden">Предыдущий</span></button>
-          <button class="sale-slider__button sale-slider__button--next" type="button" name="button"><span class="visually-hidden">Следующий</span></button>
+          <button class="sale-slider__button sale-slider__button--previous" type="button" name="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="sale-slider__button sale-slider__button--next" type="button" name="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
         </div>
-        <ul class="dot-list">
-          <li class="dot-list__dot sale-slider__dot sale-slider__dot-current"></li>
-          <li class="dot-list__dot sale-slider__dot"></li>
-          <li class="dot-list__dot sale-slider__dot"></li>
-        </ul>
+        <div class="dot-list">
+          <button class="dot-list__dot sale-slider__dot sale-slider__dot-current">
+            <span class="visually-hidden">Включить первый слайд</span>
+          </button>
+          <button class="dot-list__dot sale-slider__dot">
+            <span class="visually-hidden">Включить второй слайд</span>
+          </button>
+          <button class="dot-list__dot sale-slider__dot">
+            <span class="visually-hidden">Включить третий слайд</span>
+          </button>
+        </div>
       </article>
     </section>
 
-    <section class="page-main__search-form container">
-      <h2 class="visually-hidden">Поиск по товарам</h2>
-      <form class="search-form" action="index.html" method="post">
-        <div class="search-form__wrapper-top">
-          <input class="search-form__radio-input visually-hidden" type="radio" name="search-filter" value="vin" id="radio-input-vin">
-          <label class="search-form__radio-label" for="radio-input-vin">Поиск по Vin</label>
-          <input class="search-form__radio-input visually-hidden" type="radio" name="search-filter" value="car_brand" id="radio-input-brand" checked>
-          <label class="search-form__radio-label" for="radio-input-brand">Поиск по марке</label>
-          <input class="search-form__radio-input visually-hidden" type="radio" name="search-filter" value="product_name" id="radio-input-name">
-          <label class="search-form__radio-label" for="radio-input-name">Поиск по названию товара</label>
-          <input class="search-form__radio-input visually-hidden" type="radio" name="search-filter" value="article" id="radio-input-article">
-          <label class="search-form__radio-label" for="radio-input-article">Поиск по артикулу</label>
-        </div>
-        <div class="search-form__wrapper-bottom">
-          <input class="search-form__text-input" type="text" placeholder="Введите марку автомобиля">
-          <button class="search-form__submit-button" type="submit"></button>
-        </div>
-      </form>
-    </section>
+    <section class="page-main__search search container">
+      <h2 class="visually-hidden">Поиск по сайту</h2>
+      <div class="tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <a class="tabs__link" href="#search-vin">Поиск по Vin</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link tabs__link--current" href="#search-brand">Поиск по марке</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#search-name">Поиск по названию товара</a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#search-article">Поиск по артикулу</a>
+          </li>
+        </ul>
+
+        <section class="tabs__panel" id="search-vin">
+         <h3 class="visually-hidden">Поиск по vin</h3>
+         <form method="POST" action="https://echo.htmlacademy.ru">
+           <div class="search__fields">
+             <label class="visually-hidden" for="search-vin-input">Введите vin код</label>
+             <input class="search__input" type="search" placeholder="Введите vin код" id="search-vin-input" name="search__input" required>
+             <button class="search__submit-button" type="submit">
+               <span class="visually-hidden">Искать</span>
+             </button>
+           </div>
+         </form>
+        </section>
+
+        <section class="tabs__panel tabs__panel--current" id="search-brand">
+         <h3 class="visually-hidden">Поиск по марке автомобиля</h3>
+         <form method="POST" action="https://echo.htmlacademy.ru">
+           <div class="search__fields">
+             <label class="visually-hidden" for="search-brand-input">Введите марку автомобиля</label>
+             <input class="search__input" type="search" placeholder="Введите марку автомобиля" id="search-brand-input" name="search__input" required>
+             <button class="search__submit-button" type="submit">
+               <span class="visually-hidden">Искать</span>
+             </button>
+           </div>
+         </form>
+        </section>
+
+        <section class="tabs__panel" id="search-name">
+         <h3 class="visually-hidden">Поиск по названию товара</h3>
+         <form method="POST" action="https://echo.htmlacademy.ru">
+           <div class="search__fields">
+             <label class="visually-hidden" for="search-name-input">Введите название товара</label>
+             <input class="search__input" type="search" placeholder="Введите название товара" id="search-name-input" name="search__input" required>
+             <button class="search__submit-button" type="submit">
+               <span class="visually-hidden">Искать</span>
+             </button>
+           </div>
+         </form>
+        </section>
+
+        <section class="tabs__panel" id="search-article">
+         <h3 class="visually-hidden">Поиск по артикулу товара</h3>
+         <form method="POST" action="https://echo.htmlacademy.ru">
+           <div class="search__fields">
+             <label class="visually-hidden" for="search-article-input">Введите артикул</label>
+             <input class="search__input" type="search" placeholder="Введите артикул" id="search-article-input" name="search__input" required>
+             <button class="search__submit-button" type="submit">
+               <span class="visually-hidden">Искать</span>
+             </button>
+           </div>
+         </form>
+       </section>
+     </div>
+   </section>
 
     <section class="page-main__categories categories container">
       <h2 class="visually-hidden">Разделы сайта</h2>
       <ul class="categories__list">
         <li class="categories__item">
-          <a  class="categories__link-wrapper" href="#">
+          <a class="categories__link-wrapper" href="#">
             <h3 class="categories__item-name">Автохимия</h3>
-            <span class="categories__link" href="#">Перейти</span>
-            <div class="categories__icon categories__icon--autochemistry"></div>
+            <span class="categories__link">Перейти</span>
+            <div class="categories__icon categories__icon--autochemistry" aria-hidden="true"></div>
           </a>
         </li>
         <li class="categories__item">
           <a class="categories__link-wrapper" href="#">
             <h3 class="categories__item-name  categories__item-name--two-rows">Шины и диски</h3>
-            <span class="categories__link" href="#">Перейти</span>
-            <div class="categories__icon categories__icon--tires"></div>
+            <span class="categories__link">Перейти</span>
+            <div class="categories__icon categories__icon--tires" aria-hidden="true"></div>
           </a>
         </li>
         <li class="categories__item">
           <a class="categories__link-wrapper" href="#">
             <h3 class="categories__item-name">Инструменты</h3>
-            <span class="categories__link" href="#">Перейти</span>
-            <div class="categories__icon categories__icon--tools"></div>
+            <span class="categories__link">Перейти</span>
+            <div class="categories__icon categories__icon--tools" aria-hidden="true"></div>
           </a>
         </li>
         <li class="categories__item">
           <a class="categories__link-wrapper" href="#">
             <h3 class="categories__item-name categories__item-name--two-rows">Запчасти на ТО</h3>
-            <span class="categories__link" href="#">Перейти</span>
-            <div class="categories__icon categories__icon--spares"></div>
+            <span class="categories__link">Перейти</span>
+            <div class="categories__icon categories__icon--spares" aria-hidden="true"></div>
           </a>
         </li>
         <li class="categories__item">
           <a class="categories__link-wrapper" href="#">
             <h3 class="categories__item-name">Автоэлектроника</h3>
-            <span class="categories__link" href="#">Перейти</span>
-            <div class="categories__icon categories__icon--autoelectronic"></div>
+            <span class="categories__link">Перейти</span>
+            <div class="categories__icon categories__icon--autoelectronic" aria-hidden="true"></div>
           </a>
         </li>
         <li class="categories__item">
           <a class="categories__link-wrapper" href="#">
             <h3 class="categories__item-name categories__item-name--two-rows">Аксессуары и другое</h3>
-            <span class="categories__link" href="#">Перейти</span>
-            <div class="categories__icon categories__icon--accessories"></div>
+            <span class="categories__link">Перейти</span>
+            <div class="categories__icon categories__icon--accessories" aria-hidden="true"></div>
           </a>
         </li>
       </ul>
     </section>
-
 
     <section class="page-main__related-products related-products container">
       <div class="related-products__tabs tabs">
@@ -376,12 +480,15 @@
                 </button>
               </div>
               <a class="product-card__quick-view" href="#" tabindex="1">быстрый просмотр</a>
-              <img class="product-card__image" src="img/belt@1x.jpg" width="230" height="215" alt="Фото ремня">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/belt/belt@1x.webp 1x, img/product/belt/belt@2x.webp 2x">
+                <img src="img/product/belt/belt@1x.jpg" srcset="img/product/belt/belt@2x.jpg 2x" width="230" height="215" alt="Ремень с застёжкой">
+              </picture>
               <h3 class="product-card__name">Ремень</h3>
               <div class="product-card__price">440 ₽</div>
-              <a class="product-card__card" href="#">
+              <button class="product-card__card" aria-label="Добавить в корзину ремень стоимостью 440 рублей">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
               <a class="product-card__catalog-link" href="product-page.html">
                 <span class="visually-hidden">Перейти на страницу каталога</span>
               </a>
@@ -397,12 +504,15 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/tire-1/tire-1@1x.webp 1x, img/product/tire-1/tire-1@2x.webp 2x">
+                <img src="img/product/tire-1/tire-1@1x.jpg" srcset="img/product/tire-1/tire-1@2x.jpg 2x" width="126" height="181" alt="Автомобильное колесо с шипами">
+              </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
-              <a class="product-card__card" href="#">
+              <button class="product-card__card" aria-label="Добавить в корзину Шина 205/80 R16 104Q Misha RF Power Grum стоимостью 11680 рублей">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
               <a class="product-card__catalog-link" href="product-page.html">
                 <span class="visually-hidden">Перейти на страницу каталога</span>
               </a>
@@ -415,12 +525,16 @@
                 </button>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/headlight@1x.jpg" width="232" height="174" alt="Фара Nokian 2025">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/headlight/headlight@1x.webp 1x, img/product/headlight/headlight@2x.webp 2x">
+                <img src="img/product/headlight/headlight@1x.jpg" srcset="img/product/headlight/headlight@2x.jpg 2x" width="232" height="174"
+                  alt="Автомобильная фара">
+              </picture>
               <h3 class="product-card__name">Фара Nokian 2025</h3>
               <div class="product-card__price">680 ₽</div>
-              <a class="product-card__card" href="#">
+              <button class="product-card__card" aria-label="Добавить в корзину Фара Nokian 2025 стоимостью 680 рублей">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
               <a class="product-card__catalog-link" href="product-page.html">
                 <span class="visually-hidden">Перейти на страницу каталога</span>
               </a>
@@ -436,7 +550,10 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
+                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо без шипов">
+              </picture>
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
               <div class="product-card__no-stock">нет в наличии</div>
               <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
@@ -519,7 +636,10 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
+                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+              </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
               <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
@@ -538,12 +658,15 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
+                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+              </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
-              <a class="product-card__card" href="#">
+              <button class="product-card__card" aria-label="Добавить в корзину Шина 205/80 R16 104Q Misha RF Power Grum стоимостью 11680 рублей">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
               <a class="product-card__catalog-link" href="product-page.html">
                 <span class="visually-hidden">Перейти на страницу каталога</span>
               </a>
@@ -559,7 +682,10 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Misha RF Power Grum 104Q 16 радиуса, размером 205 на 80">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
+                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+              </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
               <a class="product-card__report-receipt" href="#">Сообщить о поступлении</a>
@@ -578,12 +704,15 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <img class="product-card__image" src="img/tire-2@1x.jpg" width="151" height="181" alt="Шипованная шина Contyther Crosh 105T 18 радиуса, размером 245 на 60">
+              <picture class="product-card__image">
+                <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
+                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+              </picture>
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conty...</h3>
               <div class="product-card__price">11 680 ₽</div>
-              <a class="product-card__card" href="#">
+              <button class="product-card__card" aria-label="Добавить в корзину Шина 245/60 R18 105T Contyther Crosh Conty стоимостью 11680 рублей">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              </button>
               <a class="product-card__catalog-link" href="product-page.html">
                 <span class="visually-hidden">Перейти на страницу каталога</span>
               </a>
@@ -613,7 +742,6 @@
           <h3 class="visually-hidden">Аксессуары и другое</h3>
         </section>
 
-        </div>
       </div>
     </section>
 
@@ -622,10 +750,10 @@
   <footer class="page-footer">
     <div class="container">
       <article class="page-footer__mailling-form mailling">
-        <form class="mailling__form" action="index.html" method="post">
+        <form class="mailling__form" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="mailling__call">Подпишитесь на нашу рассылку и узнавайте об акция быстрее</h3>
           <div class="mailling__input-wrapper">
-            <input class="mailling__email-input" type="email" placeholder="Введите ваш e-mail:">
+            <input class="mailling__email-input" type="email" placeholder="Введите ваш e-mail:" required>
             <input class="mailling__button button button--input" type="submit" value="Отправить">
           </div>
         </form>
@@ -719,7 +847,6 @@
   <script src="js/menu.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/sale-slider.js"></script>
-  <script src="js/change-placeholder.js"></script>
   <script src="js/tabs.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>

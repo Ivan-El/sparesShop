@@ -4,8 +4,6 @@
   @media (min-width: 1024px) {
     position: relative;
     display: block;
-    padding-top: 16px;
-    padding-bottom: 15px;
 
     &::after {
       position: absolute;
@@ -21,19 +19,22 @@
       @include list-reset;
 
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 
     &__link {
       position: relative;
       display: block;
+      padding-top: 16px;
+      padding-bottom: 15px;
       text-decoration: none;
       color: #48494d;
 
       &::before {
         position: absolute;
         content: "";
-        bottom: -16px;
+        bottom: -1px;
         left: -12px;
         right: -12px;
         display: block;

@@ -5,51 +5,51 @@
   &__slide {
     flex-shrink: 0;
     width: 100%;
-    padding-top: 51%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 3px;
     animation-name: fade;
     animation-duration: 1.5s;
   }
 
-  &__slide--1,
-  &__slide--2,
-  &__slide--3,
-  &__slide--4,
-  &__slide--5,
-  &__slide--6 {
-    background-image: url("/img/big-slider-image@1x.jpg");
+  &__link {
+    position: absolute;
+    content: "";
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 
   &__arrow {
     position: absolute;
+    z-index: 10;
     top: 0;
-    width: 50%;
+    width: 20%;
     height: 100%;
+    border: none;
+    background-color: transparent;
 
     &--next {
-      left: 50%;
+      right: 0;
     }
   }
 
   &__dot-list {
-    @include list-reset;
-
     position: absolute;
     content: "";
-    bottom: 10%;
+    bottom: 0;
     left: 39%;
     display: flex;
     justify-content: space-between;
     width: 21%;
+    padding: 20px 0;
   }
 
   &__dot {
     position: relative;
     width: 7px;
     height: 7px;
+    padding: 0;
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 50%;
@@ -74,13 +74,16 @@
 
     &__slide {
       height: auto;
-      padding-top: 45.6%;
     }
 
     &__arrow {
-      &::before {
+      &::before,
+      &::after {
         position: absolute;
         content: "";
+      }
+
+      &::before {
         top: 45%;
         width: 36px;
         height: 36px;
@@ -89,14 +92,26 @@
         opacity: 0.3;
       }
 
+      &:hover::before {
+        opacity: 0.7;
+      }
+
+      &::after {
+        top: 48.5%;
+        width: 15px;
+        height: 9px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
       &--previous {
         &::before {
           left: 10px;
         }
 
         &::after {
-          content: "←";
-          left: 18px;
+          left: 20px;
+          background-image: url("/img/icons/arrow-left.svg");
         }
       }
 
@@ -106,15 +121,9 @@
         }
 
         &::after {
-          content: "→";
-          right: 18px;
+          right: 20px;
+          background-image: url("/img/icons/arrow-right.svg");
         }
-      }
-
-      &::after {
-        position: absolute;
-        top: 46.5%;
-        color: #fff;
       }
     }
 
@@ -129,9 +138,15 @@
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     &__dot-list {
-      bottom: 105px;
+      bottom: 23%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__dot-list {
+      bottom: 10%;
     }
   }
 }

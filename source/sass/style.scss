@@ -1,7 +1,7 @@
 @import "globals/preprocessing";
 @import "globals/globals";
 @import "globals/visually-hidden";
-@import "globals/container";
+@import "blocks/container";
 @import "blocks/button";
 @import "blocks/radio-buttons";
 @import "blocks/page-header";
@@ -18,7 +18,7 @@
 @import "blocks/slider";
 @import "blocks/dot-list";
 @import "blocks/product-card";
-@import "blocks/search-form";
+@import "blocks/search";
 @import "blocks/categories";
 @import "blocks/related-products";
 @import "blocks/banner";
