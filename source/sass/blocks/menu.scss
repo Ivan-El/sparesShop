@@ -59,32 +59,32 @@
     &--enter::before {
       width: 14px;
       height: 15px;
-      background-image: url("/img/user-grey.svg");
+      background-image: url("/img/icons/user-grey.svg");
     }
 
     &--favorites::before {
       width: 17px;
       height: 15px;
-      background-image: url("/img/favorites-grey.svg");
+      background-image: url("/img/icons/favorites-grey.svg");
     }
 
     &--shops::before {
       width: 13px;
       height: 15px;
-      background-image: url("/img/shops.svg");
+      background-image: url("/img/icons/shops.svg");
     }
 
     &--actions::before {
       top: 17px;
       width: 19px;
       height: 25px;
-      background-image: url("/img/actions.svg");
+      background-image: url("/img/icons/actions.svg");
     }
 
     &--delivery::before {
       width: 16px;
       height: 15px;
-      background-image: url("/img/delivery.svg");
+      background-image: url("/img/icons/delivery.svg");
     }
 
     &::after {
