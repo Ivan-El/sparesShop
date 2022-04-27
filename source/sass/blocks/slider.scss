@@ -5,33 +5,10 @@
   &__slide {
     flex-shrink: 0;
     width: 100%;
-    padding-top: 51%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 3px;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-
-  &__slide--1,
-  &__slide--2,
-  &__slide--3,
-  &__slide--4,
-  &__slide--5,
-  &__slide--6 {
-    background-image: url("/img/marketing/big-slider-image@1x.jpg");
-  }
-
-  @media (min-resolution: 1.5dppx) {
-    &__slide--1,
-    &__slide--2,
-    &__slide--3,
-    &__slide--4,
-    &__slide--5,
-    &__slide--6 {
-      background-image: url("../img/marketing/big-slider-image@2x.jpg");
-    }
   }
 
   &__link {
@@ -97,7 +74,6 @@
 
     &__slide {
       height: auto;
-      padding-top: 45.6%;
     }
 
     &__arrow {
@@ -162,15 +138,15 @@
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     &__dot-list {
-      bottom: 80px;
+      bottom: 23%;
     }
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 1024px) {
     &__dot-list {
-      bottom: 27px;
+      bottom: 10%;
     }
   }
 }
