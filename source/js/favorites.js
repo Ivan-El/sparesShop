@@ -1,10 +1,8 @@
-"use strict"
+const favBtns = document.querySelectorAll('.button__favorite');
 
-let favBtns = document.querySelectorAll(".button__favorite");
-
-favBtns.forEach(function (favBtn) {
-  favBtn.addEventListener("click", function (evt) {
+favBtns.forEach((favBtn) => {
+  favBtn.addEventListener('click', (evt) => {
     evt.preventDefault();
-    evt.target.classList.toggle("button__favorite--active");
+    evt.target.classList.toggle('button__favorite--active');
   });
 });
