@@ -23,34 +23,14 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
 
-    &--favorites {
-      margin-right: 5px;
-
-      &::before {
-        width: 27px;
-        height: 25px;
-        background-image: url("../img/icons/favorites.svg");
-      }
-    }
-
-    &--account::before {
-      width: 24px;
-      height: 26px;
-      background-image: url("../img/icons/user.svg");
-    }
-
-    &--cart::before {
-      width: 29px;
-      height: 26px;
-      background-image: url("../img/icons/cart.svg");
-    }
-
-    &:hover::before {
+  &__svg {
+    &:hover {
       opacity: 0.6;
     }
 
-    &:active::before {
+    &:active {
       opacity: 0.3;
     }
   }

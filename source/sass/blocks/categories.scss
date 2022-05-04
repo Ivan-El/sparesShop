@@ -22,6 +22,10 @@
     }
   }
 
+  &__item {
+    height: 129px;
+  }
+
   &__item-name {
     margin: 0;
     padding-top: 24px;
@@ -37,7 +41,7 @@
     }
 
     &--two-rows {
-      padding-right: 36%;
+      padding-bottom: 51px;
     }
   }
 
@@ -79,60 +83,52 @@
     height: 60px;
     background-color: #ff7931;
     border-radius: 50%;
+  }
 
-    &::after {
-      position: absolute;
-      content: "";
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+  &__svg {
+    position: absolute;
+    content: "";
 
-    &--autochemistry::after {
+    &--autochemistry {
       top: 10px;
       left: 18px;
       width: 25px;
       height: 38px;
-      background-image: url("/img/icons/autochemicals.svg");
     }
 
-    &--tires::after {
+    &--tires {
       top: 11px;
       left: 11px;
       width: 39px;
       height: 39px;
-      background-image: url("/img/icons/tires.svg");
     }
 
-    &--tools::after {
+    &--tools {
       top: 5px;
       left: 17px;
       width: 27px;
       height: 50px;
-      background-image: url("/img/icons/tools.svg");
     }
 
-    &--spares::after {
+    &--spares {
       top: 14px;
       left: 14px;
       width: 34px;
       height: 34px;
-      background-image: url("/img/icons/spares.svg");
     }
 
-    &--autoelectronic::after {
+    &--autoelectronic {
       top: 15px;
       left: 11px;
       width: 38px;
       height: 30px;
-      background-image: url("/img/icons/autoelectronic.svg");
     }
 
-    &--accessories::after {
+    &--accessories {
       top: 10px;
       left: 22px;
       width: 18px;
       height: 40px;
-      background-image: url("/img/icons/accessories.svg");
     }
   }
 

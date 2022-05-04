@@ -55,7 +55,7 @@
       left: 0;
 
       &::after {
-        background-image: url("/img/icons/arrow-dark-left.svg");
+        background-image: url("../img/icons/arrow-dark-left.svg");
       }
     }
 
@@ -63,7 +63,7 @@
       right: 0;
 
       &::after {
-        background-image: url("/img/icons/arrow-dark-right.svg");
+        background-image: url("../img/icons/arrow-dark-right.svg");
       }
     }
 

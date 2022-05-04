@@ -35,20 +35,12 @@
     background-color: inherit;
     border: none;
 
-    &--sort,
-    &--filter {
-      background-repeat: no-repeat;
-      background-position: 0 14px;
-    }
-
     &--sort {
       padding-left: 27px;
-      background-image: url("/img/icons/arrows-sort.svg");
     }
 
     &--filter {
       padding-left: 22px;
-      background-image: url("/img/icons/filter.svg");
     }
 
     &--city {
@@ -86,27 +78,25 @@
     }
   }
 
+  &__svg-sort {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+  }
+
   &__view-wrapper {
     display: none;
   }
 
   &__view-button {
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
     border: none;
 
     &--tile {
-      width: 23px;
-      height: 21px;
       margin-right: 10px;
-      background-image: url("/img/icons/group-table.svg");
-    }
-
-    &--list {
-      width: 25px;
-      height: 19px;
-      background-image: url("/img/icons/group-list.svg");
     }
   }
 
@@ -170,8 +160,12 @@
       }
     }
 
+    &__svg-sort {
+      display: none;
+    }
+
     &__view-wrapper {
-      display: block;
+      display: flex;
     }
 
     &__compilation-list {

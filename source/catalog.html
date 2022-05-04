@@ -7,10 +7,10 @@
   <meta content="Каталог автозапчастей" name=description>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/180.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="icon.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="no-js catalog">
@@ -20,24 +20,54 @@
       <div class="menu">
         <ul class="menu__sections">
           <li>
-            <a class="menu__link menu__link--enter" href="blank.html">Войти</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="14" height="15">
+                <use xlink:href="img/icons/sprite.svg#user-grey"></use>
+              </svg>
+              Войти
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--enter" href="blank.html">Регистрация</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="14" height="15">
+                <use xlink:href="img/icons/sprite.svg#user-grey"></use>
+              </svg>
+              Регистрация
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--favorites" href="blank.html">Избранное</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="17" height="15">
+                <use xlink:href="img/icons/sprite.svg#favorites-grey"></use>
+              </svg>
+              Избранное
+            </a>
           </li>
         </ul>
         <ul class="menu__sections menu__sections-main">
           <li>
-            <a class="menu__link menu__link--shops" href="blank.html">Магазины</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="13" height="15">
+                <use xlink:href="img/icons/sprite.svg#shops"></use>
+              </svg>
+              Магазины
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--actions" href="blank.html">Акции</a>
+            <a class="menu__link menu__link--actions" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="19" height="25">
+                <use xlink:href="img/icons/sprite.svg#actions"></use>
+              </svg>
+              Акции
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--delivery" href="blank.html">Доставка и оплата</a>
+            <a class="menu__link menu__link--delivery" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="16" height="15">
+                <use xlink:href="img/icons/sprite.svg#delivery"></use>
+              </svg>
+              Доставка и оплата
+            </a>
           </li>
         </ul>
         <ul class="menu__sections">
@@ -67,29 +97,43 @@
           </li>
         </ul>
         <address class="menu__address">
-          <a href="blank.html" class="menu__address-link" role="link" aria-label="Открыть схему проезда в магазин">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+          <a class="menu__address-link" href="blank.html" aria-label="Открыть схему проезда в магазин">
+            <svg class="menu__svg" role="img" width="35" height="35">
+              <use xlink:href="img/icons/sprite.svg#address"></use>
+            </svg>
+            Санкт-Петербург, ул<br> Большая Конюшенная, д 19
+          </a>
         </address>
       </div>
       <button class="hamburger" type="button">
         <span class="visually-hidden">Открыть мобильное меню</span>
       </button>
-      <a class="logo" href="index.html"  role="link" aria-label="Перейти на главную страницу">
+      <a class="logo" href="index.html" aria-label="Перейти на главную страницу">
         <img class="logo__img" src="img/marketing/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
       </a>
       <ul class="icon-bar">
         <li>
-          <a class="icon-bar__link icon-bar__link--favorites" href="blank.html">
+          <a class="icon-bar__link icon-bar__link--favorites" href="blank.html" aria-label="Перейти в избранное">
+            <svg class="icon-bar__svg" role="img" width="27" height="25">
+              <use xlink:href="img/icons/sprite.svg#favorites"></use>
+            </svg>
             <span class="visually-hidden">Перейти в избранное</span>
           </a>
         </li>
         <li>
-          <a class="icon-bar__link icon-bar__link--account" href="blank.html">
+          <a class="icon-bar__link icon-bar__link--account" href="blank.html" aria-label="Перейти к вторизации">
+            <svg class="icon-bar__svg" role="img" width="24" height="26">
+              <use xlink:href="img/icons/sprite.svg#user"></use>
+            </svg>
             <span class="visually-hidden">Перейти к вторизации</span>
           </a>
         </li>
         <li>
-          <a class="icon-bar__link icon-bar__link--cart" href="blank.html">
-            <span class="visually-hidden">Перейти в корзина</span>
+          <a class="icon-bar__link icon-bar__link--cart" href="blank.html" aria-label="Перейти в корзину">
+            <svg class="icon-bar__svg" role="img" width="29" height="26">
+              <use xlink:href="img/icons/sprite.svg#cart"></use>
+            </svg>
+            <span class="visually-hidden">Перейти в корзину</span>
             <span class="icon-bar__cart-counter">1</span>
           </a>
         </li>
@@ -149,16 +193,32 @@
       <h2 class="visually-hidden">Подбор подходящей шины</h2>
       <div class="tire-selection__filter-top filter-top">
         <div class="filter-top__sorting-wrapper">
-          <button class="filter-top__sorting-button filter-top__sorting-button--sort">По популярности</button>
+          <button class="filter-top__sorting-button filter-top__sorting-button--sort">
+            <svg class="filter-top__svg-sort" width="19" height="13" aria-hidden="true" focusable="false">
+              <use xlink:href="img/icons/sprite.svg#arrows-sort"></use>
+            </svg>
+            По популярности
+          </button>
           <div class="filter-top__view-wrapper">
             <button class="filter-top__view-button filter-top__view-button--tile" type="button" name="button">
+              <svg width="23" height="21" role="img" aria-label="показать плиткой" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#group-table"></use>
+              </svg>
               <span class="visually-hidden">показать плиткой</span>
             </button>
             <button class="filter-top__view-button filter-top__view-button--list" type="button" name="button">
+              <svg width="25" height="19" role="img" aria-label="показать плиткой" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#group-list"></use>
+              </svg>
               <span class="visually-hidden">показать списком</span>
             </button>
           </div>
-          <button class="filter-top__sorting-button filter-top__sorting-button--filter">Фильтры</button>
+          <button class="filter-top__sorting-button filter-top__sorting-button--filter">
+            <svg class="filter-top__svg-sort" width="15" height="15" aria-hidden="true" focusable="false">
+              <use xlink:href="img/icons/sprite.svg#filter"></use>
+            </svg>
+            Фильтры
+          </button>
         </div>
         <button class="filter-top__sorting-button filter-top__sorting-button--city">Набережные Челны</button>
         <ul class="filter-top__compilation-list compilation-list">
@@ -643,9 +703,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -668,9 +728,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
@@ -695,9 +755,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -720,9 +780,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -745,9 +805,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
@@ -772,9 +832,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -797,9 +857,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -822,9 +882,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
@@ -849,9 +909,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -874,9 +934,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -899,9 +959,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__price">11 680 ₽</div>
@@ -926,9 +986,9 @@
                 </span>
               </div>
               <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-              <picture class="product-card__image">
+              <picture>
                 <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-                <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+                <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
               </picture>
               <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
               <div class="product-card__no-stock">нет в наличии</div>
@@ -991,9 +1051,9 @@
             </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <picture class="product-card__image">
+          <picture>
             <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-            <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+            <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
           </picture>
           <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
           <div class="product-card__no-stock">нет в наличии</div>
@@ -1013,9 +1073,9 @@
             </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <picture class="product-card__image">
+          <picture>
             <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-            <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+            <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
           </picture>
           <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
           <div class="product-card__price">11 680 ₽</div>
@@ -1037,9 +1097,9 @@
             </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <picture class="product-card__image">
+          <picture>
             <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-            <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+            <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
           </picture>
           <h3 class="product-card__name">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
           <div class="product-card__no-stock">нет в наличии</div>
@@ -1059,9 +1119,9 @@
             </span>
           </div>
           <a class="product-card__quick-view" href="#">быстрый просмотр</a>
-          <picture class="product-card__image">
+          <picture>
             <source type="image/webp" srcset="img/product/tire-2/tire-2@1x.webp 1x, img/product/tire-2/tire-2@2x.webp 2x">
-            <img src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо">
+            <img class="product-card__image" src="img/product/tire-2/tire-2@1x.jpg" srcset="img/product/tire-2/tire-2@2x.jpg 2x" width="151" height="181" alt="Автомобильное колесо" loading="lazy">
           </picture>
           <h3 class="product-card__name">Шина 245/60 R18 105T Contyther Crosh Conty...</h3>
           <div class="product-card__price">11 680 ₽</div>
@@ -1175,13 +1235,13 @@
     </div>
   </footer>
 
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/slick-carousel.js"></script>
-  <script src="js/favorites.js"></script>
-  <script src="js/footer-accordion.js"></script>
-  <script src="js/filters.js"></script>
+  <script src="js/slick-carousel.min.js"></script>
+  <script src="js/favorites.min.js"></script>
+  <script src="js/footer-accordion.min.js"></script>
+  <script src="js/filters.min.js"></script>
 </body>
 
 </html>

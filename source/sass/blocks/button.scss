@@ -17,10 +17,10 @@
     width: 29px;
     height: 26px;
     align-self: center;
-    background-image: url("/img/icons/favorites.svg");
+    background-image: url("../img/icons/favorites.svg");
 
     &--active {
-      background-image: url("/img/icons/favorites-active.svg");
+      background-image: url("../img/icons/favorites-active.svg");
     }
 
     &:hover {
@@ -34,20 +34,14 @@
     &--summer {
       width: 31px;
       height: 31px;
-      background-image: url("/img/icons/sun.svg");
+      background-image: url("../img/icons/sun.svg");
     }
 
     &--winter {
       width: 28px;
       height: 31px;
-      background-image: url("/img/icons/snowflake.svg");
+      background-image: url("../img/icons/snowflake.svg");
     }
-  }
-
-  &__bars {
-    width: 20px;
-    height: 28px;
-    background-image: url("/img/icons/bars.svg");
   }
 
   &--show-more {
@@ -72,7 +66,7 @@
   }
 
   @media (min-width: 768px) {
-    &__season {
+    .product__img &__season {
       &--winter {
         width: 36px;
         height: 40px;

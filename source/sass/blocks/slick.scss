@@ -95,6 +95,10 @@
   }
 }
 
+.slick-slide > * {
+  width: 100%;
+}
+
 .slick-arrow.slick-hidden {
   display: none;
 }
@@ -156,12 +160,12 @@
 
   .slick-prev {
     left: 20px;
-    background-image: url("/img/icons/arrow-dark-left.svg");
+    background-image: url("../img/icons/arrow-dark-left.svg");
   }
 
   .slick-next {
     right: 20px;
-    background-image: url("/img/icons/arrow-dark-right.svg");
+    background-image: url("../img/icons/arrow-dark-right.svg");
   }
 }
 
