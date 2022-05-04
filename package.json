@@ -8,6 +8,8 @@
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "editorconfig": "^0.15.3",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -32,6 +34,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
     "test": "npm run editorconfig && npm run stylelint",
+    "lint": "eslint \"source/js/**/*.js\"",
     "build": "gulp build",
     "start": "gulp"
   },
