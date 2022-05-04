@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин автозапчастей</title>
+  <meta content="Магазин автозапчастей в городе Санкт-Петербург" name=description>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/180.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="icon.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -18,24 +19,54 @@
       <div class="menu">
         <ul class="menu__sections">
           <li>
-            <a class="menu__link menu__link--enter" href="blank.html">Войти</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="14" height="15">
+                <use xlink:href="img/icons/sprite.svg#user-grey"></use>
+              </svg>
+              Войти
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--enter" href="blank.html">Регистрация</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="14" height="15">
+                <use xlink:href="img/icons/sprite.svg#user-grey"></use>
+              </svg>
+              Регистрация
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--favorites" href="blank.html">Избранное</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="17" height="15">
+                <use xlink:href="img/icons/sprite.svg#favorites-grey"></use>
+              </svg>
+              Избранное
+            </a>
           </li>
         </ul>
         <ul class="menu__sections menu__sections-main">
           <li>
-            <a class="menu__link menu__link--shops" href="blank.html">Магазины</a>
+            <a class="menu__link" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="13" height="15">
+                <use xlink:href="img/icons/sprite.svg#shops"></use>
+              </svg>
+              Магазины
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--actions" href="blank.html">Акции</a>
+            <a class="menu__link menu__link--actions" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="19" height="25">
+                <use xlink:href="img/icons/sprite.svg#actions"></use>
+              </svg>
+              Акции
+            </a>
           </li>
           <li>
-            <a class="menu__link menu__link--delivery" href="blank.html">Доставка и оплата</a>
+            <a class="menu__link menu__link--delivery" href="blank.html">
+              <svg class="menu__svg-mobile" role="img" width="16" height="15">
+                <use xlink:href="img/icons/sprite.svg#delivery"></use>
+              </svg>
+              Доставка и оплата
+            </a>
           </li>
         </ul>
         <ul class="menu__sections">
@@ -43,51 +74,65 @@
             <a class="menu__link" href="catalog.html">Каталог запчастей</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Каталог ТО</a>
+            <a class="menu__link" href="#">Каталог ТО</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Шины</a>
+            <a class="menu__link" href="#">Шины</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Диски</a>
+            <a class="menu__link" href="#">Диски</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Аккумуляторы</a>
+            <a class="menu__link" href="#">Аккумуляторы</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Автомасла</a>
+            <a class="menu__link" href="#">Автомасла</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Автолампы</a>
+            <a class="menu__link" href="#">Автолампы</a>
           </li>
           <li>
-            <a class="menu__link" href="blank.html">Аксессуары</a>
+            <a class="menu__link" href="#">Аксессуары</a>
           </li>
         </ul>
         <address class="menu__address">
-          <a href="blank.html" class="menu__address-link" role="link" aria-label="Открыть схему проезда в магазин">Санкт-Петербург, ул Большая Конюшенная, д 19</a>
+          <a class="menu__address-link" href="blank.html" aria-label="Открыть схему проезда в магазин">
+            <svg class="menu__svg" role="img" width="35" height="35">
+              <use xlink:href="img/icons/sprite.svg#address"></use>
+            </svg>
+            Санкт-Петербург, ул<br> Большая Конюшенная, д 19
+          </a>
         </address>
       </div>
       <button class="hamburger" type="button">
         <span class="visually-hidden">Открыть мобильное меню</span>
       </button>
-      <a class="logo" href="index.html"  role="link" aria-label="Перейти на главную страницу">
-        <img class="logo__img" src="img/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
+      <a class="logo" href="index.html" aria-label="Перейти на главную страницу">
+        <img class="logo__img" src="img/marketing/logo.svg" width="70" height="39" alt="Логотип Магазина автозапчастей">
       </a>
       <ul class="icon-bar">
         <li>
-          <a class="icon-bar__link icon-bar__link--favorites" href="blank.html">
+          <a class="icon-bar__link icon-bar__link--favorites" href="blank.html" aria-label="Перейти в избранное">
+            <svg class="icon-bar__svg" role="img" width="27" height="25">
+              <use xlink:href="img/icons/sprite.svg#favorites"></use>
+            </svg>
             <span class="visually-hidden">Перейти в избранное</span>
           </a>
         </li>
         <li>
-          <a class="icon-bar__link icon-bar__link--account" href="blank.html">
+          <a class="icon-bar__link icon-bar__link--account" href="blank.html" aria-label="Перейти к вторизации">
+            <svg class="icon-bar__svg" role="img" width="24" height="26">
+              <use xlink:href="img/icons/sprite.svg#user"></use>
+            </svg>
             <span class="visually-hidden">Перейти к вторизации</span>
           </a>
         </li>
         <li>
-          <a class="icon-bar__link icon-bar__link--cart" href="blank.html">
-            <span class="visually-hidden">Перейти в корзина</span>
+          <a class="icon-bar__link icon-bar__link--cart" href="blank.html" aria-label="Перейти в корзину">
+            <svg class="icon-bar__svg" role="img" width="29" height="26">
+              <use xlink:href="img/icons/sprite.svg#cart"></use>
+            </svg>
+            <span class="visually-hidden">Перейти в корзину</span>
             <span class="icon-bar__cart-counter">1</span>
           </a>
         </li>
