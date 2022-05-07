@@ -1,3 +1,5 @@
+import ghPages from "gh-pages";
+import path from "path";
 import gulp from "gulp";
 import plumber from "gulp-plumber";
 import sass from "gulp-dart-sass";
@@ -173,3 +175,9 @@ export default gulp.series(
     watcher
   )
 );
+
+// GH-Pages
+
+export const deploy = (cb) => {
+  ghPages.publish(path.join(process.cwd(), "./build"), cb);
+}

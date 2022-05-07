@@ -10,6 +10,7 @@
     "editorconfig": "^0.15.3",
     "eslint": "^8.14.0",
     "eslint-config-airbnb": "^19.0.4",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -24,6 +25,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^10.0.1",
     "jquery": "^3.6.0",
+    "path": "^0.12.7",
     "postcss": "^8.4.5",
     "postcss-csso": "^6.0.0",
     "stylelint": "^14.3.0",
@@ -35,6 +37,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
     "test": "npm run editorconfig && npm run stylelint",
     "lint": "eslint \"source/js/**/*.js\"",
+    "deploy": "gulp build && npm start deploy",
     "build": "gulp build",
     "start": "gulp"
   },
